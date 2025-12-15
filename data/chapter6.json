@@ -1,0 +1,602 @@
+[
+    {
+      "id": 1,
+      "question": "What is architectural design primarily concerned with?",
+      "options": [
+        { "id": "a", "text": "Writing detailed code for individual methods" },
+        { "id": "b", "text": "Understanding how a software system should be organized and designing its overall structure" },
+        { "id": "c", "text": "Creating user interface mockups" },
+        { "id": "d", "text": "Testing individual components" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Architectural design is concerned with understanding how a software system should be organized and designing the overall structure of that system. It focuses on the high-level organization rather than low-level implementation details."
+    },
+    {
+      "id": 2,
+      "question": "What is the critical link that architectural design provides?",
+      "options": [
+        { "id": "a", "text": "Between testing and deployment" },
+        { "id": "b", "text": "Between design and requirements engineering" },
+        { "id": "c", "text": "Between coding and debugging" },
+        { "id": "d", "text": "Between users and developers" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Architectural design is the critical link between design and requirements engineering, as it identifies the main structural components in a system and the relationships between them."
+    },
+    {
+      "id": 3,
+      "question": "Why is refactoring the system architecture usually expensive in agile processes?",
+      "options": [
+        { "id": "a", "text": "It requires purchasing new software licenses" },
+        { "id": "b", "text": "It affects so many components in the system" },
+        { "id": "c", "text": "It requires retraining all developers" },
+        { "id": "d", "text": "It violates agile principles" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Refactoring the system architecture is usually expensive because it affects so many components in the system. This is why even agile processes typically design an overall systems architecture early."
+    },
+    {
+      "id": 4,
+      "question": "What is 'architecture in the small' concerned with?",
+      "options": [
+        { "id": "a", "text": "The architecture of complex enterprise systems" },
+        { "id": "b", "text": "The architecture of distributed systems" },
+        { "id": "c", "text": "The architecture of individual programs and how they are decomposed into components" },
+        { "id": "d", "text": "The architecture of database systems only" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Architecture in the small is concerned with the architecture of individual programs. At this level, we focus on how an individual program is decomposed into components."
+    },
+    {
+      "id": 5,
+      "question": "What characterizes 'architecture in the large'?",
+      "options": [
+        { "id": "a", "text": "Simple single-server applications" },
+        { "id": "b", "text": "Mobile applications only" },
+        { "id": "c", "text": "Complex enterprise systems distributed over different computers, possibly owned by different companies" },
+        { "id": "d", "text": "Desktop applications with no network connectivity" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Architecture in the large is concerned with complex enterprise systems that include other systems, programs, and program components. These are distributed over different computers, which may be owned and managed by different companies."
+    },
+    {
+      "id": 6,
+      "question": "How should architectural models be used to facilitate stakeholder discussion?",
+      "options": [
+        { "id": "a", "text": "By providing complete implementation details" },
+        { "id": "b", "text": "By showing low-level code structure" },
+        { "id": "c", "text": "By providing a high-level view not cluttered with detail" },
+        { "id": "d", "text": "By focusing only on database schemas" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "A high-level architectural view is useful for communication with stakeholders because it is not cluttered with detail. Stakeholders can relate to and understand an abstract view, allowing them to discuss the system as a whole."
+    },
+    {
+      "id": 7,
+      "question": "In architectural design, systems in the same domain often:",
+      "options": [
+        { "id": "a", "text": "Have completely different architectures" },
+        { "id": "b", "text": "Have similar architectures that reflect domain concepts" },
+        { "id": "c", "text": "Cannot reuse any architectural patterns" },
+        { "id": "d", "text": "Must use different programming languages" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Systems in the same domain often have similar architectures that reflect domain concepts, enabling architecture reuse and standardization within a domain."
+    },
+    {
+      "id": 8,
+      "question": "To optimize for performance, which architectural strategy should be used?",
+      "options": [
+        { "id": "a", "text": "Use fine-grain components and maximize communications" },
+        { "id": "b", "text": "Localize critical operations, minimize communications, and use large rather than fine-grain components" },
+        { "id": "c", "text": "Distribute all components across multiple servers" },
+        { "id": "d", "text": "Add redundant components throughout the system" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "For performance, you should localize critical operations and minimize communications, using large rather than fine-grain components. This reduces communication overhead and improves processing efficiency."
+    },
+    {
+      "id": 9,
+      "question": "What architectural approach is recommended for security?",
+      "options": [
+        { "id": "a", "text": "Distribute security checks across all components" },
+        { "id": "b", "text": "Use a layered architecture with critical assets in the inner layers" },
+        { "id": "c", "text": "Place all assets in the outermost layer" },
+        { "id": "d", "text": "Avoid using layers entirely" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "For security, a layered architecture should be used with critical assets in the inner layers, providing multiple layers of protection and controlled access."
+    },
+    {
+      "id": 10,
+      "question": "How should safety-critical features be handled architecturally?",
+      "options": [
+        { "id": "a", "text": "Distribute them across all subsystems" },
+        { "id": "b", "text": "Localize them in a small number of subsystems" },
+        { "id": "c", "text": "Implement them in the user interface layer" },
+        { "id": "d", "text": "Avoid isolating them from other features" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Safety-critical features should be localized in a small number of subsystems. This makes them easier to verify, validate, and certify for safety compliance."
+    },
+    {
+      "id": 11,
+      "question": "To achieve high availability, what architectural approach is recommended?",
+      "options": [
+        { "id": "a", "text": "Use only single instances of all components" },
+        { "id": "b", "text": "Minimize the number of components" },
+        { "id": "c", "text": "Include redundant components and mechanisms for fault tolerance" },
+        { "id": "d", "text": "Centralize all functionality in one server" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "For availability, the architecture should include redundant components and mechanisms for fault tolerance, ensuring the system remains operational even when individual components fail."
+    },
+    {
+      "id": 12,
+      "question": "What component granularity supports maintainability best?",
+      "options": [
+        { "id": "a", "text": "Very large, monolithic components" },
+        { "id": "b", "text": "Fine-grain, replaceable components" },
+        { "id": "c", "text": "Components that cannot be modified" },
+        { "id": "d", "text": "Tightly coupled components" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Maintainability is best supported by using fine-grain, replaceable components. This allows individual components to be updated or replaced without affecting the entire system."
+    },
+    {
+      "id": 13,
+      "question": "How many views are in the '4+1 view model' of software architecture?",
+      "options": [
+        { "id": "a", "text": "Four views total" },
+        { "id": "b", "text": "Five views total" },
+        { "id": "c", "text": "Six views total" },
+        { "id": "d", "text": "Three views plus scenarios" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The 4+1 view model contains five views total: logical, process, development, physical, plus use cases/scenarios that relate the four main views together."
+    },
+    {
+      "id": 14,
+      "question": "What does the logical view in the 4+1 model show?",
+      "options": [
+        { "id": "a", "text": "How software is decomposed for development" },
+        { "id": "b", "text": "System hardware and component distribution" },
+        { "id": "c", "text": "The key abstractions in the system as objects or object classes" },
+        { "id": "d", "text": "Runtime process interactions" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "The logical view shows the key abstractions in the system as objects or object classes, focusing on the functionality provided to end-users."
+    },
+    {
+      "id": 15,
+      "question": "What does the process view in the 4+1 model represent?",
+      "options": [
+        { "id": "a", "text": "The development workflow" },
+        { "id": "b", "text": "How, at run-time, the system is composed of interacting processes" },
+        { "id": "c", "text": "The physical hardware configuration" },
+        { "id": "d", "text": "The logical data model" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The process view shows how, at run-time, the system is composed of interacting processes. It addresses concurrency and synchronization aspects."
+    },
+    {
+      "id": 16,
+      "question": "What is the purpose of the '+1' in the 4+1 view model?",
+      "options": [
+        { "id": "a", "text": "It represents the database schema" },
+        { "id": "b", "text": "It consists of use cases or scenarios that relate the four main views" },
+        { "id": "c", "text": "It shows the deployment diagram" },
+        { "id": "d", "text": "It represents future system extensions" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The '+1' refers to use cases or scenarios that relate and tie together the four main views, helping to validate the architecture."
+    },
+    {
+      "id": 17,
+      "question": "What is an architectural pattern?",
+      "options": [
+        { "id": "a", "text": "A specific code template" },
+        { "id": "b", "text": "A stylized description of good design practice, tried and tested in different environments" },
+        { "id": "c", "text": "A database design schema" },
+        { "id": "d", "text": "A user interface layout" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "An architectural pattern is a stylized description of good design practice, which has been tried and tested in different environments. It's a means of representing, sharing, and reusing knowledge."
+    },
+    {
+      "id": 18,
+      "question": "In the Model-View-Controller (MVC) pattern, what is the role of the Model?",
+      "options": [
+        { "id": "a", "text": "Manages user interaction" },
+        { "id": "b", "text": "Defines presentation to users" },
+        { "id": "c", "text": "Manages system data and operations on that data" },
+        { "id": "d", "text": "Handles network communications" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "In MVC, the Model manages the system data and operations on that data. It represents the business logic and data layer of the application."
+    },
+    {
+      "id": 19,
+      "question": "In the MVC pattern, what component manages user interaction such as mouse and keyboard input?",
+      "options": [
+        { "id": "a", "text": "Model" },
+        { "id": "b", "text": "View" },
+        { "id": "c", "text": "Controller" },
+        { "id": "d", "text": "Database" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "The Controller manages user interaction, including events from devices like the mouse and keyboard. It acts as an intermediary between the View and Model."
+    },
+    {
+      "id": 20,
+      "question": "What is a key advantage of the MVC pattern?",
+      "options": [
+        { "id": "a", "text": "It eliminates the need for a database" },
+        { "id": "b", "text": "It allows data changes to be reflected in multiple representations" },
+        { "id": "c", "text": "It requires less code than other patterns" },
+        { "id": "d", "text": "It only works for web applications" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "A key advantage of MVC is that data changes can be reflected in multiple representations, and support for user interaction can be added without changing the data representation."
+    },
+    {
+      "id": 21,
+      "question": "What is a disadvantage of the MVC pattern?",
+      "options": [
+        { "id": "a", "text": "It cannot handle user input" },
+        { "id": "b", "text": "It doesn't support multiple views" },
+        { "id": "c", "text": "It can involve additional code and complexity for simple models" },
+        { "id": "d", "text": "It only works with relational databases" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "A disadvantage of MVC is that it can involve additional code and complexity, especially for simple models where the separation might be overkill."
+    },
+    {
+      "id": 22,
+      "question": "What is the primary purpose of a layered architecture?",
+      "options": [
+        { "id": "a", "text": "To maximize component coupling" },
+        { "id": "b", "text": "To model the interfacing of subsystems and organize the system into layers providing sets of services" },
+        { "id": "c", "text": "To eliminate the need for documentation" },
+        { "id": "d", "text": "To centralize all functionality in one layer" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Layered architecture is used to model the interfacing of subsystems. It organizes the system into layers (or abstract machines), each of which provides a set of services."
+    },
+    {
+      "id": 23,
+      "question": "What happens when a layer interface changes in a layered architecture?",
+      "options": [
+        { "id": "a", "text": "All layers must be rewritten" },
+        { "id": "b", "text": "Only the adjacent layer is affected" },
+        { "id": "c", "text": "The entire system must be redesigned" },
+        { "id": "d", "text": "No other layers are affected" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "In a layered architecture, when a layer interface changes, only the adjacent layer is affected. This supports incremental development and limits the impact of changes."
+    },
+    {
+      "id": 24,
+      "question": "In a repository architecture, how do subsystems primarily exchange data?",
+      "options": [
+        { "id": "a", "text": "Through direct method calls" },
+        { "id": "b", "text": "Through a central database or repository that all subsystems can access" },
+        { "id": "c", "text": "By copying files between directories" },
+        { "id": "d", "text": "Through email notifications" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "In repository architecture, shared data is held in a central database or repository that may be accessed by all subsystems. This is an efficient data sharing mechanism, especially for large amounts of data."
+    },
+    {
+      "id": 25,
+      "question": "When is the repository model of data sharing most commonly used?",
+      "options": [
+        { "id": "a", "text": "When minimal data needs to be shared" },
+        { "id": "b", "text": "When large amounts of data are to be shared" },
+        { "id": "c", "text": "When subsystems are completely independent" },
+        { "id": "d", "text": "When real-time performance is critical" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "When large amounts of data are to be shared, the repository model of sharing is most commonly used as this is an efficient data sharing mechanism."
+    },
+    {
+      "id": 26,
+      "question": "What is an example of a repository architecture application?",
+      "options": [
+        { "id": "a", "text": "A simple calculator" },
+        { "id": "b", "text": "An Integrated Development Environment (IDE)" },
+        { "id": "c", "text": "A standalone text editor" },
+        { "id": "d", "text": "A mobile game" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "An IDE is a classic example of repository architecture, where components like the editor, compiler, linker, and debugger all access a shared code repository."
+    },
+    {
+      "id": 27,
+      "question": "In a client-server architecture, what is the role of servers?",
+      "options": [
+        { "id": "a", "text": "To request services from clients" },
+        { "id": "b", "text": "To provide specific services such as printing, data management, etc." },
+        { "id": "c", "text": "To only store user interfaces" },
+        { "id": "d", "text": "To eliminate the need for a network" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "In client-server architecture, servers are stand-alone systems that provide specific services such as printing, data management, etc., which clients can access."
+    },
+    {
+      "id": 28,
+      "question": "Can a client-server architecture be implemented on a single computer?",
+      "options": [
+        { "id": "a", "text": "No, it always requires multiple computers" },
+        { "id": "b", "text": "Yes, it can be implemented on a single computer" },
+        { "id": "c", "text": "Only if it's a mainframe computer" },
+        { "id": "d", "text": "Only for development purposes" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Client-server architecture can be implemented on a single computer, although it is a distributed system model. The separation is logical rather than necessarily physical."
+    },
+    {
+      "id": 29,
+      "question": "What is the pipe and filter architecture also known as when transformations are sequential?",
+      "options": [
+        { "id": "a", "text": "Real-time processing model" },
+        { "id": "b", "text": "Interactive system model" },
+        { "id": "c", "text": "Batch sequential model" },
+        { "id": "d", "text": "Event-driven model" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "When transformations are sequential, the pipe and filter architecture is referred to as a batch sequential model, which is extensively used in data processing systems."
+    },
+    {
+      "id": 30,
+      "question": "What type of systems is the pipe and filter architecture NOT suitable for?",
+      "options": [
+        { "id": "a", "text": "Data processing systems" },
+        { "id": "b", "text": "Batch processing systems" },
+        { "id": "c", "text": "Interactive systems" },
+        { "id": "d", "text": "Sequential transformation systems" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "The pipe and filter architecture is not really suitable for interactive systems because it is designed for sequential batch processing rather than real-time user interaction."
+    },
+    {
+      "id": 31,
+      "question": "In Event-Driven Architecture (EDA), what are the two main types of components?",
+      "options": [
+        { "id": "a", "text": "Clients and servers" },
+        { "id": "b", "text": "Models and views" },
+        { "id": "c", "text": "Event producers (emitters) and event consumers (handlers)" },
+        { "id": "d", "text": "Layers and interfaces" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "In EDA, components communicate through events. Event producers (emitters) trigger events, and event consumers (handlers) respond asynchronously to these events."
+    },
+    {
+      "id": 32,
+      "question": "What is an advantage of Event-Driven Architecture?",
+      "options": [
+        { "id": "a", "text": "Simplified debugging" },
+        { "id": "b", "text": "Guaranteed consistency" },
+        { "id": "c", "text": "Scalable and loosely coupled, supporting real-time systems" },
+        { "id": "d", "text": "Requires no testing" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "EDA is scalable and loosely coupled, and it supports real-time systems well. These characteristics make it suitable for applications requiring rapid response to events."
+    },
+    {
+      "id": 33,
+      "question": "What is a disadvantage of Event-Driven Architecture?",
+      "options": [
+        { "id": "a", "text": "Cannot handle multiple events" },
+        { "id": "b", "text": "Debugging and testing are more complex, and ensuring consistency is harder" },
+        { "id": "c", "text": "Too tightly coupled" },
+        { "id": "d", "text": "Cannot scale" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "EDA has more complex debugging and testing requirements, and it's harder to ensure consistency across the system due to the asynchronous nature of event handling."
+    },
+    {
+      "id": 34,
+      "question": "How do services communicate in Microservices Architecture?",
+      "options": [
+        { "id": "a", "text": "Through shared databases only" },
+        { "id": "b", "text": "Through lightweight APIs, often REST or gRPC" },
+        { "id": "c", "text": "Through direct memory access" },
+        { "id": "d", "text": "Through file system sharing" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "In Microservices Architecture, services communicate through lightweight APIs, often using REST or gRPC protocols, enabling independent service development and deployment."
+    },
+    {
+      "id": 35,
+      "question": "What is an advantage of Microservices Architecture?",
+      "options": [
+        { "id": "a", "text": "Simpler to manage than monoliths" },
+        { "id": "b", "text": "No need for DevOps" },
+        { "id": "c", "text": "Independent deployment and fault isolation" },
+        { "id": "d", "text": "Eliminates all communication complexity" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Microservices offer independent deployment and fault isolation. Services can be developed, deployed, and scaled independently, and failures in one service don't necessarily bring down the entire system."
+    },
+    {
+      "id": 36,
+      "question": "What challenge does Microservices Architecture present?",
+      "options": [
+        { "id": "a", "text": "Cannot be scaled" },
+        { "id": "b", "text": "Services must be deployed together" },
+        { "id": "c", "text": "Complex communication and data consistency, requires DevOps and container orchestration" },
+        { "id": "d", "text": "All services must use the same technology stack" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Microservices introduce complex communication patterns and data consistency challenges, and they require sophisticated DevOps practices and container orchestration tools to manage effectively."
+    },
+    {
+      "id": 37,
+      "question": "What protocols are commonly used in Service-Oriented Architecture (SOA)?",
+      "options": [
+        { "id": "a", "text": "Only FTP and SMTP" },
+        { "id": "b", "text": "SOAP or REST" },
+        { "id": "c", "text": "Only proprietary protocols" },
+        { "id": "d", "text": "Direct socket connections only" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "SOA commonly uses SOAP or REST protocols for service communication. These provide standardized ways for services to expose functionality through well-defined interfaces."
+    },
+    {
+      "id": 38,
+      "question": "What is a generic application architecture?",
+      "options": [
+        { "id": "a", "text": "An architecture that only works for one specific application" },
+        { "id": "b", "text": "An architecture for a type of software system that can be configured and adapted to create systems meeting specific requirements" },
+        { "id": "c", "text": "A hardware specification" },
+        { "id": "d", "text": "A programming language framework" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "A generic application architecture is an architecture for a type of software system that may be configured and adapted to create a system that meets specific requirements."
+    },
+    {
+      "id": 39,
+      "question": "Which of the following is NOT a listed use of application architectures?",
+      "options": [
+        { "id": "a", "text": "As a starting point for architectural design" },
+        { "id": "b", "text": "As a design checklist" },
+        { "id": "c", "text": "As a means of assessing components for reuse" },
+        { "id": "d", "text": "As a replacement for testing" }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Application architectures are used as starting points for design, design checklists, work organization tools, component assessment tools, and vocabulary, but they are not a replacement for testing."
+    },
+    {
+      "id": 40,
+      "question": "What are data processing applications characterized by?",
+      "options": [
+        { "id": "a", "text": "Continuous user interaction during processing" },
+        { "id": "b", "text": "Processing data in batches without explicit user intervention during the processing" },
+        { "id": "c", "text": "Real-time event handling" },
+        { "id": "d", "text": "Distributed processing across multiple user devices" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Data processing applications are data-driven applications that process data in batches without explicit user intervention during the processing."
+    },
+    {
+      "id": 41,
+      "question": "What defines a transaction from a user's perspective in transaction processing systems?",
+      "options": [
+        { "id": "a", "text": "Any database query" },
+        { "id": "b", "text": "Any coherent sequence of operations that satisfies a goal" },
+        { "id": "c", "text": "Only financial operations" },
+        { "id": "d", "text": "Any system login" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "From a user perspective, a transaction is any coherent sequence of operations that satisfies a goal, such as finding flight times from London to Paris."
+    },
+    {
+      "id": 42,
+      "question": "How do users make requests in transaction processing systems?",
+      "options": [
+        { "id": "a", "text": "Through synchronous batch files" },
+        { "id": "b", "text": "Through asynchronous requests processed by a transaction manager" },
+        { "id": "c", "text": "Through scheduled tasks only" },
+        { "id": "d", "text": "Through email only" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Users make asynchronous requests for service which are then processed by a transaction manager in transaction processing systems."
+    },
+    {
+      "id": 43,
+      "question": "What are the typical layers in an information systems architecture?",
+      "options": [
+        { "id": "a", "text": "Presentation, business logic, and hardware" },
+        { "id": "b", "text": "User interface, user communications, information retrieval, and system database" },
+        { "id": "c", "text": "Input, processing, and output only" },
+        { "id": "d", "text": "Client, network, and server only" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Information systems architecture typically includes layers for the user interface, user communications, information retrieval, and system database."
+    },
+    {
+      "id": 44,
+      "question": "In a multi-tier web-based information system, what is the web server responsible for?",
+      "options": [
+        { "id": "a", "text": "Transaction management only" },
+        { "id": "b", "text": "Database storage only" },
+        { "id": "c", "text": "All user communications, with the user interface implemented using a web browser" },
+        { "id": "d", "text": "Only security functions" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "The web server is responsible for all user communications, with the user interface implemented using a web browser in a multi-tier architecture."
+    },
+    {
+      "id": 45,
+      "question": "What does the application server handle in a multi-tier architecture?",
+      "options": [
+        { "id": "a", "text": "Only user interface rendering" },
+        { "id": "b", "text": "Application-specific logic as well as information storage and retrieval requests" },
+        { "id": "c", "text": "Only network routing" },
+        { "id": "d", "text": "Only database backups" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The application server is responsible for implementing application-specific logic as well as information storage and retrieval requests in a multi-tier architecture."
+    },
+    {
+      "id": 46,
+      "question": "What is the purpose of language processing systems?",
+      "options": [
+        { "id": "a", "text": "To only translate between human languages" },
+        { "id": "b", "text": "To accept a natural or artificial language as input and generate some other representation of that language" },
+        { "id": "c", "text": "To only compile code" },
+        { "id": "d", "text": "To process audio files" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Language processing systems accept a natural or artificial language as input and generate some other representation of that language, and may include an interpreter to execute the instructions."
+    },
+    {
+      "id": 47,
+      "question": "What is the role of the lexical analyzer in a compiler?",
+      "options": [
+        { "id": "a", "text": "To generate machine code" },
+        { "id": "b", "text": "To check semantic correctness" },
+        { "id": "c", "text": "To take input language tokens and convert them to an internal form" },
+        { "id": "d", "text": "To optimize the code" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "The lexical analyzer takes input language tokens and converts them to an internal form, serving as the first stage of language processing."
+    },
+    {
+      "id": 48,
+      "question": "What does the symbol table in a compiler hold?",
+      "options": [
+        { "id": "a", "text": "Only variable names" },
+        { "id": "b", "text": "Information about the names of entities (variables, class names, object names, etc.) used in the text being translated" },
+        { "id": "c", "text": "Only function definitions" },
+        { "id": "d", "text": "Compiled machine code" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The symbol table holds information about the names of entities such as variables, class names, object names, etc., used in the text that is being translated."
+    },
+    {
+      "id": 49,
+      "question": "What does the semantic analyzer use to check correctness?",
+      "options": [
+        { "id": "a", "text": "Only the source code" },
+        { "id": "b", "text": "Information from the syntax tree and the symbol table" },
+        { "id": "c", "text": "Only user input" },
+        { "id": "d", "text": "Network protocols" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The semantic analyzer uses information from the syntax tree and the symbol table to check the semantic correctness of the input language text."
+    },
+    {
+      "id": 50,
+      "question": "Which architectural pattern(s) can be used to implement a language processing system?",
+      "options": [
+        { "id": "a", "text": "Only MVC" },
+        { "id": "b", "text": "Only Client-Server" },
+        { "id": "c", "text": "Repository or Pipe and Filter" },
+        { "id": "d", "text": "Only Event-Driven" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Language processing systems can be implemented using either Repository architecture (with shared symbol table and syntax tree) or Pipe and Filter architecture (with sequential processing stages)."
+    }
+  ]

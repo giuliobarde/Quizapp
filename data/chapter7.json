@@ -1,0 +1,662 @@
+[
+    {
+      "id": 1,
+      "question": "What is the relationship between software design and implementation activities?",
+      "options": [
+        { "id": "a", "text": "They are completely sequential processes" },
+        { "id": "b", "text": "They are invariably interleaved" },
+        { "id": "c", "text": "Implementation must be completed before design begins" },
+        { "id": "d", "text": "They are independent and unrelated activities" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Software design and implementation activities are invariably interleaved, meaning they occur together and influence each other throughout the development process, rather than being strictly sequential."
+    },
+    {
+      "id": 2,
+      "question": "Which statement best describes object class identification in object-oriented design?",
+      "options": [
+        { "id": "a", "text": "There is a magic formula that always works" },
+        { "id": "b", "text": "It is an iterative process that relies on skill, experience, and domain knowledge" },
+        { "id": "c", "text": "It is always correct on the first attempt" },
+        { "id": "d", "text": "It requires no domain knowledge" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Object identification is an iterative process that relies on the skill, experience, and domain knowledge of system designers. There is no magic formula, and designers are unlikely to get it right the first time."
+    },
+    {
+      "id": 3,
+      "question": "Which approach to object identification is based on analyzing a natural language description of the system?",
+      "options": [
+        { "id": "a", "text": "Behavioral approach" },
+        { "id": "b", "text": "Scenario-based analysis" },
+        { "id": "c", "text": "Grammatical approach" },
+        { "id": "d", "text": "Tangible things approach" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "The grammatical approach uses a natural language description of the system, where nouns typically become classes and verbs become methods."
+    },
+    {
+      "id": 4,
+      "question": "What UML construct is used to show subsystem models?",
+      "options": [
+        { "id": "a", "text": "Classes" },
+        { "id": "b", "text": "Packages" },
+        { "id": "c", "text": "Interfaces" },
+        { "id": "d", "text": "Components" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "In UML, packages are the encapsulation construct used to show subsystem models, displaying logical groupings of objects into coherent subsystems."
+    },
+    {
+      "id": 5,
+      "question": "Which of the following is true about subsystem models?",
+      "options": [
+        { "id": "a", "text": "They represent the actual physical organization of objects" },
+        { "id": "b", "text": "They are logical models that may differ from actual organization" },
+        { "id": "c", "text": "They cannot use packages" },
+        { "id": "d", "text": "They show individual object implementations" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Subsystem models are logical models. The actual organization of objects in the system may be different from the logical groupings shown in subsystem models."
+    },
+    {
+      "id": 6,
+      "question": "Why must component interfaces be defined precisely?",
+      "options": [
+        { "id": "a", "text": "To make the code run faster" },
+        { "id": "b", "text": "So that objects and components can be designed in parallel" },
+        { "id": "c", "text": "To reduce memory usage" },
+        { "id": "d", "text": "To eliminate all bugs" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Component interfaces must be precisely specified so that objects and other components can be designed in parallel by different developers or teams."
+    },
+    {
+      "id": 7,
+      "question": "What should designers do regarding interface representation?",
+      "options": [
+        { "id": "a", "text": "Design it in detail and expose it publicly" },
+        { "id": "b", "text": "Avoid designing it and hide it in the object itself" },
+        { "id": "c", "text": "Always use global variables for interfaces" },
+        { "id": "d", "text": "Share it across all objects in the system" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Designers should avoid designing the interface representation but should hide this in the object itself, following the principle of information hiding."
+    },
+    {
+      "id": 8,
+      "question": "How many interfaces can an object have?",
+      "options": [
+        { "id": "a", "text": "Exactly one interface" },
+        { "id": "b", "text": "No more than two interfaces" },
+        { "id": "c", "text": "Several interfaces providing different viewpoints" },
+        { "id": "d", "text": "None of the above" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Objects may have several interfaces which are viewpoints on the methods provided, allowing different perspectives on the object's functionality."
+    },
+    {
+      "id": 9,
+      "question": "What is a design pattern?",
+      "options": [
+        { "id": "a", "text": "A concrete implementation of a specific solution" },
+        { "id": "b", "text": "A way of reusing abstract knowledge about a problem and its solution" },
+        { "id": "c", "text": "A programming language feature" },
+        { "id": "d", "text": "A testing methodology" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "A design pattern is a way of reusing abstract knowledge about a problem and its solution, providing a template that can be applied in different contexts."
+    },
+    {
+      "id": 10,
+      "question": "Design patterns typically make use of which object-oriented characteristics?",
+      "options": [
+        { "id": "a", "text": "Only encapsulation" },
+        { "id": "b", "text": "Inheritance and polymorphism" },
+        { "id": "c", "text": "Only abstraction" },
+        { "id": "d", "text": "None of the above" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Pattern descriptions usually make use of object-oriented characteristics such as inheritance and polymorphism to provide flexible, reusable solutions."
+    },
+    {
+      "id": 11,
+      "question": "How many elements does a design pattern have?",
+      "options": [
+        { "id": "a", "text": "Two: problem and solution" },
+        { "id": "b", "text": "Three: name, problem, and solution" },
+        { "id": "c", "text": "Four: name, problem, solution, and consequences" },
+        { "id": "d", "text": "Five: name, problem, solution, consequences, and implementation" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "A design pattern has four elements: a meaningful name, problem description, solution description, and consequences (results and trade-offs)."
+    },
+    {
+      "id": 12,
+      "question": "What does the 'consequences' element of a design pattern describe?",
+      "options": [
+        { "id": "a", "text": "The programming language to use" },
+        { "id": "b", "text": "The results and trade-offs of applying the pattern" },
+        { "id": "c", "text": "The history of the pattern" },
+        { "id": "d", "text": "The number of classes needed" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The consequences element describes the results and trade-offs of applying the pattern, helping developers evaluate whether the pattern is appropriate for their situation."
+    },
+    {
+      "id": 13,
+      "question": "Which of the following is NOT one of the three major implementation issues covered in the chapter?",
+      "options": [
+        { "id": "a", "text": "Reuse" },
+        { "id": "b", "text": "Configuration management" },
+        { "id": "c", "text": "Programming syntax" },
+        { "id": "d", "text": "Host-target development" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "The three major implementation issues are reuse, configuration management, and host-target development. The chapter explicitly states the focus is not on programming itself but on other implementation issues."
+    },
+    {
+      "id": 14,
+      "question": "How was most software developed from the 1960s to the 1990s?",
+      "options": [
+        { "id": "a", "text": "Using extensive reuse of components" },
+        { "id": "b", "text": "From scratch, writing all code in high-level languages" },
+        { "id": "c", "text": "Using open source libraries" },
+        { "id": "d", "text": "Through automatic code generation" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "From the 1960s to the 1990s, most new software was developed from scratch by writing all code in a high-level programming language, with minimal reuse."
+    },
+    {
+      "id": 15,
+      "question": "At the abstraction level of reuse, what is being reused?",
+      "options": [
+        { "id": "a", "text": "Actual software code directly" },
+        { "id": "b", "text": "Complete application systems" },
+        { "id": "c", "text": "Knowledge of successful abstractions in design" },
+        { "id": "d", "text": "Objects from libraries" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "At the abstraction level, you don't reuse software directly but use knowledge of successful abstractions in the design of your software."
+    },
+    {
+      "id": 16,
+      "question": "At which level of reuse do you directly use objects from a library rather than writing code yourself?",
+      "options": [
+        { "id": "a", "text": "Abstraction level" },
+        { "id": "b", "text": "Object level" },
+        { "id": "c", "text": "Component level" },
+        { "id": "d", "text": "System level" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "At the object level, you directly reuse objects from a library rather than writing the code yourself."
+    },
+    {
+      "id": 17,
+      "question": "What are components in the context of software reuse?",
+      "options": [
+        { "id": "a", "text": "Individual functions" },
+        { "id": "b", "text": "Collections of objects and object classes" },
+        { "id": "c", "text": "Single lines of code" },
+        { "id": "d", "text": "Database tables" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "At the component level, components are collections of objects and object classes that you reuse in application systems."
+    },
+    {
+      "id": 18,
+      "question": "Which represents the highest level of software reuse?",
+      "options": [
+        { "id": "a", "text": "Object level" },
+        { "id": "b", "text": "Abstraction level" },
+        { "id": "c", "text": "Component level" },
+        { "id": "d", "text": "System level" }
+      ],
+      "correctAnswer": "d",
+      "explanation": "System level reuse is the highest level, where you reuse entire application systems."
+    },
+    {
+      "id": 19,
+      "question": "Which of the following is NOT one of the costs of reuse?",
+      "options": [
+        { "id": "a", "text": "Time spent searching for and assessing software" },
+        { "id": "b", "text": "Costs of buying reusable software" },
+        { "id": "c", "text": "Costs of hiring more developers" },
+        { "id": "d", "text": "Costs of adapting and configuring components" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "The four costs of reuse are: search and assessment costs, purchase costs, adaptation and configuration costs, and integration costs. Hiring costs are not specifically mentioned as a reuse cost."
+    },
+    {
+      "id": 20,
+      "question": "What type of cost is associated with making reusable components work with each other and with new code?",
+      "options": [
+        { "id": "a", "text": "Search costs" },
+        { "id": "b", "text": "Purchase costs" },
+        { "id": "c", "text": "Adaptation costs" },
+        { "id": "d", "text": "Integration costs" }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Integration costs are the costs of integrating reusable software elements with each other and with new code, especially when using software from different sources."
+    },
+    {
+      "id": 21,
+      "question": "What is the aim of configuration management?",
+      "options": [
+        { "id": "a", "text": "To write better code" },
+        { "id": "b", "text": "To support system integration so developers can access code in a controlled way" },
+        { "id": "c", "text": "To eliminate all bugs" },
+        { "id": "d", "text": "To reduce development costs" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The aim of configuration management is to support the system integration process so that all developers can access project code and documents in a controlled way, find out what changes have been made, and compile and link components."
+    },
+    {
+      "id": 22,
+      "question": "Which configuration management activity helps keep track of different versions of software components?",
+      "options": [
+        { "id": "a", "text": "Version management" },
+        { "id": "b", "text": "System integration" },
+        { "id": "c", "text": "Problem tracking" },
+        { "id": "d", "text": "Quality assurance" }
+      ],
+      "correctAnswer": "a",
+      "explanation": "Version management provides support to keep track of different versions of software components and includes facilities to coordinate development by several programmers."
+    },
+    {
+      "id": 23,
+      "question": "What does system integration support help developers do?",
+      "options": [
+        { "id": "a", "text": "Write unit tests" },
+        { "id": "b", "text": "Define what versions of components create each system version and build automatically" },
+        { "id": "c", "text": "Debug code" },
+        { "id": "d", "text": "Design user interfaces" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "System integration support helps developers define what versions of components are used to create each version of a system, and this description is then used to build a system automatically by compiling and linking."
+    },
+    {
+      "id": 24,
+      "question": "What is the purpose of problem tracking in configuration management?",
+      "options": [
+        { "id": "a", "text": "To identify design patterns" },
+        { "id": "b", "text": "To allow users to report bugs and see who is working on them" },
+        { "id": "c", "text": "To manage version numbers" },
+        { "id": "d", "text": "To compile source code" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Problem tracking provides support to allow users to report bugs and other problems, and to allow all developers to see who is working on these problems and when they are fixed."
+    },
+    {
+      "id": 25,
+      "question": "In host-target development, where is the software developed?",
+      "options": [
+        { "id": "a", "text": "On the target system" },
+        { "id": "b", "text": "On the host system" },
+        { "id": "c", "text": "On both systems simultaneously" },
+        { "id": "d", "text": "On a cloud server" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "In host-target development, software is developed on the host system (one computer) but runs on a separate target system (target machine)."
+    },
+    {
+      "id": 26,
+      "question": "What is a platform in the context of software development?",
+      "options": [
+        { "id": "a", "text": "Only the hardware" },
+        { "id": "b", "text": "Only the operating system" },
+        { "id": "c", "text": "Hardware plus installed operating system and supporting software" },
+        { "id": "d", "text": "The programming language" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "A platform is more than just hardware. It includes the installed operating system plus other supporting software such as a database management system or interactive development environment."
+    },
+    {
+      "id": 27,
+      "question": "Which of the following is a development platform tool?",
+      "options": [
+        { "id": "a", "text": "Language debugging system" },
+        { "id": "b", "text": "Graphical editing tools for UML models" },
+        { "id": "c", "text": "Testing tools like JUnit" },
+        { "id": "d", "text": "All of the above" }
+      ],
+      "correctAnswer": "d",
+      "explanation": "All of these are development platform tools: integrated compiler and syntax-directed editing, language debugging system, graphical editing tools, testing tools, and project support tools."
+    },
+    {
+      "id": 28,
+      "question": "What is an Integrated Development Environment (IDE)?",
+      "options": [
+        { "id": "a", "text": "A single debugging tool" },
+        { "id": "b", "text": "A set of software tools supporting development within a common framework" },
+        { "id": "c", "text": "Only a code editor" },
+        { "id": "d", "text": "A version control system" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "An IDE is a set of software tools that supports different aspects of software development within some common framework and user interface."
+    },
+    {
+      "id": 29,
+      "question": "IDEs are typically created to support development in:",
+      "options": [
+        { "id": "a", "text": "Any programming language equally" },
+        { "id": "b", "text": "A specific programming language like Java" },
+        { "id": "c", "text": "Only web development" },
+        { "id": "d", "text": "Database design only" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "IDEs are created to support development in a specific programming language such as Java, though they may be instantiations of general-purpose IDEs with specific language-support tools."
+    },
+    {
+      "id": 30,
+      "question": "If a component is designed for a specific hardware architecture, where must it be deployed?",
+      "options": [
+        { "id": "a", "text": "On any available platform" },
+        { "id": "b", "text": "On a platform providing the required hardware and software support" },
+        { "id": "c", "text": "Only on cloud servers" },
+        { "id": "d", "text": "On the development platform" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "If a component is designed for specific hardware architecture or relies on other software, it must be deployed on a platform that provides the required hardware and software support."
+    },
+    {
+      "id": 31,
+      "question": "Why might high availability systems require components on multiple platforms?",
+      "options": [
+        { "id": "a", "text": "To increase development speed" },
+        { "id": "b", "text": "To provide alternative implementation in case of platform failure" },
+        { "id": "c", "text": "To reduce licensing costs" },
+        { "id": "d", "text": "To simplify deployment" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "High availability systems may require components to be deployed on more than one platform so that in the event of platform failure, an alternative implementation of the component is available."
+    },
+    {
+      "id": 32,
+      "question": "When there is high communication traffic between components, how should they be deployed?",
+      "options": [
+        { "id": "a", "text": "On different continents" },
+        { "id": "b", "text": "On the same platform or physically close platforms" },
+        { "id": "c", "text": "On the cheapest available servers" },
+        { "id": "d", "text": "Deployment location doesn't matter" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "If there is high communication traffic between components, it makes sense to deploy them on the same platform or on platforms physically close to each other to reduce message delay."
+    },
+    {
+      "id": 33,
+      "question": "What is open source development?",
+      "options": [
+        { "id": "a", "text": "Development where all code must be purchased" },
+        { "id": "b", "text": "An approach where source code is published and volunteers participate" },
+        { "id": "c", "text": "Development only by professional programmers" },
+        { "id": "d", "text": "Closed development within a single company" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Open source development is an approach where the source code is published and volunteers are invited to participate in the development process."
+    },
+    {
+      "id": 34,
+      "question": "What organization has roots in advocating that source code should not be proprietary?",
+      "options": [
+        { "id": "a", "text": "Microsoft Corporation" },
+        { "id": "b", "text": "Free Software Foundation" },
+        { "id": "c", "text": "Apple Inc." },
+        { "id": "d", "text": "Oracle Corporation" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The Free Software Foundation (www.fsf.org) advocates that source code should not be proprietary but should always be available for users to examine and modify."
+    },
+    {
+      "id": 35,
+      "question": "Which of the following is NOT mentioned as an important open source product?",
+      "options": [
+        { "id": "a", "text": "Linux operating system" },
+        { "id": "b", "text": "Apache web server" },
+        { "id": "c", "text": "MySQL database" },
+        { "id": "d", "text": "Microsoft Windows" }
+      ],
+      "correctAnswer": "d",
+      "explanation": "Linux, Apache, Java, and MySQL are mentioned as important open source products. Microsoft Windows is proprietary software, not open source."
+    },
+    {
+      "id": 36,
+      "question": "What is the modern open source business model based on?",
+      "options": [
+        { "id": "a", "text": "Selling the software product" },
+        { "id": "b", "text": "Selling support for the product" },
+        { "id": "c", "text": "Selling advertisements" },
+        { "id": "d", "text": "Selling user data" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Modern open source business models are not reliant on selling the software product but on selling support for that product."
+    },
+    {
+      "id": 37,
+      "question": "Even though source code is freely available in open source, what is still true?",
+      "options": [
+        { "id": "a", "text": "Anyone can do anything with the code without restrictions" },
+        { "id": "b", "text": "The developer still owns the code and can place restrictions via licenses" },
+        { "id": "c", "text": "The code has no legal protection" },
+        { "id": "d", "text": "Copyright doesn't apply to open source" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Even with freely available source code, the developer (company or individual) still owns the code and can place restrictions on how it is used through legally binding conditions in an open source software license."
+    },
+    {
+      "id": 38,
+      "question": "What does the GPL (GNU General Public License) require?",
+      "options": [
+        { "id": "a", "text": "You can use it in proprietary software without restrictions" },
+        { "id": "b", "text": "If you use GPL software, you must make your software open source" },
+        { "id": "c", "text": "You must pay licensing fees" },
+        { "id": "d", "text": "You cannot modify the code" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The GPL is a 'reciprocal' license, meaning if you use open source software licensed under GPL, you must make your software open source as well."
+    },
+    {
+      "id": 39,
+      "question": "What is the key difference between GPL and LGPL?",
+      "options": [
+        { "id": "a", "text": "LGPL requires payment while GPL is free" },
+        { "id": "b", "text": "LGPL allows linking to open source code without publishing component source" },
+        { "id": "c", "text": "GPL is more permissive than LGPL" },
+        { "id": "d", "text": "There is no difference" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "LGPL is a variant of GPL where you can write components that link to open source code without having to publish the source of these components."
+    },
+    {
+      "id": 40,
+      "question": "Which license is non-reciprocal, allowing code to be included in proprietary systems?",
+      "options": [
+        { "id": "a", "text": "GPL" },
+        { "id": "b", "text": "LGPL" },
+        { "id": "c", "text": "BSD" },
+        { "id": "d", "text": "All of the above" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "The BSD (Berkeley Standard Distribution) License is a non-reciprocal license, meaning you are not obliged to republish changes and can include the code in proprietary systems."
+    },
+    {
+      "id": 41,
+      "question": "Which of the following is a license management best practice?",
+      "options": [
+        { "id": "a", "text": "Establish a system for maintaining information about open source components" },
+        { "id": "b", "text": "Be aware of different license types before using components" },
+        { "id": "c", "text": "Educate people about open source" },
+        { "id": "d", "text": "All of the above" }
+      ],
+      "correctAnswer": "d",
+      "explanation": "All of these are part of the six license management best practices: establishing information systems, license awareness, evolution awareness, education, auditing, and community participation."
+    },
+    {
+      "id": 42,
+      "question": "Why should organizations participate in the open source community?",
+      "options": [
+        { "id": "a", "text": "It's required by law" },
+        { "id": "b", "text": "To build relationships and stay informed about changes" },
+        { "id": "c", "text": "To avoid paying for software" },
+        { "id": "d", "text": "It has no benefit" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Participating in the open source community helps build relationships, contributes back to projects, provides influence over project direction, and helps organizations stay informed about changes."
+    },
+    {
+      "id": 43,
+      "question": "What approach to object identification focuses on what participates in what behavior?",
+      "options": [
+        { "id": "a", "text": "Grammatical approach" },
+        { "id": "b", "text": "Tangible things approach" },
+        { "id": "c", "text": "Behavioral approach" },
+        { "id": "d", "text": "Scenario-based approach" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "The behavioral approach identifies objects based on what participates in what behavior, focusing on the actions and interactions in the system."
+    },
+    {
+      "id": 44,
+      "question": "In scenario-based analysis for object identification, what is identified?",
+      "options": [
+        { "id": "a", "text": "Only objects" },
+        { "id": "b", "text": "Only methods" },
+        { "id": "c", "text": "Objects, attributes, and methods in each scenario" },
+        { "id": "d", "text": "Only database tables" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "In scenario-based analysis, the objects, attributes, and methods in each scenario are identified, providing a comprehensive view of the system's components."
+    },
+    {
+      "id": 45,
+      "question": "What does the tangible things approach to object identification focus on?",
+      "options": [
+        { "id": "a", "text": "Abstract concepts only" },
+        { "id": "b", "text": "Tangible things in the application domain" },
+        { "id": "c", "text": "Database schemas" },
+        { "id": "d", "text": "User interface elements" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The tangible things approach bases object identification on tangible things in the application domain, using real-world physical entities as objects."
+    },
+    {
+      "id": 46,
+      "question": "What do interfaces define in object-oriented design?",
+      "options": [
+        { "id": "a", "text": "Only method names" },
+        { "id": "b", "text": "The signatures and semantics of services provided by objects" },
+        { "id": "c", "text": "Only return types" },
+        { "id": "d", "text": "Database connections" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Interfaces define the signatures and semantics of the services that are provided by the object or group of objects, specifying both the structure and meaning of the operations."
+    },
+    {
+      "id": 47,
+      "question": "An implementing model element realizes an interface by:",
+      "options": [
+        { "id": "a", "text": "Ignoring the interface operations" },
+        { "id": "b", "text": "Overriding each of the operations that the interface declares" },
+        { "id": "c", "text": "Creating new unrelated operations" },
+        { "id": "d", "text": "Deleting the interface" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "An implementing model element realizes an interface by overriding each of the operations that the interface declares, providing concrete implementations."
+    },
+    {
+      "id": 48,
+      "question": "Why did the approach of developing software from scratch become unviable after the 1990s?",
+      "options": [
+        { "id": "a", "text": "Programmers became less skilled" },
+        { "id": "b", "text": "Costs and schedule pressure increased" },
+        { "id": "c", "text": "Programming languages disappeared" },
+        { "id": "d", "text": "Hardware became obsolete" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Costs and schedule pressure meant that developing software from scratch became increasingly unviable, especially for commercial and Internet-based systems, leading to the rise of reuse-based development."
+    },
+    {
+      "id": 49,
+      "question": "Configuration management is essential when:",
+      "options": [
+        { "id": "a", "text": "Working alone on small projects" },
+        { "id": "b", "text": "A team of people are cooperating to develop software" },
+        { "id": "c", "text": "Using only one programming language" },
+        { "id": "d", "text": "Developing mobile apps only" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Configuration management is essential when a team of people are cooperating to develop software, as it helps coordinate their efforts and track changes."
+    },
+    {
+      "id": 50,
+      "question": "Which statement about design patterns is FALSE?",
+      "options": [
+        { "id": "a", "text": "They should be sufficiently abstract to be reused in different settings" },
+        { "id": "b", "text": "They are concrete implementations ready to deploy" },
+        { "id": "c", "text": "They include consequences as one of their elements" },
+        { "id": "d", "text": "They describe the essence of a solution" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Design patterns are NOT concrete implementations but rather templates for design solutions that can be instantiated in different ways. They are abstract by nature."
+    },
+    {
+      "id": 51,
+      "question": "What is true about the development and execution platforms in host-target development?",
+      "options": [
+        { "id": "a", "text": "They must always be identical" },
+        { "id": "b", "text": "They usually have different installed software and may have different architectures" },
+        { "id": "c", "text": "They must use the same operating system" },
+        { "id": "d", "text": "They cannot communicate with each other" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "The development platform usually has different installed software than the execution platform, and these platforms may have different architectures."
+    },
+    {
+      "id": 52,
+      "question": "Which is NOT a reason companies believe in using open source approaches?",
+      "options": [
+        { "id": "a", "text": "Software can be developed more cheaply" },
+        { "id": "b", "text": "Software can be developed more quickly" },
+        { "id": "c", "text": "It eliminates all security vulnerabilities" },
+        { "id": "d", "text": "It creates a community of users" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Companies believe open source allows cheaper and faster development and creates user communities. However, it does not eliminate all security vulnerabilities - that's not a realistic claim."
+    },
+    {
+      "id": 53,
+      "question": "What type of license is described as 'reciprocal'?",
+      "options": [
+        { "id": "a", "text": "BSD" },
+        { "id": "b", "text": "MIT" },
+        { "id": "c", "text": "GPL" },
+        { "id": "d", "text": "None of the above" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "GPL (GNU General Public License) is described as a 'reciprocal' or 'copyleft' license because it requires that derivative works also be open source."
+    },
+    {
+      "id": 54,
+      "question": "When should you be aware of evolution pathways for open source components?",
+      "options": [
+        { "id": "a", "text": "Only after deployment" },
+        { "id": "b", "text": "Never, it doesn't matter" },
+        { "id": "c", "text": "As part of license management best practices" },
+        { "id": "d", "text": "Only if the component fails" }
+      ],
+      "correctAnswer": "c",
+      "explanation": "Being aware of evolution pathways for components is one of the six license management best practices, helping organizations understand how components may change over time."
+    },
+    {
+      "id": 55,
+      "question": "What is the primary purpose of having auditing systems for open source usage?",
+      "options": [
+        { "id": "a", "text": "To prevent developers from using open source" },
+        { "id": "b", "text": "To verify license compliance and track component usage" },
+        { "id": "c", "text": "To increase software costs" },
+        { "id": "d", "text": "To slow down development" }
+      ],
+      "correctAnswer": "b",
+      "explanation": "Auditing systems are in place to conduct regular compliance checks, verify license compliance, and track component usage as part of proper license management."
+    }
+  ]

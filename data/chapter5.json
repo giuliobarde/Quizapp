@@ -1,0 +1,662 @@
+[
+    {
+      "id": 1,
+      "question": "What is the primary purpose of system modeling?",
+      "options": [
+        { "id": "a", "text": "To write code for the system" },
+        { "id": "b", "text": "To develop abstract models presenting different views or perspectives of a system" },
+        { "id": "c", "text": "To test the system for bugs" },
+        { "id": "d", "text": "To market the system to customers" }
+      ],
+      "correctAnswer": "b"
+    },
+    {
+      "id": 2,
+      "question": "Which graphical notation is now almost always used for system modeling?",
+      "options": [
+        { "id": "a", "text": "Flowcharts" },
+        { "id": "b", "text": "Entity-Relationship Diagrams" },
+        { "id": "c", "text": "Unified Modeling Language (UML)" },
+        { "id": "d", "text": "Data Flow Diagrams" }
+      ],
+      "correctAnswer": "c"
+    },
+    {
+      "id": 3,
+      "question": "Models of existing systems are used during requirements engineering to:",
+      "options": [
+        { "id": "a", "text": "Help clarify what the existing system does" },
+        { "id": "b", "text": "Discuss strengths and weaknesses" },
+        { "id": "c", "text": "Lead to requirements for the new system" },
+        { "id": "d", "text": "All of the above" }
+      ],
+      "correctAnswer": "d"
+    },
+    {
+      "id": 4,
+      "question": "In a model-driven engineering process, what is possible?",
+      "options": [
+        { "id": "a", "text": "Generate complete or partial system implementation from the system model" },
+        { "id": "b", "text": "Automatically test all system components" },
+        { "id": "c", "text": "Eliminate the need for programmers" },
+        { "id": "d", "text": "Create hardware specifications" }
+      ],
+      "correctAnswer": "a"
+    },
+    {
+      "id": 5,
+      "question": "Which system perspective models the context or environment of the system?",
+      "options": [
+        { "id": "a", "text": "Interaction perspective" },
+        { "id": "b", "text": "External perspective" },
+        { "id": "c", "text": "Structural perspective" },
+        { "id": "d", "text": "Behavioral perspective" }
+      ],
+      "correctAnswer": "b"
+    },
+    {
+      "id": 6,
+      "question": "The interaction perspective models:",
+      "options": [
+        { "id": "a", "text": "Only interactions between system components" },
+        { "id": "b", "text": "Only interactions between system and environment" },
+        { "id": "c", "text": "Interactions between a system and its environment, or between components" },
+        { "id": "d", "text": "The database structure" }
+      ],
+      "correctAnswer": "c"
+    },
+    {
+      "id": 7,
+      "question": "Which perspective models the dynamic behavior of the system and how it responds to events?",
+      "options": [
+        { "id": "a", "text": "External perspective" },
+        { "id": "b", "text": "Structural perspective" },
+        { "id": "c", "text": "Interaction perspective" },
+        { "id": "d", "text": "Behavioral perspective" }
+      ],
+      "correctAnswer": "d"
+    },
+    {
+      "id": 8,
+      "question": "Activity diagrams are used to show:",
+      "options": [
+        { "id": "a", "text": "The activities involved in a process or data processing" },
+        { "id": "b", "text": "The database schema" },
+        { "id": "c", "text": "The network topology" },
+        { "id": "d", "text": "The hardware components" }
+      ],
+      "correctAnswer": "a"
+    },
+    {
+      "id": 9,
+      "question": "Which UML diagram type shows the interactions between a system and its environment?",
+      "options": [
+        { "id": "a", "text": "Class diagrams" },
+        { "id": "b", "text": "State diagrams" },
+        { "id": "c", "text": "Use case diagrams" },
+        { "id": "d", "text": "Activity diagrams" }
+      ],
+      "correctAnswer": "c"
+    },
+    {
+      "id": 10,
+      "question": "Sequence diagrams show:",
+      "options": [
+        { "id": "a", "text": "The database structure" },
+        { "id": "b", "text": "Interactions between actors and the system and between system components" },
+        { "id": "c", "text": "The physical network layout" },
+        { "id": "d", "text": "Only the user interface flow" }
+      ],
+      "correctAnswer": "b"
+    },
+    {
+      "id": 11,
+      "question": "Class diagrams show:",
+      "options": [
+        { "id": "a", "text": "The object classes in the system" },
+        { "id": "b", "text": "The associations between classes" },
+        { "id": "c", "text": "Both the object classes and associations between them" },
+        { "id": "d", "text": "The execution timeline" }
+      ],
+      "correctAnswer": "c"
+    },
+    {
+      "id": 12,
+      "question": "State diagrams show:",
+      "options": [
+        { "id": "a", "text": "How the system reacts to internal and external events" },
+        { "id": "b", "text": "The database tables" },
+        { "id": "c", "text": "The user interface layout" },
+        { "id": "d", "text": "The network protocols" }
+      ],
+      "correctAnswer": "a"
+    },
+    {
+      "id": 13,
+      "question": "When graphical models are used to facilitate discussion about a system:",
+      "options": [
+        { "id": "a", "text": "They must be completely accurate" },
+        { "id": "b", "text": "Incomplete and incorrect models are acceptable" },
+        { "id": "c", "text": "They must include all implementation details" },
+        { "id": "d", "text": "They require formal verification" }
+      ],
+      "correctAnswer": "b"
+    },
+    {
+      "id": 14,
+      "question": "When models are used to document an existing system, they should be:",
+      "options": [
+        { "id": "a", "text": "An accurate representation but need not be complete" },
+        { "id": "b", "text": "Completely inaccurate" },
+        { "id": "c", "text": "Only high-level abstractions" },
+        { "id": "d", "text": "Written in natural language only" }
+      ],
+      "correctAnswer": "a"
+    },
+    {
+      "id": 15,
+      "question": "When models are used as detailed system descriptions for generating implementation:",
+      "options": [
+        { "id": "a", "text": "They only need to be approximately correct" },
+        { "id": "b", "text": "They can be incomplete" },
+        { "id": "c", "text": "They must be both correct and complete" },
+        { "id": "d", "text": "They are optional" }
+      ],
+      "correctAnswer": "c"
+    },
+    {
+      "id": 16,
+      "question": "Context models are used to:",
+      "options": [
+        { "id": "a", "text": "Illustrate the operational context of a system" },
+        { "id": "b", "text": "Show what lies outside the system boundaries" },
+        { "id": "c", "text": "Show the system's relationship with other systems" },
+        { "id": "d", "text": "All of the above" }
+      ],
+      "correctAnswer": "d"
+    },
+    {
+      "id": 17,
+      "question": "Defining a system boundary is described as:",
+      "options": [
+        { "id": "a", "text": "A purely technical decision" },
+        { "id": "b", "text": "A political judgment" },
+        { "id": "c", "text": "An automated process" },
+        { "id": "d", "text": "Irrelevant to requirements" }
+      ],
+      "correctAnswer": "b"
+    },
+    {
+      "id": 18,
+      "question": "The position of the system boundary:",
+      "options": [
+        { "id": "a", "text": "Has no effect on system requirements" },
+        { "id": "b", "text": "Only affects performance requirements" },
+        { "id": "c", "text": "Has a profound effect on system requirements" },
+        { "id": "d", "text": "Only matters for security" }
+      ],
+      "correctAnswer": "c"
+    },
+    {
+      "id": 19,
+      "question": "What is the main difference between context models and process models?",
+      "options": [
+        { "id": "a", "text": "Context models show what's around the system, process models show what happens in order" },
+        { "id": "b", "text": "Context models are more detailed than process models" },
+        { "id": "c", "text": "Process models are only for manufacturing systems" },
+        { "id": "d", "text": "There is no difference" }
+      ],
+      "correctAnswer": "a"
+    },
+    {
+      "id": 20,
+      "question": "Process models reveal:",
+      "options": [
+        { "id": "a", "text": "Only the hardware architecture" },
+        { "id": "b", "text": "How the system being developed is used in broader business processes" },
+        { "id": "c", "text": "The network topology" },
+        { "id": "d", "text": "The programming languages used" }
+      ],
+      "correctAnswer": "b"
+    },
+    {
+      "id": 21,
+      "question": "In use case modeling, actors may be:",
+      "options": [
+        { "id": "a", "text": "Only people" },
+        { "id": "b", "text": "Only other systems" },
+        { "id": "c", "text": "People or other systems" },
+        { "id": "d", "text": "Only database administrators" }
+      ],
+      "correctAnswer": "c"
+    },
+    {
+      "id": 22,
+      "question": "Each use case represents:",
+      "options": [
+        { "id": "a", "text": "A discrete task that involves external interaction with a system" },
+        { "id": "b", "text": "A database table" },
+        { "id": "c", "text": "A programming function" },
+        { "id": "d", "text": "A hardware component" }
+      ],
+      "correctAnswer": "a"
+    },
+    {
+      "id": 23,
+      "question": "Use case diagrams are represented:",
+      "options": [
+        { "id": "a", "text": "Only in textual form" },
+        { "id": "b", "text": "Only in graphical form" },
+        { "id": "c", "text": "Both diagrammatically and in detailed textual form" },
+        { "id": "d", "text": "As pseudocode" }
+      ],
+      "correctAnswer": "c"
+    },
+    {
+      "id": 24,
+      "question": "In a use case tabular description, what does the 'Stimulus' field describe?",
+      "options": [
+        { "id": "a", "text": "The actors involved" },
+        { "id": "b", "text": "What triggers the use case" },
+        { "id": "c", "text": "The data used" },
+        { "id": "d", "text": "The system response" }
+      ],
+      "correctAnswer": "b"
+    },
+    {
+      "id": 25,
+      "question": "Which use case relationship is represented by a dotted line labeled <<include>>?",
+      "options": [
+        { "id": "a", "text": "Association" },
+        { "id": "b", "text": "Generalization" },
+        { "id": "c", "text": "Extend" },
+        { "id": "d", "text": "Include" }
+      ],
+      "correctAnswer": "d"
+    },
+    {
+      "id": 26,
+      "question": "The <<extend>> relationship in use cases:",
+      "options": [
+        { "id": "a", "text": "Is shown with an arrow toward the base case" },
+        { "id": "b", "text": "Indicates the extending use case may add behavior to the base case" },
+        { "id": "c", "text": "Requires the base case to declare extension points" },
+        { "id": "d", "text": "All of the above" }
+      ],
+      "correctAnswer": "d"
+    },
+    {
+      "id": 27,
+      "question": "In sequence diagrams, objects and actors are:",
+      "options": [
+        { "id": "a", "text": "Listed along the bottom" },
+        { "id": "b", "text": "Listed along the top with dotted vertical lines (lifelines)" },
+        { "id": "c", "text": "Not shown at all" },
+        { "id": "d", "text": "Only shown in the middle" }
+      ],
+      "correctAnswer": "b"
+    },
+    {
+      "id": 28,
+      "question": "Interactions between objects in sequence diagrams are indicated by:",
+      "options": [
+        { "id": "a", "text": "Solid rectangles" },
+        { "id": "b", "text": "Annotated arrows" },
+        { "id": "c", "text": "Dashed circles" },
+        { "id": "d", "text": "Colored boxes" }
+      ],
+      "correctAnswer": "b"
+    },
+    {
+      "id": 29,
+      "question": "Structural models display:",
+      "options": [
+        { "id": "a", "text": "The organization of a system in terms of components and relationships" },
+        { "id": "b", "text": "Only the user interface" },
+        { "id": "c", "text": "Only the database schema" },
+        { "id": "d", "text": "The project timeline" }
+      ],
+      "correctAnswer": "a"
+    },
+    {
+      "id": 30,
+      "question": "Static structural models show:",
+      "options": [
+        { "id": "a", "text": "The structure of the system design" },
+        { "id": "b", "text": "The organization when the system is executing" },
+        { "id": "c", "text": "Only runtime behavior" },
+        { "id": "d", "text": "Network traffic patterns" }
+      ],
+      "correctAnswer": "a"
+    },
+    {
+      "id": 31,
+      "question": "When identifying system components from user requirements, the first step is to:",
+      "options": [
+        { "id": "a", "text": "Write all the code" },
+        { "id": "b", "text": "Review and categorize requirements by functionality or use case" },
+        { "id": "c", "text": "Design the database" },
+        { "id": "d", "text": "Choose the programming language" }
+      ],
+      "correctAnswer": "b"
+    },
+    {
+      "id": 32,
+      "question": "In a class diagram, a class is represented by a rectangle subdivided into how many compartments?",
+      "options": [
+        { "id": "a", "text": "Two" },
+        { "id": "b", "text": "Three (Name, Attributes, Operations)" },
+        { "id": "c", "text": "Four" },
+        { "id": "d", "text": "Five" }
+      ],
+      "correctAnswer": "b"
+    },
+    {
+      "id": 33,
+      "question": "Which visibility modifier denotes Public visibility in UML class diagrams?",
+      "options": [
+        { "id": "a", "text": "-" },
+        { "id": "b", "text": "#" },
+        { "id": "c", "text": "+" },
+        { "id": "d", "text": "*" }
+      ],
+      "correctAnswer": "c"
+    },
+    {
+      "id": 34,
+      "question": "Which visibility modifier denotes Private visibility?",
+      "options": [
+        { "id": "a", "text": "+" },
+        { "id": "b", "text": "#" },
+        { "id": "c", "text": "-" },
+        { "id": "d", "text": "~" }
+      ],
+      "correctAnswer": "c"
+    },
+    {
+      "id": 35,
+      "question": "Which visibility modifier denotes Protected visibility?",
+      "options": [
+        { "id": "a", "text": "+" },
+        { "id": "b", "text": "#" },
+        { "id": "c", "text": "-" },
+        { "id": "d", "text": "@" }
+      ],
+      "correctAnswer": "b"
+    },
+    {
+      "id": 36,
+      "question": "By default in class diagrams:",
+      "options": [
+        { "id": "a", "text": "Attributes are visible and operations are hidden" },
+        { "id": "b", "text": "Attributes are hidden and operations are visible" },
+        { "id": "c", "text": "Everything is visible" },
+        { "id": "d", "text": "Everything is hidden" }
+      ],
+      "correctAnswer": "b"
+    },
+    {
+      "id": 37,
+      "question": "Generalization in UML expresses:",
+      "options": [
+        { "id": "a", "text": "A database relationship" },
+        { "id": "b", "text": "A parent/child relationship among related classes" },
+        { "id": "c", "text": "Network connectivity" },
+        { "id": "d", "text": "User permissions" }
+      ],
+      "correctAnswer": "b"
+    },
+    {
+      "id": 38,
+      "question": "In object-oriented languages like Java, generalization is implemented using:",
+      "options": [
+        { "id": "a", "text": "Interfaces only" },
+        { "id": "b", "text": "Class inheritance mechanisms" },
+        { "id": "c", "text": "Database foreign keys" },
+        { "id": "d", "text": "Network protocols" }
+      ],
+      "correctAnswer": "b"
+    },
+    {
+      "id": 39,
+      "question": "In a generalization hierarchy, lower-level classes (subclasses):",
+      "options": [
+        { "id": "a", "text": "Inherit attributes and operations from superclasses" },
+        { "id": "b", "text": "Add more specific attributes and operations" },
+        { "id": "c", "text": "Both inherit from superclasses and add specific attributes/operations" },
+        { "id": "d", "text": "Have no relationship to superclasses" }
+      ],
+      "correctAnswer": "c"
+    },
+    {
+      "id": 40,
+      "question": "What does the filled/solid diamond symbol represent in UML class diagrams?",
+      "options": [
+        { "id": "a", "text": "Association" },
+        { "id": "b", "text": "Aggregation" },
+        { "id": "c", "text": "Composition" },
+        { "id": "d", "text": "Generalization" }
+      ],
+      "correctAnswer": "c"
+    },
+    {
+      "id": 41,
+      "question": "What does the hollow diamond symbol represent in UML class diagrams?",
+      "options": [
+        { "id": "a", "text": "Association" },
+        { "id": "b", "text": "Aggregation" },
+        { "id": "c", "text": "Composition" },
+        { "id": "d", "text": "Generalization" }
+      ],
+      "correctAnswer": "b"
+    },
+    {
+      "id": 42,
+      "question": "In composition relationships:",
+      "options": [
+        { "id": "a", "text": "Objects can exist independently" },
+        { "id": "b", "text": "If the owner is destroyed, its parts are destroyed too" },
+        { "id": "c", "text": "There is no ownership" },
+        { "id": "d", "text": "Components can belong to multiple owners" }
+      ],
+      "correctAnswer": "b"
+    },
+    {
+      "id": 43,
+      "question": "In aggregation relationships:",
+      "options": [
+        { "id": "a", "text": "The parts cannot exist without the whole" },
+        { "id": "b", "text": "The parts can exist independently of the container" },
+        { "id": "c", "text": "There is lifecycle dependency" },
+        { "id": "d", "text": "The relationship is the strongest type" }
+      ],
+      "correctAnswer": "b"
+    },
+    {
+      "id": 44,
+      "question": "Which relationship type is the strongest?",
+      "options": [
+        { "id": "a", "text": "Association" },
+        { "id": "b", "text": "Aggregation" },
+        { "id": "c", "text": "Composition" },
+        { "id": "d", "text": "They are all equally strong" }
+      ],
+      "correctAnswer": "c"
+    },
+    {
+      "id": 45,
+      "question": "In association relationships, what does multiplicity indicate?",
+      "options": [
+        { "id": "a", "text": "The speed of the relationship" },
+        { "id": "b", "text": "How many instances participate in the relationship" },
+        { "id": "c", "text": "The cost of the relationship" },
+        { "id": "d", "text": "The security level" }
+      ],
+      "correctAnswer": "b"
+    },
+    {
+      "id": 46,
+      "question": "What does the multiplicity symbol '1..*' mean?",
+      "options": [
+        { "id": "a", "text": "Zero to any positive integer" },
+        { "id": "b", "text": "One and only one" },
+        { "id": "c", "text": "From one to any positive integer" },
+        { "id": "d", "text": "Zero or one" }
+      ],
+      "correctAnswer": "c"
+    },
+    {
+      "id": 47,
+      "question": "What does the multiplicity symbol '0..1' mean?",
+      "options": [
+        { "id": "a", "text": "Zero to any positive integer" },
+        { "id": "b", "text": "One and only one" },
+        { "id": "c", "text": "Zero or one" },
+        { "id": "d", "text": "From one to any positive integer" }
+      ],
+      "correctAnswer": "c"
+    },
+    {
+      "id": 48,
+      "question": "What does the multiplicity symbol '*' mean?",
+      "options": [
+        { "id": "a", "text": "One and only one" },
+        { "id": "b", "text": "Zero or one" },
+        { "id": "c", "text": "From zero to any positive integer" },
+        { "id": "d", "text": "Exactly two" }
+      ],
+      "correctAnswer": "c"
+    },
+    {
+      "id": 49,
+      "question": "Behavioral models show:",
+      "options": [
+        { "id": "a", "text": "The static structure of the system" },
+        { "id": "b", "text": "The dynamic behavior of a system as it is executing" },
+        { "id": "c", "text": "The database schema" },
+        { "id": "d", "text": "The network topology" }
+      ],
+      "correctAnswer": "b"
+    },
+    {
+      "id": 50,
+      "question": "The two types of stimuli in behavioral models are:",
+      "options": [
+        { "id": "a", "text": "Data and Events" },
+        { "id": "b", "text": "Input and Output" },
+        { "id": "c", "text": "Public and Private" },
+        { "id": "d", "text": "Static and Dynamic" }
+      ],
+      "correctAnswer": "a"
+    },
+    {
+      "id": 51,
+      "question": "Data-driven models are particularly useful for:",
+      "options": [
+        { "id": "a", "text": "Real-time embedded systems" },
+        { "id": "b", "text": "Many business systems that are primarily driven by data" },
+        { "id": "c", "text": "Operating systems" },
+        { "id": "d", "text": "Device drivers" }
+      ],
+      "correctAnswer": "b"
+    },
+    {
+      "id": 52,
+      "question": "Data-driven models show:",
+      "options": [
+        { "id": "a", "text": "The sequence of actions involved in processing input data and generating output" },
+        { "id": "b", "text": "Only the database structure" },
+        { "id": "c", "text": "Only the user interface" },
+        { "id": "d", "text": "The network protocols" }
+      ],
+      "correctAnswer": "a"
+    },
+    {
+      "id": 53,
+      "question": "Event-driven modeling is based on the assumption that:",
+      "options": [
+        { "id": "a", "text": "The system processes only data" },
+        { "id": "b", "text": "The system has a finite number of states" },
+        { "id": "c", "text": "The system never changes state" },
+        { "id": "d", "text": "Events are irrelevant" }
+      ],
+      "correctAnswer": "b"
+    },
+    {
+      "id": 54,
+      "question": "In event-driven systems, events may cause:",
+      "options": [
+        { "id": "a", "text": "A transition from one state to another" },
+        { "id": "b", "text": "The system to shut down" },
+        { "id": "c", "text": "Database corruption" },
+        { "id": "d", "text": "Network failures" }
+      ],
+      "correctAnswer": "a"
+    },
+    {
+      "id": 55,
+      "question": "State machine models show:",
+      "options": [
+        { "id": "a", "text": "System states as nodes and events as arcs between nodes" },
+        { "id": "b", "text": "Only the final state" },
+        { "id": "c", "text": "Database tables" },
+        { "id": "d", "text": "Network topology" }
+      ],
+      "correctAnswer": "a"
+    },
+    {
+      "id": 56,
+      "question": "In UML state diagrams, the initial state is represented by:",
+      "options": [
+        { "id": "a", "text": "A square" },
+        { "id": "b", "text": "A solid circle" },
+        { "id": "c", "text": "A triangle" },
+        { "id": "d", "text": "A diamond" }
+      ],
+      "correctAnswer": "b"
+    },
+    {
+      "id": 57,
+      "question": "Superstates in state diagrams are used to:",
+      "options": [
+        { "id": "a", "text": "Make diagrams more complex" },
+        { "id": "b", "text": "Group related states together to reduce complexity" },
+        { "id": "c", "text": "Show errors" },
+        { "id": "d", "text": "Indicate the final state" }
+      ],
+      "correctAnswer": "b"
+    },
+    {
+      "id": 58,
+      "question": "Real-time systems are often:",
+      "options": [
+        { "id": "a", "text": "Data-driven with extensive data processing" },
+        { "id": "b", "text": "Event-driven with minimal data processing" },
+        { "id": "c", "text": "Neither data-driven nor event-driven" },
+        { "id": "d", "text": "Only used in manufacturing" }
+      ],
+      "correctAnswer": "b"
+    },
+    {
+      "id": 59,
+      "question": "In the microwave oven state diagram example, what happens when the door is opened during operation?",
+      "options": [
+        { "id": "a", "text": "The system continues cooking" },
+        { "id": "b", "text": "The system transitions to the Disabled state" },
+        { "id": "c", "text": "The system shuts down permanently" },
+        { "id": "d", "text": "Nothing happens" }
+      ],
+      "correctAnswer": "b"
+    },
+    {
+      "id": 60,
+      "question": "Which of the following is NOT one of the main categories of UML relationships?",
+      "options": [
+        { "id": "a", "text": "Generalization" },
+        { "id": "b", "text": "Association" },
+        { "id": "c", "text": "Compilation" },
+        { "id": "d", "text": "Aggregation" }
+      ],
+      "correctAnswer": "c"
+    }
+  ]

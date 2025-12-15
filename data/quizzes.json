@@ -1,0 +1,50 @@
+[
+  {
+    "id": "random-100",
+    "name": "Random 100 Questions",
+    "title": "Random 100 Questions",
+    "description": "A comprehensive quiz with 100 randomly selected questions from all available chapters. Perfect for comprehensive review!",
+    "questionCount": 100,
+    "difficulty": "Mixed"
+  },
+  {
+    "id": "chapter5",
+    "name": "Chapter 5: System Modeling",
+    "title": "Chapter 5: System Modeling",
+    "description": "Test your knowledge on system modeling concepts, UML diagrams, and architectural design patterns.",
+    "questionCount": 60,
+    "difficulty": "Medium"
+  },
+  {
+    "id": "chapter6",
+    "name": "Chapter 6: Architectural Design",
+    "title": "Chapter 6: Architectural Design",
+    "description": "Test your understanding of software architecture, architectural patterns, and system design principles.",
+    "questionCount": 50,
+    "difficulty": "Medium"
+  },
+  {
+    "id": "chapter7",
+    "name": "Chapter 7: Design and Implementation",
+    "title": "Chapter 7: Design and Implementation",
+    "description": "Test your knowledge on design patterns, implementation strategies, and coding best practices.",
+    "questionCount": 55,
+    "difficulty": "Medium"
+  },
+  {
+    "id": "chapter8",
+    "name": "Chapter 8: Software Testing",
+    "title": "Chapter 8: Software Testing",
+    "description": "Test your understanding of testing strategies, test cases, and quality assurance processes.",
+    "questionCount": 50,
+    "difficulty": "Medium"
+  },
+  {
+    "id": "chapter9",
+    "name": "Chapter 9: Software Evolution",
+    "title": "Chapter 9: Software Evolution",
+    "description": "Test your knowledge on software maintenance, evolution processes, and legacy system management.",
+    "questionCount": 50,
+    "difficulty": "Medium"
+  }
+]
