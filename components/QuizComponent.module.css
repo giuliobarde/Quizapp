@@ -2,6 +2,8 @@
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .card {
@@ -10,6 +12,8 @@
   padding: 40px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
   animation: slideIn 0.3s ease-out;
+  display: flex;
+  flex-direction: column;
 }
 
 @keyframes slideIn {
@@ -42,11 +46,69 @@
   transition: width 0.3s ease;
 }
 
+.headerInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
 .questionCounter {
   text-align: center;
   color: #666;
   font-size: 14px;
   font-weight: 500;
+  flex: 1;
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.timerIcon {
+  font-size: 18px;
+}
+
+.timerText {
+  font-variant-numeric: tabular-nums;
+  min-width: 50px;
+}
+
+.timerNormal {
+  background: #e3f2fd;
+  color: #1976d2;
+  border: 2px solid #1976d2;
+}
+
+.timerWarning {
+  background: #fff3e0;
+  color: #f57c00;
+  border: 2px solid #f57c00;
+  animation: pulse 1s ease-in-out infinite;
+}
+
+.timerCritical {
+  background: #ffebee;
+  color: #d32f2f;
+  border: 2px solid #d32f2f;
+  animation: pulse 0.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
 }
 
 .questionSection {
@@ -154,13 +216,31 @@
   text-align: left;
   transition: all 0.2s ease;
   cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
 }
 
-.option:hover:not(:disabled) {
-  border-color: #667eea;
-  transform: translateX(5px);
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
-}
+  .option:hover:not(:disabled) {
+    border-color: #667eea;
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+  }
+
+  .option:active:not(:disabled) {
+    transform: scale(0.98);
+  }
+
+  @media (hover: none) and (pointer: coarse) {
+    .option:hover:not(:disabled) {
+      transform: none;
+    }
+    
+    .option:active:not(:disabled) {
+      border-color: #667eea;
+      transform: scale(0.98);
+      box-shadow: 0 2px 8px rgba(102, 126, 234, 0.2);
+    }
+  }
 
 .option:disabled {
   cursor: not-allowed;
@@ -255,6 +335,8 @@
   font-size: 16px;
   font-weight: 600;
   transition: all 0.2s ease;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .primaryButton {
@@ -289,24 +371,274 @@
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding: 0;
+    height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
   .card {
-    padding: 25px;
+    padding: 12px;
+    border-radius: 0;
+    margin: 0;
+    height: 100%;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: none;
+    overflow: hidden;
+    flex: 1;
+  }
+
+  .header {
+    margin-bottom: 10px;
+    flex-shrink: 0;
+  }
+
+  .progressBar {
+    height: 6px;
+    margin-bottom: 8px;
+  }
+
+  .headerInfo {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .questionCounter {
+    font-size: 11px;
+    text-align: left;
+    flex: 1;
+  }
+
+  .timer {
+    font-size: 12px;
+    padding: 4px 8px;
+    flex-shrink: 0;
+  }
+
+  .timerIcon {
+    font-size: 14px;
+  }
+
+  .timerText {
+    min-width: 40px;
+    font-size: 11px;
+  }
+
+  .questionSection {
+    margin-bottom: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    padding-right: 2px;
   }
 
   .question {
-    font-size: 22px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 1.3;
+    flex-shrink: 0;
+    word-wrap: break-word;
+  }
+
+  .feedback {
+    padding: 8px 12px;
+    font-size: 13px;
+    margin-bottom: 10px;
+    flex-shrink: 0;
+  }
+
+  .feedbackIcon {
+    font-size: 16px;
+  }
+
+  .explanation {
+    padding: 10px;
+    margin-bottom: 10px;
+    flex-shrink: 0;
+  }
+
+  .explanationHeader {
+    margin-bottom: 6px;
+    gap: 6px;
+  }
+
+  .explanationIcon {
+    font-size: 16px;
+  }
+
+  .explanationTitle {
+    font-size: 12px;
+  }
+
+  .explanationText {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  .options {
+    gap: 8px;
+    flex-shrink: 0;
+    margin-bottom: 0;
+  }
+
+  .option {
+    padding: 10px 12px;
+    min-height: 48px;
+    border-radius: 8px;
+  }
+
+  .optionLabel {
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+    margin-right: 10px;
+  }
+
+  .optionText {
+    font-size: 13px;
+    line-height: 1.3;
+  }
+
+  .checkmark,
+  .crossmark {
+    font-size: 16px;
   }
 
   .actions {
     flex-direction: column;
+    gap: 8px;
+    flex-shrink: 0;
+    margin-top: auto;
+    padding-top: 8px;
+    border-top: 1px solid #e0e0e0;
+    background: white;
   }
 
   .navigationButtons {
     width: 100%;
+    display: flex;
+    gap: 8px;
   }
 
   .button {
     flex: 1;
+    padding: 10px 12px;
+    font-size: 13px;
+    min-height: 40px;
+    border-radius: 6px;
+  }
+
+  .secondaryButton:first-child {
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0;
+  }
+
+  .card {
+    padding: 10px;
+  }
+
+  .header {
+    margin-bottom: 8px;
+  }
+
+  .progressBar {
+    height: 5px;
+    margin-bottom: 6px;
+  }
+
+  .questionCounter {
+    font-size: 10px;
+  }
+
+  .timer {
+    font-size: 11px;
+    padding: 3px 6px;
+  }
+
+  .timerText {
+    min-width: 35px;
+    font-size: 10px;
+  }
+
+  .question {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .feedback {
+    padding: 6px 10px;
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+
+  .feedbackIcon {
+    font-size: 14px;
+  }
+
+  .explanation {
+    padding: 8px;
+    margin-bottom: 8px;
+  }
+
+  .explanationText {
+    font-size: 11px;
+  }
+
+  .options {
+    gap: 6px;
+  }
+
+  .option {
+    padding: 8px 10px;
+    min-height: 44px;
+  }
+
+  .optionLabel {
+    width: 26px;
+    height: 26px;
+    font-size: 11px;
+    margin-right: 8px;
+  }
+
+  .optionText {
+    font-size: 12px;
+  }
+
+  .checkmark,
+  .crossmark {
+    font-size: 14px;
+  }
+
+  .actions {
+    gap: 6px;
+  }
+
+  .button {
+    padding: 8px 10px;
+    font-size: 12px;
+    min-height: 38px;
+  }
+
+  .navigationButtons {
+    gap: 6px;
   }
 }
 

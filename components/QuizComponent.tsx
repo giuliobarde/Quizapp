@@ -15,6 +15,7 @@ interface QuizComponentProps {
   onSkip: () => void
   canGoPrevious: boolean
   canGoNext: boolean
+  timeRemaining?: number | null
 }
 
 export default function QuizComponent({
@@ -29,9 +30,25 @@ export default function QuizComponent({
   onSkip,
   canGoPrevious,
   canGoNext,
+  timeRemaining,
 }: QuizComponentProps) {
   const showFeedback = selectedAnswer !== null && isCorrect !== null
-  
+
+  // Format time as MM:SS
+  const formatTime = (seconds: number): string => {
+    const mins = Math.floor(seconds / 60)
+    const secs = seconds % 60
+    return `${mins}:${secs.toString().padStart(2, '0')}`
+  }
+
+  // Determine timer color based on time remaining
+  const getTimerClass = (): string => {
+    if (timeRemaining === null || timeRemaining === undefined) return ''
+    if (timeRemaining <= 60) return styles.timerCritical
+    if (timeRemaining <= 300) return styles.timerWarning
+    return styles.timerNormal
+  }
+
   return (
     <div className={styles.container}>
       <div className={styles.card}>
@@ -42,8 +59,16 @@ export default function QuizComponent({
               style={{ width: `${(questionNumber / totalQuestions) * 100}%` }}
             />
           </div>
-          <div className={styles.questionCounter}>
-            Question {questionNumber} of {totalQuestions}
+          <div className={styles.headerInfo}>
+            <div className={styles.questionCounter}>
+              Question {questionNumber} of {totalQuestions}
+            </div>
+            {timeRemaining !== null && timeRemaining !== undefined && (
+              <div className={`${styles.timer} ${getTimerClass()}`}>
+                <span className={styles.timerIcon}>⏱️</span>
+                <span className={styles.timerText}>{formatTime(timeRemaining)}</span>
+              </div>
+            )}
           </div>
         </div>
 

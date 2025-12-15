@@ -8,6 +8,8 @@ interface ResultsComponentProps {
   questions: Question[]
   onRestart: () => void
   onBackToHome?: () => void
+  timeSpent?: number
+  timedOut?: boolean
 }
 
 export default function ResultsComponent({
@@ -15,6 +17,8 @@ export default function ResultsComponent({
   questions,
   onRestart,
   onBackToHome,
+  timeSpent = 0,
+  timedOut = false,
 }: ResultsComponentProps) {
   const correctAnswers = answers.filter(
     (answer) => answer.isCorrect === true
@@ -32,11 +36,24 @@ export default function ResultsComponent({
     return '#f44336'
   }
 
+  const formatTime = (seconds: number): string => {
+    const mins = Math.floor(seconds / 60)
+    const secs = seconds % 60
+    return `${mins}:${secs.toString().padStart(2, '0')}`
+  }
+
   return (
     <div className={styles.container}>
       <div className={styles.card}>
         <div className={styles.header}>
-          <h1 className={styles.title}>Quiz Complete!</h1>
+          <h1 className={styles.title}>
+            {timedOut ? "Time's Up!" : 'Quiz Complete!'}
+          </h1>
+          {timedOut && (
+            <div className={styles.timeoutBadge}>
+              ⏰ Quiz ended due to time limit
+            </div>
+          )}
           <div
             className={styles.scoreCircle}
             style={{ borderColor: getScoreColor() }}
@@ -66,6 +83,14 @@ export default function ResultsComponent({
             </div>
             <div className={styles.statLabel}>Skipped</div>
           </div>
+          {timeSpent > 0 && (
+            <div className={styles.statCard}>
+              <div className={styles.statNumber} style={{ color: '#1976d2' }}>
+                {formatTime(timeSpent)}
+              </div>
+              <div className={styles.statLabel}>Time</div>
+            </div>
+          )}
         </div>
 
         <div className={styles.reviewSection}>

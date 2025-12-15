@@ -11,6 +11,7 @@ interface Quiz {
   description: string
   questionCount: number
   difficulty: string
+  timeLimit?: number
 }
 
 export default function Home() {
@@ -41,10 +42,17 @@ export default function Home() {
               </div>
               <p className={styles.quizDescription}>{quiz.description}</p>
               <div className={styles.quizFooter}>
-                <span className={styles.questionCount}>
-                  {quiz.questionCount} {quiz.questionCount === 1 ? 'question' : 'questions'}
-                  {quiz.id === 'random-100' && ' (randomly selected)'}
-                </span>
+                <div className={styles.quizInfo}>
+                  <span className={styles.questionCount}>
+                    {quiz.questionCount} {quiz.questionCount === 1 ? 'question' : 'questions'}
+                    {quiz.id === 'random-100' && ' (randomly selected)'}
+                  </span>
+                  {quiz.timeLimit && (
+                    <span className={styles.timeLimit}>
+                      ⏱️ {Math.floor(quiz.timeLimit / 60)} min
+                    </span>
+                  )}
+                </div>
                 <button
                   className={styles.startButton}
                   onClick={() => handleStartQuiz(quiz.id)}

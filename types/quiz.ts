@@ -13,3 +13,19 @@ export interface Answer {
   isSkipped: boolean
 }
 
+export interface Quiz {
+  id: string
+  name: string
+  title: string
+  description: string
+  questionCount: number
+  difficulty: string
+  timeLimit?: number // time limit in seconds (optional)
+}
+
+export interface QuizResult {
+  answers: Answer[]
+  timeSpent: number // total time spent in seconds
+  timedOut: boolean // whether the quiz ended due to timeout
+}
+

@@ -4,12 +4,14 @@ import { useState, useEffect } from 'react'
 import { useRouter, useParams } from 'next/navigation'
 import QuizComponent from '@/components/QuizComponent'
 import ResultsComponent from '@/components/ResultsComponent'
-import { Question, Answer } from '@/types/quiz'
+import { Question, Answer, Quiz } from '@/types/quiz'
 import chapter5Data from '@/data/chapter5.json'
 import chapter6Data from '@/data/chapter6.json'
 import chapter7Data from '@/data/chapter7.json'
 import chapter8Data from '@/data/chapter8.json'
 import chapter9Data from '@/data/chapter9.json'
+import quizzesData from '@/data/quizzes.json'
+import styles from './page.module.css'
 
 // Fisher-Yates shuffle algorithm
 function shuffleArray<T>(array: T[]): T[] {
@@ -25,11 +27,15 @@ export default function QuizPage() {
   const router = useRouter()
   const params = useParams()
   const quizId = params.id as string
-  
+
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
   const [answers, setAnswers] = useState<Answer[]>([])
   const [isQuizComplete, setIsQuizComplete] = useState(false)
   const [questions, setQuestions] = useState<Question[]>([])
+  const [timeRemaining, setTimeRemaining] = useState<number | null>(null)
+  const [timeSpent, setTimeSpent] = useState(0)
+  const [timedOut, setTimedOut] = useState(false)
+  const [startTime, setStartTime] = useState<number | null>(null)
 
   // Get all questions from all chapters
   const getAllQuestions = (): Question[] => {
@@ -72,12 +78,28 @@ export default function QuizPage() {
     }
   }
 
+  // Get quiz metadata
+  const getQuizMetadata = (id: string): Quiz | null => {
+    const quizzes = quizzesData as Quiz[]
+    return quizzes.find((q) => q.id === id) || null
+  }
+
   // Initialize and shuffle questions on mount
   useEffect(() => {
     const quizData = getQuizData(quizId)
     if (quizData.length > 0) {
       const shuffledQuestions = shuffleArray(quizData)
       setQuestions(shuffledQuestions)
+
+      // Initialize timer if quiz has time limit
+      const quizMetadata = getQuizMetadata(quizId)
+      if (quizMetadata?.timeLimit) {
+        setTimeRemaining(quizMetadata.timeLimit)
+        setStartTime(Date.now())
+      } else {
+        setTimeRemaining(null)
+        setStartTime(Date.now())
+      }
     } else {
       setQuestions([])
     }
@@ -95,6 +117,34 @@ export default function QuizPage() {
       setAnswers(initialAnswers)
     }
   }, [questions])
+
+  // Timer countdown effect
+  useEffect(() => {
+    if (timeRemaining === null || timeRemaining <= 0 || isQuizComplete) {
+      return
+    }
+
+    const timer = setInterval(() => {
+      setTimeRemaining((prev) => {
+        if (prev === null || prev <= 1) {
+          setTimedOut(true)
+          setIsQuizComplete(true)
+          return 0
+        }
+        return prev - 1
+      })
+    }, 1000)
+
+    return () => clearInterval(timer)
+  }, [timeRemaining, isQuizComplete])
+
+  // Track time spent
+  useEffect(() => {
+    if (isQuizComplete && startTime) {
+      const elapsed = Math.floor((Date.now() - startTime) / 1000)
+      setTimeSpent(elapsed)
+    }
+  }, [isQuizComplete, startTime])
 
   const handleAnswerSelect = (answerId: string) => {
     const currentQuestion = questions[currentQuestionIndex]
@@ -147,6 +197,14 @@ export default function QuizPage() {
         setQuestions(selectedQuestions)
         setCurrentQuestionIndex(0)
         setIsQuizComplete(false)
+        setTimedOut(false)
+
+        // Reset timer
+        const quizMetadata = getQuizMetadata(quizId)
+        if (quizMetadata?.timeLimit) {
+          setTimeRemaining(quizMetadata.timeLimit)
+        }
+        setStartTime(Date.now())
       }
     } else {
       const quizData = getQuizData(quizId)
@@ -155,6 +213,14 @@ export default function QuizPage() {
         setQuestions(shuffledQuestions)
         setCurrentQuestionIndex(0)
         setIsQuizComplete(false)
+        setTimedOut(false)
+
+        // Reset timer
+        const quizMetadata = getQuizMetadata(quizId)
+        if (quizMetadata?.timeLimit) {
+          setTimeRemaining(quizMetadata.timeLimit)
+        }
+        setStartTime(Date.now())
       }
     }
   }
@@ -164,29 +230,28 @@ export default function QuizPage() {
   }
 
   if (isQuizComplete) {
-    return <ResultsComponent answers={answers} questions={questions} onRestart={handleRestart} onBackToHome={handleBackToHome} />
+    return (
+      <ResultsComponent
+        answers={answers}
+        questions={questions}
+        onRestart={handleRestart}
+        onBackToHome={handleBackToHome}
+        timeSpent={timeSpent}
+        timedOut={timedOut}
+      />
+    )
   }
 
   if (questions.length === 0) {
     const quizData = getQuizData(quizId)
     if (quizData.length === 0) {
       return (
-        <div style={{ textAlign: 'center', color: 'white', padding: '40px' }}>
-          <h1>No questions available</h1>
-          <p>This quiz doesn't have any questions yet.</p>
+        <div className={styles.errorContainer}>
+          <h1 className={styles.errorTitle}>No questions available</h1>
+          <p className={styles.errorText}>This quiz doesn't have any questions yet.</p>
           <button
             onClick={handleBackToHome}
-            style={{
-              marginTop: '20px',
-              padding: '12px 24px',
-              background: 'rgba(255, 255, 255, 0.2)',
-              color: 'white',
-              border: '2px solid rgba(255, 255, 255, 0.3)',
-              borderRadius: '10px',
-              cursor: 'pointer',
-              fontSize: '16px',
-              fontWeight: '600',
-            }}
+            className={styles.errorButton}
           >
             Back to Home
           </button>
@@ -194,8 +259,8 @@ export default function QuizPage() {
       )
     }
     return (
-      <div style={{ textAlign: 'center', color: 'white', padding: '40px' }}>
-        <h1>Loading quiz...</h1>
+      <div className={styles.loadingContainer}>
+        <h1 className={styles.loadingText}>Loading quiz...</h1>
       </div>
     )
   }
@@ -203,32 +268,12 @@ export default function QuizPage() {
   const currentAnswer = answers[currentQuestionIndex]
   
   return (
-    <>
+    <div className={styles.quizWrapper}>
       <button
         onClick={handleBackToHome}
-        style={{
-          position: 'absolute',
-          top: '20px',
-          left: '20px',
-          padding: '10px 20px',
-          background: 'rgba(255, 255, 255, 0.2)',
-          color: 'white',
-          border: '2px solid rgba(255, 255, 255, 0.3)',
-          borderRadius: '10px',
-          cursor: 'pointer',
-          fontSize: '14px',
-          fontWeight: '600',
-          transition: 'all 0.2s ease',
-          zIndex: 10,
-        }}
-        onMouseEnter={(e) => {
-          e.currentTarget.style.background = 'rgba(255, 255, 255, 0.3)'
-        }}
-        onMouseLeave={(e) => {
-          e.currentTarget.style.background = 'rgba(255, 255, 255, 0.2)'
-        }}
+        className={styles.backButton}
       >
-        ← Back to Home
+        ← Back
       </button>
       <QuizComponent
         question={questions[currentQuestionIndex]}
@@ -242,8 +287,9 @@ export default function QuizPage() {
         onSkip={handleSkip}
         canGoPrevious={currentQuestionIndex > 0}
         canGoNext={currentQuestionIndex < questions.length - 1}
+        timeRemaining={timeRemaining}
       />
-    </>
+    </div>
   )
 }
 
