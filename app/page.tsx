@@ -22,6 +22,10 @@ export default function Home() {
     router.push(`/quiz/${quizId}`)
   }
 
+  const handleViewQuestions = (quizId: string) => {
+    router.push(`/chapter/${quizId}/view`)
+  }
+
   return (
     <div className={styles.container}>
       <div className={styles.content}>
@@ -53,12 +57,22 @@ export default function Home() {
                     </span>
                   )}
                 </div>
-                <button
-                  className={styles.startButton}
-                  onClick={() => handleStartQuiz(quiz.id)}
-                >
-                  Start Quiz
-                </button>
+                <div className={styles.actionButtons}>
+                  {quiz.id !== 'random-100' && (
+                    <button
+                      className={styles.viewButton}
+                      onClick={() => handleViewQuestions(quiz.id)}
+                    >
+                      View Questions
+                    </button>
+                  )}
+                  <button
+                    className={styles.startButton}
+                    onClick={() => handleStartQuiz(quiz.id)}
+                  >
+                    Start Quiz
+                  </button>
+                </div>
               </div>
             </div>
           ))}
