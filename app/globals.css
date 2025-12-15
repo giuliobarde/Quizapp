@@ -33,9 +33,8 @@ body {
 @media (max-width: 768px) {
   body {
     padding: 0;
-    align-items: stretch;
-    height: 100vh;
-    overflow: hidden;
+    align-items: flex-start;
+    min-height: 100vh;
   }
 }
 

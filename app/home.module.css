@@ -181,6 +181,9 @@
   .container {
     padding: 20px 10px;
     align-items: flex-start;
+    min-height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
 
   .content {
@@ -264,6 +267,8 @@
 @media (max-width: 480px) {
   .container {
     padding: 15px 8px;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
 
   .header {
