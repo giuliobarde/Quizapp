@@ -1,602 +1,602 @@
 [
-    {
-      "id": 1,
-      "question": "What fundamental limitation does program testing have?",
-      "options": [
-        { "id": "a", "text": "Testing can only reveal the presence of errors, not their absence" },
-        { "id": "b", "text": "Testing can prove that a program is completely error-free" },
-        { "id": "c", "text": "Testing can only be performed after deployment" },
-        { "id": "d", "text": "Testing requires the system to be complete before it can begin" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "A critical principle of testing is that it can reveal the presence of errors but cannot demonstrate that there are no remaining faults. This is why testing is part of a broader verification and validation process."
-    },
-    {
-      "id": 2,
-      "question": "Which statement correctly distinguishes between verification and validation?",
-      "options": [
-        { "id": "a", "text": "Verification asks 'Are we building the product right?' while validation asks 'Are we building the right product?'" },
-        { "id": "b", "text": "Verification asks 'Are we building the right product?' while validation asks 'Are we building the product right?'" },
-        { "id": "c", "text": "Verification and validation are synonymous terms" },
-        { "id": "d", "text": "Verification is only performed by customers, validation by developers" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "Verification checks that the software meets its stated functional and non-functional requirements (building it right), while validation ensures the software meets the customer's expectations (building the right thing)."
-    },
-    {
-      "id": 3,
-      "question": "What are the two primary goals of program testing?",
-      "options": [
-        { "id": "a", "text": "To demonstrate the software meets requirements and to discover incorrect behavior" },
-        { "id": "b", "text": "To find all bugs and to prove the software is perfect" },
-        { "id": "c", "text": "To satisfy management and to complete documentation" },
-        { "id": "d", "text": "To speed up development and to reduce costs" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "The two primary goals are validation testing (demonstrating the software meets its requirements) and defect testing (discovering situations where the software behaves incorrectly or doesn't conform to its specification)."
-    },
-    {
-      "id": 4,
-      "question": "In defect testing, what constitutes a 'successful' test?",
-      "options": [
-        { "id": "a", "text": "A test that runs without any errors" },
-        { "id": "b", "text": "A test that makes the system perform incorrectly and exposes a defect" },
-        { "id": "c", "text": "A test that completes in the shortest amount of time" },
-        { "id": "d", "text": "A test that validates all requirements" }
-      ],
-      "correctAnswer": "b",
-      "explanation": "In defect testing, a successful test is one that makes the system perform incorrectly and so exposes a defect in the system. The goal is to find problems, not to show the system works correctly."
-    },
-    {
-      "id": 5,
-      "question": "Which factors determine the level of V&V confidence required for a system?",
-      "options": [
-        { "id": "a", "text": "Software purpose, user expectations, and marketing environment" },
-        { "id": "b", "text": "Only the number of developers on the team" },
-        { "id": "c", "text": "The programming language used" },
-        { "id": "d", "text": "The size of the codebase only" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "V&V confidence depends on how critical the software is (software purpose), what users expect (user expectations), and business pressures like time-to-market (marketing environment). Critical systems require higher confidence levels."
-    },
-    {
-      "id": 6,
-      "question": "What is the key characteristic of software inspections?",
-      "options": [
-        { "id": "a", "text": "They require executing the system with test data" },
-        { "id": "b", "text": "They involve people examining the source representation without execution (static verification)" },
-        { "id": "c", "text": "They can only be performed after deployment" },
-        { "id": "d", "text": "They replace the need for all other testing" }
-      ],
-      "correctAnswer": "b",
-      "explanation": "Software inspections are concerned with analysis of the static system representation to discover problems. They involve people examining source code, requirements, or design without executing the system, making them a form of static verification."
-    },
-    {
-      "id": 7,
-      "question": "Which of the following is an advantage of inspections over testing?",
-      "options": [
-        { "id": "a", "text": "During testing, errors can mask other errors, but inspection is a static process that avoids this problem" },
-        { "id": "b", "text": "Inspections can test non-functional characteristics like performance" },
-        { "id": "c", "text": "Inspections can verify the system meets customer's real requirements" },
-        { "id": "d", "text": "Inspections are always faster than testing" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "A key advantage of inspections is that errors cannot mask other errors since inspection is a static process. Additionally, incomplete systems can be inspected without specialized test harnesses, and inspections can evaluate broader quality attributes."
-    },
-    {
-      "id": 8,
-      "question": "What is the relationship between inspections and testing?",
-      "options": [
-        { "id": "a", "text": "They are complementary and both should be used during V&V" },
-        { "id": "b", "text": "They are opposing techniques; only one should be used" },
-        { "id": "c", "text": "Inspections have completely replaced testing in modern software development" },
-        { "id": "d", "text": "Testing is always superior to inspections" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "Inspections and testing are complementary, not opposing verification techniques. Both should be used during the V&V process as each has unique strengths and limitations."
-    },
-    {
-      "id": 9,
-      "question": "What are the three main stages of testing?",
-      "options": [
-        { "id": "a", "text": "Development testing, release testing, and user testing" },
-        { "id": "b", "text": "Alpha testing, beta testing, and gamma testing" },
-        { "id": "c", "text": "Unit testing, integration testing, and regression testing" },
-        { "id": "d", "text": "Planning testing, execution testing, and maintenance testing" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "The three main stages are: Development testing (by the development team to discover bugs), Release testing (by a separate team before release to users), and User testing (by users or potential users in their own environment)."
-    },
-    {
-      "id": 10,
-      "question": "Which of the following best describes unit testing?",
-      "options": [
-        { "id": "a", "text": "Testing individual components in isolation" },
-        { "id": "b", "text": "Testing the complete integrated system" },
-        { "id": "c", "text": "Testing performed by end users" },
-        { "id": "d", "text": "Testing only after deployment" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "Unit testing is the process of testing individual components in isolation. It is a defect testing process where units may be individual functions, object classes, or composite components with defined interfaces."
-    },
-    {
-      "id": 11,
-      "question": "What are the three levels of development testing?",
-      "options": [
-        { "id": "a", "text": "Unit testing, component testing, and system testing" },
-        { "id": "b", "text": "White-box testing, black-box testing, and grey-box testing" },
-        { "id": "c", "text": "Alpha testing, beta testing, and acceptance testing" },
-        { "id": "d", "text": "Manual testing, automated testing, and exploratory testing" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "Development testing consists of three levels: Unit testing (individual program units or object classes), Component testing (integrated units creating composite components), and System testing (integrated components tested as a whole system)."
-    },
-    {
-      "id": 12,
-      "question": "In object class testing, what makes inheritance a challenge?",
-      "options": [
-        { "id": "a", "text": "The information to be tested is not localized" },
-        { "id": "b", "text": "Inherited classes cannot be tested" },
-        { "id": "c", "text": "It requires special hardware" },
-        { "id": "d", "text": "It only works with certain programming languages" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "Inheritance makes it more difficult to design object class tests because the information to be tested is not localized. Inherited attributes and methods from parent classes must also be considered when testing child classes."
-    },
-    {
-      "id": 13,
-      "question": "What are the three components of automated unit testing?",
-      "options": [
-        { "id": "a", "text": "Setup, call, and assertion" },
-        { "id": "b", "text": "Input, process, and output" },
-        { "id": "c", "text": "Planning, execution, and reporting" },
-        { "id": "d", "text": "Design, implementation, and verification" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "Automated unit testing consists of three parts: Setup (initialize system with test case inputs and expected outputs), Call (call the object or method being tested), and Assertion (compare result with expected result - true means success, false means failure)."
-    },
-    {
-      "id": 14,
-      "question": "What is the primary focus of component testing?",
-      "options": [
-        { "id": "a", "text": "Testing component interfaces" },
-        { "id": "b", "text": "Testing individual methods in isolation" },
-        { "id": "c", "text": "Testing the complete system" },
-        { "id": "d", "text": "Testing user acceptance" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "Component testing focuses on testing composite components made up of several interacting objects. The primary focus is on showing that the component interface behaves according to its specification, assuming unit tests on individual objects have been completed."
-    },
-    {
-      "id": 15,
-      "question": "What does system testing primarily focus on?",
-      "options": [
-        { "id": "a", "text": "Testing the interactions between components" },
-        { "id": "b", "text": "Testing individual functions" },
-        { "id": "c", "text": "Testing only the user interface" },
-        { "id": "d", "text": "Testing documentation" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "System testing involves integrating components to create a version of the system and testing the integrated system. The focus is on testing the interactions between components, checking compatibility, correct interaction, proper data transfer, and emergent system behavior."
-    },
-    {
-      "id": 16,
-      "question": "What are the two main testing strategies for choosing test cases?",
-      "options": [
-        { "id": "a", "text": "Partition testing and guideline-based testing" },
-        { "id": "b", "text": "Random testing and sequential testing" },
-        { "id": "c", "text": "Manual testing and automated testing" },
-        { "id": "d", "text": "Positive testing and negative testing" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "The two main testing strategies are Partition testing (identifying groups of inputs with common characteristics and choosing tests from each partition) and Guideline-based testing (using testing guidelines based on common programmer errors and previous experience)."
-    },
-    {
-      "id": 17,
-      "question": "In partition testing, what is an equivalence partition?",
-      "options": [
-        { "id": "a", "text": "A class where all members are related and the program behaves equivalently for each class member" },
-        { "id": "b", "text": "A way to divide the development team into equal groups" },
-        { "id": "c", "text": "A method for splitting code into equal-sized modules" },
-        { "id": "d", "text": "A technique for balancing server loads" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "An equivalence partition (or domain) is a class where all members are related and the program behaves in an equivalent way for each class member. Test cases should be chosen from each partition to ensure comprehensive coverage."
-    },
-    {
-      "id": 18,
-      "question": "Which of the following is a guideline for testing sequences (arrays, lists)?",
-      "options": [
-        { "id": "a", "text": "All of the above" },
-        { "id": "b", "text": "Test with sequences that have only a single value" },
-        { "id": "c", "text": "Test with sequences of zero length" },
-        { "id": "d", "text": "Derive tests so that the first, middle, and last elements are accessed" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "All of these are important guidelines for testing sequences: testing with single values, using different sequence sizes, accessing first/middle/last elements, and testing zero-length sequences. These help uncover common boundary and edge case errors."
-    },
-    {
-      "id": 19,
-      "question": "What is a general testing guideline for finding defects?",
-      "options": [
-        { "id": "a", "text": "Design inputs that cause input buffers to overflow" },
-        { "id": "b", "text": "Only test with valid, expected inputs" },
-        { "id": "c", "text": "Avoid testing error messages" },
-        { "id": "d", "text": "Never repeat the same input multiple times" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "General testing guidelines include: choosing inputs that force all error messages, causing buffer overflows, repeating inputs numerous times, forcing invalid outputs, and forcing computation results to be too large or too small."
-    },
-    {
-      "id": 20,
-      "question": "What is the objective of interface testing?",
-      "options": [
-        { "id": "a", "text": "To detect faults due to interface errors or invalid assumptions about interfaces" },
-        { "id": "b", "text": "To test only the graphical user interface" },
-        { "id": "c", "text": "To verify the color scheme of the application" },
-        { "id": "d", "text": "To test database connections only" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "The objective of interface testing is to detect faults due to interface errors or invalid assumptions about interfaces. This includes testing how components interact through various interface types."
-    },
-    {
-      "id": 21,
-      "question": "Which of the following is NOT one of the four interface types?",
-      "options": [
-        { "id": "a", "text": "Graphical user interfaces" },
-        { "id": "b", "text": "Parameter interfaces" },
-        { "id": "c", "text": "Shared memory interfaces" },
-        { "id": "d", "text": "Message passing interfaces" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "The four interface types for component interaction are: Parameter interfaces (data passed between methods), Shared memory interfaces (shared memory blocks), Procedural interfaces (encapsulated procedures), and Message passing interfaces (service requests). Graphical user interfaces are not one of these component interaction types."
-    },
-    {
-      "id": 22,
-      "question": "What is an interface misuse error?",
-      "options": [
-        { "id": "a", "text": "A calling component makes an error in its use of an interface, such as parameters in the wrong order" },
-        { "id": "b", "text": "The interface is too slow" },
-        { "id": "c", "text": "The interface has too many methods" },
-        { "id": "d", "text": "The interface documentation is incomplete" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "Interface misuse occurs when a calling component calls another component and makes an error in its use of the interface, such as passing parameters in the wrong order. This is one of three main types of interface errors."
-    },
-    {
-      "id": 23,
-      "question": "What type of interface error occurs when components operate at different speeds?",
-      "options": [
-        { "id": "a", "text": "Timing errors" },
-        { "id": "b", "text": "Interface misuse" },
-        { "id": "c", "text": "Interface misunderstanding" },
-        { "id": "d", "text": "Synchronization conflicts" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "Timing errors occur when the called and calling component operate at different speeds and out-of-date information is accessed. This is one of the three main types of interface errors."
-    },
-    {
-      "id": 24,
-      "question": "Which interface testing guideline is correct?",
-      "options": [
-        { "id": "a", "text": "Always test pointer parameters with null pointers" },
-        { "id": "b", "text": "Never test with extreme parameter values" },
-        { "id": "c", "text": "Avoid testing component failures" },
-        { "id": "d", "text": "Only test with typical, expected values" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "Interface testing guidelines include: testing parameters at extreme ends of ranges, always testing pointer parameters with null pointers, designing tests that cause component failure, using stress testing in message passing systems, and varying activation order in shared memory systems."
-    },
-    {
-      "id": 25,
-      "question": "How are use-cases utilized in system testing?",
-      "options": [
-        { "id": "a", "text": "Use-cases can be used as a basis for system testing because they involve several system components and force interactions" },
-        { "id": "b", "text": "Use-cases replace the need for all other testing" },
-        { "id": "c", "text": "Use-cases are only used for documentation" },
-        { "id": "d", "text": "Use-cases are not relevant to testing" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "Use-cases developed to identify system interactions can be used as a basis for system testing. Each use-case usually involves several system components, so testing the use-case forces these interactions to occur. Sequence diagrams document the components and interactions being tested."
-    },
-    {
-      "id": 26,
-      "question": "Why is exhaustive system testing impossible?",
-      "options": [
-        { "id": "a", "text": "The number of possible test cases is too large to execute completely" },
-        { "id": "b", "text": "System testing is not necessary" },
-        { "id": "c", "text": "Testing tools are not advanced enough" },
-        { "id": "d", "text": "Developers don't have time for testing" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "Exhaustive system testing is impossible because the combinatorial explosion of possible inputs, states, and scenarios makes it infeasible to test everything. Therefore, testing policies that define required system test coverage are developed to guide testing efforts."
-    },
-    {
-      "id": 27,
-      "question": "What is a key principle of Test-Driven Development (TDD)?",
-      "options": [
-        { "id": "a", "text": "Tests are written before code and passing tests is the critical driver of development" },
-        { "id": "b", "text": "Code is written first, then tests are created afterward" },
-        { "id": "c", "text": "Testing is performed only at the end of development" },
-        { "id": "d", "text": "Tests are optional in TDD" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "In Test-Driven Development, tests are written before code and 'passing' the tests is the critical driver of development. You develop code incrementally along with tests, and don't move on until the code passes its test."
-    },
-    {
-      "id": 28,
-      "question": "In TDD, what happens after you write a test for new functionality?",
-      "options": [
-        { "id": "a", "text": "Run the test (it will fail), then implement the functionality, then re-run the test" },
-        { "id": "b", "text": "Immediately implement the functionality without running the test" },
-        { "id": "c", "text": "Delete the test and write new code" },
-        { "id": "d", "text": "Deploy the code to production" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "The TDD process is: write a test, run it (it will fail initially since functionality isn't implemented), implement the functionality, re-run the test, and once all tests pass, move on to the next increment. This ensures tests are written first and drive development."
-    },
-    {
-      "id": 29,
-      "question": "Which of the following is a benefit of Test-Driven Development?",
-      "options": [
-        { "id": "a", "text": "All of the above" },
-        { "id": "b", "text": "Code coverage - every code segment has at least one associated test" },
-        { "id": "c", "text": "Simplified debugging - when a test fails, the problem is in newly written code" },
-        { "id": "d", "text": "The tests serve as documentation describing what the code should do" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "TDD provides multiple benefits: complete code coverage (every segment has tests), automatic regression test suite development, simplified debugging (failed tests point to new code), and tests serving as system documentation."
-    },
-    {
-      "id": 30,
-      "question": "What is regression testing?",
-      "options": [
-        { "id": "a", "text": "Testing the system to check that changes have not broken previously working code" },
-        { "id": "b", "text": "Testing that goes backward through the code" },
-        { "id": "c", "text": "Testing only the oldest parts of the system" },
-        { "id": "d", "text": "Testing that is no longer necessary" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "Regression testing is testing the system to check that changes have not 'broken' previously working code. With automated testing, it is simple - all tests are rerun every time a change is made, and tests must run successfully before the change is committed."
-    },
-    {
-      "id": 31,
-      "question": "What is the primary goal of release testing?",
-      "options": [
-        { "id": "a", "text": "To convince the supplier that the system is good enough for use" },
-        { "id": "b", "text": "To find as many bugs as possible" },
-        { "id": "c", "text": "To test only new features" },
-        { "id": "d", "text": "To reduce development costs" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "The primary goal of release testing is to convince the supplier of the system that it is good enough for use. Release testing must show that the system delivers its specified functionality, performance, and dependability, and doesn't fail during normal use."
-    },
-    {
-      "id": 32,
-      "question": "What type of testing approach is typically used in release testing?",
-      "options": [
-        { "id": "a", "text": "Black-box testing where tests are derived from the system specification" },
-        { "id": "b", "text": "White-box testing where testers examine the code" },
-        { "id": "c", "text": "Grey-box testing with partial code knowledge" },
-        { "id": "d", "text": "Random testing without any strategy" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "Release testing is usually a black-box testing process where tests are only derived from the system specification. Testers do not have access to the source code and test based on expected behavior from specifications."
-    },
-    {
-      "id": 33,
-      "question": "How does release testing differ from system testing?",
-      "options": [
-        { "id": "a", "text": "Release testing is done by a separate team and focuses on validation, while system testing is done by developers and focuses on defect detection" },
-        { "id": "b", "text": "They are exactly the same" },
-        { "id": "c", "text": "Release testing is always automated while system testing is manual" },
-        { "id": "d", "text": "System testing is only for large systems" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "Key differences: Release testing is performed by a separate team not involved in development, while system testing is by the development team. System testing focuses on discovering bugs (defect testing), while release testing checks that requirements are met and the system is good enough for external use (validation testing)."
-    },
-    {
-      "id": 34,
-      "question": "What is requirements-based testing?",
-      "options": [
-        { "id": "a", "text": "Examining each requirement and developing a test or tests for it" },
-        { "id": "b", "text": "Testing without considering requirements" },
-        { "id": "c", "text": "Only testing the most important requirements" },
-        { "id": "d", "text": "Testing requirements documentation for errors" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "Requirements-based testing involves examining each requirement and developing one or more tests for it. This ensures that all requirements are validated and that there is traceability between requirements and tests."
-    },
-    {
-      "id": 35,
-      "question": "In scenario testing, what is a usage scenario?",
-      "options": [
-        { "id": "a", "text": "A realistic use case describing how the system would typically be used" },
-        { "id": "b", "text": "A theoretical situation that would never happen" },
-        { "id": "c", "text": "A test that only checks error conditions" },
-        { "id": "d", "text": "A marketing description of the product" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "A usage scenario is a realistic use case that describes typical system use. Scenario testing involves inventing such scenarios and using them to derive test cases, which helps test realistic workflows and multiple system features working together."
-    },
-    {
-      "id": 36,
-      "question": "What is the purpose of performance testing?",
-      "options": [
-        { "id": "a", "text": "To test emergent properties like performance and reliability by steadily increasing load until performance becomes unacceptable" },
-        { "id": "b", "text": "To test only the speed of individual functions" },
-        { "id": "c", "text": "To compare different programming languages" },
-        { "id": "d", "text": "To test only database queries" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "Performance testing involves testing emergent properties such as performance and reliability. Tests should reflect the profile of use of the system and typically involve planning a series of tests where the load is steadily increased until the system performance becomes unacceptable."
-    },
-    {
-      "id": 37,
-      "question": "What is stress testing?",
-      "options": [
-        { "id": "a", "text": "A form of performance testing where the system is deliberately overloaded to test its failure behavior" },
-        { "id": "b", "text": "Testing under normal operating conditions" },
-        { "id": "c", "text": "Testing the stress levels of developers" },
-        { "id": "d", "text": "Testing only during peak business hours" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "Stress testing is a form of performance testing where the system is deliberately overloaded to test its failure behavior. It helps determine how the system handles extreme conditions and where its breaking points are."
-    },
-    {
-      "id": 38,
-      "question": "Why is user testing essential even after comprehensive system and release testing?",
-      "options": [
-        { "id": "a", "text": "Because influences from the user's working environment cannot be replicated in a testing environment" },
-        { "id": "b", "text": "Because users always find more bugs than testers" },
-        { "id": "c", "text": "Because it is required by law" },
-        { "id": "d", "text": "Because developers don't do thorough testing" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "User testing is essential because influences from the user's working environment have a major effect on reliability, performance, usability, and robustness that cannot be replicated in a testing environment. Real-world conditions often reveal issues not found in controlled testing."
-    },
-    {
-      "id": 39,
-      "question": "What is alpha testing?",
-      "options": [
-        { "id": "a", "text": "Users work with the development team to test the software at the developer's site" },
-        { "id": "b", "text": "The first round of automated testing" },
-        { "id": "c", "text": "Testing performed only by the development team" },
-        { "id": "d", "text": "Testing after the software is released to the public" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "Alpha testing is a type of user testing where users of the software work with the development team to test the software at the developer's site. This allows close collaboration and immediate feedback."
-    },
-    {
-      "id": 40,
-      "question": "What is beta testing?",
-      "options": [
-        { "id": "a", "text": "A release of the software is made available to users to experiment with and report problems" },
-        { "id": "b", "text": "The second phase of unit testing" },
-        { "id": "c", "text": "Testing performed only by professional testers" },
-        { "id": "d", "text": "Testing that occurs before alpha testing" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "Beta testing involves making a release of the software available to users to allow them to experiment and raise problems that they discover with the system developers. Users test in their own environments with real-world usage patterns."
-    },
-    {
-      "id": 41,
-      "question": "What is acceptance testing primarily used for?",
-      "options": [
-        { "id": "a", "text": "Customers test a system to decide whether to accept it from developers and deploy it in their environment" },
-        { "id": "b", "text": "Developers test to see if they accept the requirements" },
-        { "id": "c", "text": "Testing if users accept the user interface design" },
-        { "id": "d", "text": "All software must undergo acceptance testing" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "Acceptance testing is when customers test a system to decide whether or not it is ready to be accepted from the system developers and deployed in the customer environment. It is primarily for custom systems."
-    },
-    {
-      "id": 42,
-      "question": "What are the stages in the acceptance testing process?",
-      "options": [
-        { "id": "a", "text": "Define acceptance criteria, plan acceptance testing, derive tests, run tests, negotiate results, reject/accept system" },
-        { "id": "b", "text": "Write code, test code, deploy code" },
-        { "id": "c", "text": "Only run tests and accept the system" },
-        { "id": "d", "text": "Plan testing and deploy immediately" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "The acceptance testing process involves six stages: Define acceptance criteria, Plan acceptance testing, Derive acceptance tests, Run acceptance tests, Negotiate test results, and finally Reject/accept system."
-    },
-    {
-      "id": 43,
-      "question": "How does acceptance testing differ in agile methods?",
-      "options": [
-        { "id": "a", "text": "The user/customer is part of the development team and there is no separate acceptance testing process" },
-        { "id": "b", "text": "Acceptance testing is more formal and lengthy" },
-        { "id": "c", "text": "Acceptance testing is eliminated entirely" },
-        { "id": "d", "text": "Only automated acceptance tests are used" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "In agile methods, the user/customer is part of the development team and is responsible for making decisions on system acceptability. Tests are defined by the user/customer and integrated with other tests, run automatically when changes are made. There is no separate acceptance testing process."
-    },
-    {
-      "id": 44,
-      "question": "What is a potential problem with acceptance testing in agile methods?",
-      "options": [
-        { "id": "a", "text": "Whether the embedded user is typical and can represent the interests of all system stakeholders" },
-        { "id": "b", "text": "Agile methods don't allow any testing" },
-        { "id": "c", "text": "Tests take too long to run" },
-        { "id": "d", "text": "Customers are never involved in agile development" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "The main problem with acceptance testing in agile methods is whether the embedded user is 'typical' and can truly represent the interests of all system stakeholders. One user may not capture all diverse needs and perspectives."
-    },
-    {
-      "id": 45,
-      "question": "Which statement about inspections is correct?",
-      "options": [
-        { "id": "a", "text": "Inspections can be applied to any representation of the system including requirements, design, and test data" },
-        { "id": "b", "text": "Inspections can only be applied to source code" },
-        { "id": "c", "text": "Inspections require the system to be executing" },
-        { "id": "d", "text": "Inspections have been proven ineffective for finding errors" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "Software inspections can be applied to any representation of the system, including requirements, design, configuration data, test data, and source code. They do not require execution and can be used before implementation."
-    },
-    {
-      "id": 46,
-      "question": "What should be included when testing object classes?",
-      "options": [
-        { "id": "a", "text": "Testing all operations, setting and interrogating all attributes, and exercising the object in all possible states" },
-        { "id": "b", "text": "Only testing the constructor" },
-        { "id": "c", "text": "Only testing public methods" },
-        { "id": "d", "text": "Testing is not necessary for object classes" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "Complete test coverage of a class involves testing all operations associated with an object, setting and interrogating all object attributes, and exercising the object in all possible states. This ensures comprehensive validation of the class behavior."
-    },
-    {
-      "id": 47,
-      "question": "What limitation do inspections have compared to testing?",
-      "options": [
-        { "id": "a", "text": "Inspections cannot check non-functional characteristics such as performance and usability" },
-        { "id": "b", "text": "Inspections cannot find any errors" },
-        { "id": "c", "text": "Inspections are always more expensive than testing" },
-        { "id": "d", "text": "Inspections require more people than testing" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "While inspections are effective for finding many types of errors, they cannot check non-functional characteristics such as performance, usability, and other runtime behaviors. These require actual system execution through testing."
-    },
-    {
-      "id": 48,
-      "question": "In the context of testing, what does 'test coverage' refer to?",
-      "options": [
-        { "id": "a", "text": "The extent to which testing exercises the code, requirements, or functionality of the system" },
-        { "id": "b", "text": "The physical space needed for testing equipment" },
-        { "id": "c", "text": "The number of testers assigned to a project" },
-        { "id": "d", "text": "The insurance coverage for software projects" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "Test coverage refers to the extent to which testing exercises the code, requirements, or functionality of the system. In TDD, for example, every code segment has at least one associated test, providing complete code coverage."
-    },
-    {
-      "id": 49,
-      "question": "Which testing approach should you use when you want to test combinations of functions accessed through the same menu?",
-      "options": [
-        { "id": "a", "text": "This is part of a testing policy that defines required system test coverage" },
-        { "id": "b", "text": "This is not necessary to test" },
-        { "id": "c", "text": "Only test each function individually" },
-        { "id": "d", "text": "This is only tested in acceptance testing" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "Testing policies define the required system test coverage. An example policy states that combinations of functions (e.g., text formatting) that are accessed through the same menu must be tested, ensuring that feature interactions are validated."
-    },
-    {
-      "id": 50,
-      "question": "What is the main difference between validation testing and defect testing?",
-      "options": [
-        { "id": "a", "text": "Validation testing demonstrates the software meets requirements; defect testing discovers faults where behavior is incorrect" },
-        { "id": "b", "text": "Validation testing is always automated; defect testing is always manual" },
-        { "id": "c", "text": "Validation testing is cheaper than defect testing" },
-        { "id": "d", "text": "There is no difference between them" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "Validation testing aims to demonstrate to the developer and customer that the software meets its requirements (are we building the right product?). Defect testing aims to discover faults or defects where the software's behavior is incorrect or doesn't conform to its specification."
-    }
-  ]
+  {
+    "id": 1,
+    "question": "What fundamental limitation does program testing have?",
+    "options": [
+      { "id": "a", "text": "Testing can only reveal the presence of errors, not their absence" },
+      { "id": "b", "text": "Testing can only demonstrate correct behavior for the specific test cases executed, not for all possible inputs" },
+      { "id": "c", "text": "Testing can only verify functional requirements but cannot validate non-functional requirements" },
+      { "id": "d", "text": "Testing can only be effective when performed by an independent testing team" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "A critical principle of testing is that it can reveal the presence of errors but cannot demonstrate that there are no remaining faults. This is why testing is part of a broader verification and validation process."
+  },
+  {
+    "id": 2,
+    "question": "Which statement correctly distinguishes between verification and validation?",
+    "options": [
+      { "id": "a", "text": "Verification asks 'Are we building the product right?' while validation asks 'Are we building the right product?'" },
+      { "id": "b", "text": "Verification asks 'Are we building the right product?' while validation asks 'Are we building the product right?'" },
+      { "id": "c", "text": "Verification and validation are synonymous terms" },
+      { "id": "d", "text": "Verification is only performed by customers, validation by developers" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "Verification checks that the software meets its stated functional and non-functional requirements (building it right), while validation ensures the software meets the customer's expectations (building the right thing)."
+  },
+  {
+    "id": 3,
+    "question": "What are the two primary goals of program testing?",
+    "options": [
+      { "id": "a", "text": "To demonstrate the software meets requirements and to discover incorrect behavior" },
+      { "id": "b", "text": "To verify code quality and to validate system architecture" },
+      { "id": "c", "text": "To ensure code coverage and to measure system performance" },
+      { "id": "d", "text": "To reduce development time and to minimize maintenance costs" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "The two primary goals are validation testing (demonstrating the software meets its requirements) and defect testing (discovering situations where the software behaves incorrectly or doesn't conform to its specification)."
+  },
+  {
+    "id": 4,
+    "question": "In defect testing, what constitutes a 'successful' test?",
+    "options": [
+      { "id": "a", "text": "A test that verifies all functional requirements are correctly implemented" },
+      { "id": "b", "text": "A test that makes the system perform incorrectly and exposes a defect" },
+      { "id": "c", "text": "A test that executes all code paths and achieves 100% code coverage" },
+      { "id": "d", "text": "A test that demonstrates the system meets all acceptance criteria" }
+    ],
+    "correctAnswer": "b",
+    "explanation": "In defect testing, a successful test is one that makes the system perform incorrectly and so exposes a defect in the system. The goal is to find problems, not to show the system works correctly."
+  },
+  {
+    "id": 5,
+    "question": "Which factors determine the level of V&V confidence required for a system?",
+    "options": [
+      { "id": "a", "text": "Software purpose, user expectations, and marketing environment" },
+      { "id": "b", "text": "Development methodology, team size, and project budget" },
+      { "id": "c", "text": "Code complexity, system architecture, and testing tools available" },
+      { "id": "d", "text": "Programming language, deployment platform, and regulatory requirements" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "V&V confidence depends on how critical the software is (software purpose), what users expect (user expectations), and business pressures like time-to-market (marketing environment). Critical systems require higher confidence levels."
+  },
+  {
+    "id": 6,
+    "question": "What is the key characteristic of software inspections?",
+    "options": [
+      { "id": "a", "text": "They analyze the system through automated testing frameworks to detect runtime errors" },
+      { "id": "b", "text": "They involve people examining the source representation without execution (static verification)" },
+      { "id": "c", "text": "They focus on validating the system through user acceptance testing in production environments" },
+      { "id": "d", "text": "They use dynamic analysis tools to monitor system behavior during execution" }
+    ],
+    "correctAnswer": "b",
+    "explanation": "Software inspections are concerned with analysis of the static system representation to discover problems. They involve people examining source code, requirements, or design without executing the system, making them a form of static verification."
+  },
+  {
+    "id": 7,
+    "question": "Which of the following is an advantage of inspections over testing?",
+    "options": [
+      { "id": "a", "text": "During testing, errors can mask other errors, but inspection is a static process that avoids this problem" },
+      { "id": "b", "text": "Inspections can validate system performance and response times under various load conditions" },
+      { "id": "c", "text": "Inspections can verify the system satisfies all customer requirements in real-world scenarios" },
+      { "id": "d", "text": "Inspections provide quantitative metrics on system reliability and availability" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "A key advantage of inspections is that errors cannot mask other errors since inspection is a static process. Additionally, incomplete systems can be inspected without specialized test harnesses, and inspections can evaluate broader quality attributes."
+  },
+  {
+    "id": 8,
+    "question": "What is the relationship between inspections and testing?",
+    "options": [
+      { "id": "a", "text": "They are complementary and both should be used during V&V" },
+      { "id": "b", "text": "They serve the same purpose and can be used interchangeably in any situation" },
+      { "id": "c", "text": "They address different quality attributes and should be applied sequentially" },
+      { "id": "d", "text": "They are redundant verification methods where one is sufficient for most projects" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "Inspections and testing are complementary, not opposing verification techniques. Both should be used during the V&V process as each has unique strengths and limitations."
+  },
+  {
+    "id": 9,
+    "question": "What are the three main stages of testing?",
+    "options": [
+      { "id": "a", "text": "Development testing, release testing, and user testing" },
+      { "id": "b", "text": "Requirements testing, integration testing, and deployment testing" },
+      { "id": "c", "text": "Unit testing, system testing, and acceptance testing" },
+      { "id": "d", "text": "Static testing, dynamic testing, and regression testing" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "The three main stages are: Development testing (by the development team to discover bugs), Release testing (by a separate team before release to users), and User testing (by users or potential users in their own environment)."
+  },
+  {
+    "id": 10,
+    "question": "Which of the following best describes unit testing?",
+    "options": [
+      { "id": "a", "text": "Testing individual components in isolation" },
+      { "id": "b", "text": "Testing the integration of multiple modules working together" },
+      { "id": "c", "text": "Testing the system's functionality from the user's perspective" },
+      { "id": "d", "text": "Testing all components simultaneously in a production-like environment" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "Unit testing is the process of testing individual components in isolation. It is a defect testing process where units may be individual functions, object classes, or composite components with defined interfaces."
+  },
+  {
+    "id": 11,
+    "question": "What are the three levels of development testing?",
+    "options": [
+      { "id": "a", "text": "Unit testing, component testing, and system testing" },
+      { "id": "b", "text": "White-box testing, black-box testing, and grey-box testing" },
+      { "id": "c", "text": "Alpha testing, beta testing, and acceptance testing" },
+      { "id": "d", "text": "Manual testing, automated testing, and exploratory testing" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "Development testing consists of three levels: Unit testing (individual program units or object classes), Component testing (integrated units creating composite components), and System testing (integrated components tested as a whole system)."
+  },
+  {
+    "id": 12,
+    "question": "In object class testing, what makes inheritance a challenge?",
+    "options": [
+      { "id": "a", "text": "The information to be tested is not localized" },
+      { "id": "b", "text": "Testing must account for both inherited and overridden methods across the hierarchy" },
+      { "id": "c", "text": "Multiple inheritance creates ambiguity in which methods should be tested" },
+      { "id": "d", "text": "Subclasses may have dependencies on parent class implementation details" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "Inheritance makes it more difficult to design object class tests because the information to be tested is not localized. Inherited attributes and methods from parent classes must also be considered when testing child classes."
+  },
+  {
+    "id": 13,
+    "question": "What are the three components of automated unit testing?",
+    "options": [
+      { "id": "a", "text": "Setup, call, and assertion" },
+      { "id": "b", "text": "Input, process, and output" },
+      { "id": "c", "text": "Planning, execution, and reporting" },
+      { "id": "d", "text": "Design, implementation, and verification" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "Automated unit testing consists of three parts: Setup (initialize system with test case inputs and expected outputs), Call (call the object or method being tested), and Assertion (compare result with expected result - true means success, false means failure)."
+  },
+  {
+    "id": 14,
+    "question": "What is the primary focus of component testing?",
+    "options": [
+      { "id": "a", "text": "Testing component interfaces" },
+      { "id": "b", "text": "Testing the internal logic and algorithms within each component" },
+      { "id": "c", "text": "Testing how components interact with external databases and APIs" },
+      { "id": "d", "text": "Testing the performance characteristics of individual components under load" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "Component testing focuses on testing composite components made up of several interacting objects. The primary focus is on showing that the component interface behaves according to its specification, assuming unit tests on individual objects have been completed."
+  },
+  {
+    "id": 15,
+    "question": "What does system testing primarily focus on?",
+    "options": [
+      { "id": "a", "text": "Testing the interactions between components" },
+      { "id": "b", "text": "Testing that each component meets its individual specifications" },
+      { "id": "c", "text": "Testing the system against all stakeholder requirements" },
+      { "id": "d", "text": "Testing the system's deployment and installation procedures" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "System testing involves integrating components to create a version of the system and testing the integrated system. The focus is on testing the interactions between components, checking compatibility, correct interaction, proper data transfer, and emergent system behavior."
+  },
+  {
+    "id": 16,
+    "question": "What are the two main testing strategies for choosing test cases?",
+    "options": [
+      { "id": "a", "text": "Partition testing and guideline-based testing" },
+      { "id": "b", "text": "Boundary testing and state-based testing" },
+      { "id": "c", "text": "Path coverage testing and branch coverage testing" },
+      { "id": "d", "text": "Risk-based testing and exploratory testing" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "The two main testing strategies are Partition testing (identifying groups of inputs with common characteristics and choosing tests from each partition) and Guideline-based testing (using testing guidelines based on common programmer errors and previous experience)."
+  },
+  {
+    "id": 17,
+    "question": "In partition testing, what is an equivalence partition?",
+    "options": [
+      { "id": "a", "text": "A class where all members are related and the program behaves equivalently for each class member" },
+      { "id": "b", "text": "A set of test cases that cover all possible execution paths through the program" },
+      { "id": "c", "text": "A grouping of similar components that share common interfaces and behaviors" },
+      { "id": "d", "text": "A division of the input space into equal-sized ranges for systematic testing" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "An equivalence partition (or domain) is a class where all members are related and the program behaves in an equivalent way for each class member. Test cases should be chosen from each partition to ensure comprehensive coverage."
+  },
+  {
+    "id": 18,
+    "question": "Which of the following is a guideline for testing sequences (arrays, lists)?",
+    "options": [
+      { "id": "a", "text": "All of the above" },
+      { "id": "b", "text": "Test with sequences that have only a single value" },
+      { "id": "c", "text": "Test with sequences of zero length" },
+      { "id": "d", "text": "Derive tests so that the first, middle, and last elements are accessed" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "All of these are important guidelines for testing sequences: testing with single values, using different sequence sizes, accessing first/middle/last elements, and testing zero-length sequences. These help uncover common boundary and edge case errors."
+  },
+  {
+    "id": 19,
+    "question": "What is a general testing guideline for finding defects?",
+    "options": [
+      { "id": "a", "text": "Design inputs that cause input buffers to overflow" },
+      { "id": "b", "text": "Focus testing on the most frequently used features and workflows" },
+      { "id": "c", "text": "Prioritize test cases based on business risk and impact" },
+      { "id": "d", "text": "Test all possible combinations of input parameters systematically" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "General testing guidelines include: choosing inputs that force all error messages, causing buffer overflows, repeating inputs numerous times, forcing invalid outputs, and forcing computation results to be too large or too small."
+  },
+  {
+    "id": 20,
+    "question": "What is the objective of interface testing?",
+    "options": [
+      { "id": "a", "text": "To detect faults due to interface errors or invalid assumptions about interfaces" },
+      { "id": "b", "text": "To verify the usability and accessibility of all user-facing interfaces" },
+      { "id": "c", "text": "To validate that interfaces comply with design patterns and architectural standards" },
+      { "id": "d", "text": "To ensure interfaces handle concurrent access and maintain data consistency" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "The objective of interface testing is to detect faults due to interface errors or invalid assumptions about interfaces. This includes testing how components interact through various interface types."
+  },
+  {
+    "id": 21,
+    "question": "Which of the following is NOT one of the four interface types?",
+    "options": [
+      { "id": "a", "text": "Graphical user interfaces" },
+      { "id": "b", "text": "Parameter interfaces" },
+      { "id": "c", "text": "Shared memory interfaces" },
+      { "id": "d", "text": "Message passing interfaces" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "The four interface types for component interaction are: Parameter interfaces (data passed between methods), Shared memory interfaces (shared memory blocks), Procedural interfaces (encapsulated procedures), and Message passing interfaces (service requests). Graphical user interfaces are not one of these component interaction types."
+  },
+  {
+    "id": 22,
+    "question": "What is an interface misuse error?",
+    "options": [
+      { "id": "a", "text": "A calling component makes an error in its use of an interface, such as parameters in the wrong order" },
+      { "id": "b", "text": "The interface implementation does not match the interface specification" },
+      { "id": "c", "text": "The interface violates object-oriented design principles like encapsulation" },
+      { "id": "d", "text": "The interface exposes more functionality than necessary to calling components" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "Interface misuse occurs when a calling component calls another component and makes an error in its use of the interface, such as passing parameters in the wrong order. This is one of three main types of interface errors."
+  },
+  {
+    "id": 23,
+    "question": "What type of interface error occurs when components operate at different speeds?",
+    "options": [
+      { "id": "a", "text": "Timing errors" },
+      { "id": "b", "text": "Interface misuse" },
+      { "id": "c", "text": "Interface misunderstanding" },
+      { "id": "d", "text": "Race conditions" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "Timing errors occur when the called and calling component operate at different speeds and out-of-date information is accessed. This is one of the three main types of interface errors."
+  },
+  {
+    "id": 24,
+    "question": "Which interface testing guideline is correct?",
+    "options": [
+      { "id": "a", "text": "Always test pointer parameters with null pointers" },
+      { "id": "b", "text": "Test parameters with values in the middle of their valid ranges" },
+      { "id": "c", "text": "Design tests that ensure components never fail under any circumstances" },
+      { "id": "d", "text": "Maintain consistent component activation order in all testing scenarios" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "Interface testing guidelines include: testing parameters at extreme ends of ranges, always testing pointer parameters with null pointers, designing tests that cause component failure, using stress testing in message passing systems, and varying activation order in shared memory systems."
+  },
+  {
+    "id": 25,
+    "question": "How are use-cases utilized in system testing?",
+    "options": [
+      { "id": "a", "text": "Use-cases can be used as a basis for system testing because they involve several system components and force interactions" },
+      { "id": "b", "text": "Use-cases provide requirements traceability and help organize test documentation" },
+      { "id": "c", "text": "Use-cases define the user acceptance criteria that guide all testing activities" },
+      { "id": "d", "text": "Use-cases help identify edge cases and boundary conditions for testing" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "Use-cases developed to identify system interactions can be used as a basis for system testing. Each use-case usually involves several system components, so testing the use-case forces these interactions to occur. Sequence diagrams document the components and interactions being tested."
+  },
+  {
+    "id": 26,
+    "question": "Why is exhaustive system testing impossible?",
+    "options": [
+      { "id": "a", "text": "The number of possible test cases is too large to execute completely" },
+      { "id": "b", "text": "Resource constraints limit the time and budget available for testing" },
+      { "id": "c", "text": "The system complexity makes it difficult to design comprehensive test suites" },
+      { "id": "d", "text": "Requirements are often incomplete or ambiguous, making complete testing infeasible" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "Exhaustive system testing is impossible because the combinatorial explosion of possible inputs, states, and scenarios makes it infeasible to test everything. Therefore, testing policies that define required system test coverage are developed to guide testing efforts."
+  },
+  {
+    "id": 27,
+    "question": "What is a key principle of Test-Driven Development (TDD)?",
+    "options": [
+      { "id": "a", "text": "Tests are written before code and passing tests is the critical driver of development" },
+      { "id": "b", "text": "Code and tests are developed in parallel to ensure comprehensive coverage" },
+      { "id": "c", "text": "Tests are continuously refactored alongside code to maintain test quality" },
+      { "id": "d", "text": "Testing activities are integrated throughout the entire development lifecycle" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "In Test-Driven Development, tests are written before code and 'passing' the tests is the critical driver of development. You develop code incrementally along with tests, and don't move on until the code passes its test."
+  },
+  {
+    "id": 28,
+    "question": "In TDD, what happens after you write a test for new functionality?",
+    "options": [
+      { "id": "a", "text": "Run the test (it will fail), then implement the functionality, then re-run the test" },
+      { "id": "b", "text": "Review the test with the team, implement the functionality, then execute the test suite" },
+      { "id": "c", "text": "Refactor existing code to accommodate the new test, then implement the functionality" },
+      { "id": "d", "text": "Implement the minimum code needed to pass the test, then refactor for quality" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "The TDD process is: write a test, run it (it will fail initially since functionality isn't implemented), implement the functionality, re-run the test, and once all tests pass, move on to the next increment. This ensures tests are written first and drive development."
+  },
+  {
+    "id": 29,
+    "question": "Which of the following is a benefit of Test-Driven Development?",
+    "options": [
+      { "id": "a", "text": "All of the above" },
+      { "id": "b", "text": "Code coverage - every code segment has at least one associated test" },
+      { "id": "c", "text": "Simplified debugging - when a test fails, the problem is in newly written code" },
+      { "id": "d", "text": "The tests serve as documentation describing what the code should do" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "TDD provides multiple benefits: complete code coverage (every segment has tests), automatic regression test suite development, simplified debugging (failed tests point to new code), and tests serving as system documentation."
+  },
+  {
+    "id": 30,
+    "question": "What is regression testing?",
+    "options": [
+      { "id": "a", "text": "Testing the system to check that changes have not broken previously working code" },
+      { "id": "b", "text": "Testing performed on older versions of the system to identify historical defects" },
+      { "id": "c", "text": "Testing that validates the system still meets its original requirements over time" },
+      { "id": "d", "text": "Testing focused on functionality that was previously reported as defective" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "Regression testing is testing the system to check that changes have not 'broken' previously working code. With automated testing, it is simple - all tests are rerun every time a change is made, and tests must run successfully before the change is committed."
+  },
+  {
+    "id": 31,
+    "question": "What is the primary goal of release testing?",
+    "options": [
+      { "id": "a", "text": "To convince the supplier that the system is good enough for use" },
+      { "id": "b", "text": "To identify and document all remaining defects before customer delivery" },
+      { "id": "c", "text": "To verify that the system meets all specified functional and non-functional requirements" },
+      { "id": "d", "text": "To validate that the system is ready for deployment in the production environment" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "The primary goal of release testing is to convince the supplier of the system that it is good enough for use. Release testing must show that the system delivers its specified functionality, performance, and dependability, and doesn't fail during normal use."
+  },
+  {
+    "id": 32,
+    "question": "What type of testing approach is typically used in release testing?",
+    "options": [
+      { "id": "a", "text": "Black-box testing where tests are derived from the system specification" },
+      { "id": "b", "text": "White-box testing where testers analyze the internal code structure" },
+      { "id": "c", "text": "Grey-box testing combining specification knowledge with limited code access" },
+      { "id": "d", "text": "Model-based testing using formal specifications to generate test cases" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "Release testing is usually a black-box testing process where tests are only derived from the system specification. Testers do not have access to the source code and test based on expected behavior from specifications."
+  },
+  {
+    "id": 33,
+    "question": "How does release testing differ from system testing?",
+    "options": [
+      { "id": "a", "text": "Release testing is done by a separate team and focuses on validation, while system testing is done by developers and focuses on defect detection" },
+      { "id": "b", "text": "Release testing validates external quality attributes, while system testing verifies internal implementation correctness" },
+      { "id": "c", "text": "Release testing uses real user data and environments, while system testing uses simulated test conditions" },
+      { "id": "d", "text": "Release testing is performed closer to deployment, while system testing occurs earlier in development" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "Key differences: Release testing is performed by a separate team not involved in development, while system testing is by the development team. System testing focuses on discovering bugs (defect testing), while release testing checks that requirements are met and the system is good enough for external use (validation testing)."
+  },
+  {
+    "id": 34,
+    "question": "What is requirements-based testing?",
+    "options": [
+      { "id": "a", "text": "Examining each requirement and developing a test or tests for it" },
+      { "id": "b", "text": "Validating that requirements are complete, consistent, and testable before development" },
+      { "id": "c", "text": "Prioritizing test cases based on the criticality and risk of each requirement" },
+      { "id": "d", "text": "Ensuring that test coverage aligns with the requirements specification structure" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "Requirements-based testing involves examining each requirement and developing one or more tests for it. This ensures that all requirements are validated and that there is traceability between requirements and tests."
+  },
+  {
+    "id": 35,
+    "question": "In scenario testing, what is a usage scenario?",
+    "options": [
+      { "id": "a", "text": "A realistic use case describing how the system would typically be used" },
+      { "id": "b", "text": "A documented workflow that captures all possible system interactions" },
+      { "id": "c", "text": "A test script that validates specific functional requirements end-to-end" },
+      { "id": "d", "text": "A user story that describes desired system behavior from a stakeholder perspective" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "A usage scenario is a realistic use case that describes typical system use. Scenario testing involves inventing such scenarios and using them to derive test cases, which helps test realistic workflows and multiple system features working together."
+  },
+  {
+    "id": 36,
+    "question": "What is the purpose of performance testing?",
+    "options": [
+      { "id": "a", "text": "To test emergent properties like performance and reliability by steadily increasing load until performance becomes unacceptable" },
+      { "id": "b", "text": "To measure response times and throughput against specified performance requirements" },
+      { "id": "c", "text": "To identify performance bottlenecks and optimize system resource utilization" },
+      { "id": "d", "text": "To validate that the system scales appropriately with increasing user loads" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "Performance testing involves testing emergent properties such as performance and reliability. Tests should reflect the profile of use of the system and typically involve planning a series of tests where the load is steadily increased until the system performance becomes unacceptable."
+  },
+  {
+    "id": 37,
+    "question": "What is stress testing?",
+    "options": [
+      { "id": "a", "text": "A form of performance testing where the system is deliberately overloaded to test its failure behavior" },
+      { "id": "b", "text": "Testing the system under maximum expected load to verify it meets performance criteria" },
+      { "id": "c", "text": "Testing how the system recovers from failures and handles error conditions gracefully" },
+      { "id": "d", "text": "Testing the system's ability to maintain performance during sustained high-load periods" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "Stress testing is a form of performance testing where the system is deliberately overloaded to test its failure behavior. It helps determine how the system handles extreme conditions and where its breaking points are."
+  },
+  {
+    "id": 38,
+    "question": "Why is user testing essential even after comprehensive system and release testing?",
+    "options": [
+      { "id": "a", "text": "Because influences from the user's working environment cannot be replicated in a testing environment" },
+      { "id": "b", "text": "Because users provide valuable feedback on usability and user experience issues" },
+      { "id": "c", "text": "Because real-world usage patterns often differ from anticipated test scenarios" },
+      { "id": "d", "text": "Because users can validate that the system meets their actual business needs" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "User testing is essential because influences from the user's working environment have a major effect on reliability, performance, usability, and robustness that cannot be replicated in a testing environment. Real-world conditions often reveal issues not found in controlled testing."
+  },
+  {
+    "id": 39,
+    "question": "What is alpha testing?",
+    "options": [
+      { "id": "a", "text": "Users work with the development team to test the software at the developer's site" },
+      { "id": "b", "text": "Internal testing performed by the development organization before external release" },
+      { "id": "c", "text": "Early testing phase focused on validating core functionality and features" },
+      { "id": "d", "text": "Testing conducted with a limited group of external users under controlled conditions" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "Alpha testing is a type of user testing where users of the software work with the development team to test the software at the developer's site. This allows close collaboration and immediate feedback."
+  },
+  {
+    "id": 40,
+    "question": "What is beta testing?",
+    "options": [
+      { "id": "a", "text": "A release of the software is made available to users to experiment with and report problems" },
+      { "id": "b", "text": "Testing performed by selected customers in their own environments before general release" },
+      { "id": "c", "text": "The second phase of testing that follows alpha testing and precedes final release" },
+      { "id": "d", "text": "External testing where users validate the software meets their operational requirements" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "Beta testing involves making a release of the software available to users to allow them to experiment and raise problems that they discover with the system developers. Users test in their own environments with real-world usage patterns."
+  },
+  {
+    "id": 41,
+    "question": "What is acceptance testing primarily used for?",
+    "options": [
+      { "id": "a", "text": "Customers test a system to decide whether to accept it from developers and deploy it in their environment" },
+      { "id": "b", "text": "Validating that the system satisfies all contractual obligations and acceptance criteria" },
+      { "id": "c", "text": "Verifying the system is ready for operational use in the production environment" },
+      { "id": "d", "text": "Ensuring the system meets both functional requirements and business objectives" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "Acceptance testing is when customers test a system to decide whether or not it is ready to be accepted from the system developers and deployed in the customer environment. It is primarily for custom systems."
+  },
+  {
+    "id": 42,
+    "question": "What are the stages in the acceptance testing process?",
+    "options": [
+      { "id": "a", "text": "Define acceptance criteria, plan acceptance testing, derive tests, run tests, negotiate results, reject/accept system" },
+      { "id": "b", "text": "Requirements analysis, test design, test execution, defect tracking, final acceptance decision" },
+      { "id": "c", "text": "Test planning, environment setup, test execution, results analysis, sign-off" },
+      { "id": "d", "text": "Criteria definition, test case development, user training, system testing, deployment approval" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "The acceptance testing process involves six stages: Define acceptance criteria, Plan acceptance testing, Derive acceptance tests, Run acceptance tests, Negotiate test results, and finally Reject/accept system."
+  },
+  {
+    "id": 43,
+    "question": "How does acceptance testing differ in agile methods?",
+    "options": [
+      { "id": "a", "text": "The user/customer is part of the development team and there is no separate acceptance testing process" },
+      { "id": "b", "text": "Acceptance tests are automated and integrated into the continuous integration pipeline" },
+      { "id": "c", "text": "Acceptance testing occurs at the end of each sprint rather than at project completion" },
+      { "id": "d", "text": "User stories serve as acceptance criteria and are validated incrementally" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "In agile methods, the user/customer is part of the development team and is responsible for making decisions on system acceptability. Tests are defined by the user/customer and integrated with other tests, run automatically when changes are made. There is no separate acceptance testing process."
+  },
+  {
+    "id": 44,
+    "question": "What is a potential problem with acceptance testing in agile methods?",
+    "options": [
+      { "id": "a", "text": "Whether the embedded user is typical and can represent the interests of all system stakeholders" },
+      { "id": "b", "text": "The lack of formal documentation makes it difficult to track acceptance criteria" },
+      { "id": "c", "text": "Continuous acceptance testing may slow down the development velocity" },
+      { "id": "d", "text": "Customer involvement throughout development may lead to scope creep" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "The main problem with acceptance testing in agile methods is whether the embedded user is 'typical' and can truly represent the interests of all system stakeholders. One user may not capture all diverse needs and perspectives."
+  },
+  {
+    "id": 45,
+    "question": "Which statement about inspections is correct?",
+    "options": [
+      { "id": "a", "text": "Inspections can be applied to any representation of the system including requirements, design, and test data" },
+      { "id": "b", "text": "Inspections focus primarily on code artifacts and are most effective during implementation" },
+      { "id": "c", "text": "Inspections require formal meetings with defined roles like moderator and recorder" },
+      { "id": "d", "text": "Inspections are most valuable when conducted by the original authors of the artifacts" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "Software inspections can be applied to any representation of the system, including requirements, design, configuration data, test data, and source code. They do not require execution and can be used before implementation."
+  },
+  {
+    "id": 46,
+    "question": "What should be included when testing object classes?",
+    "options": [
+      { "id": "a", "text": "Testing all operations, setting and interrogating all attributes, and exercising the object in all possible states" },
+      { "id": "b", "text": "Testing public methods, validating encapsulation, and verifying inheritance relationships" },
+      { "id": "c", "text": "Testing constructors, destructors, and all accessor and mutator methods" },
+      { "id": "d", "text": "Testing interface contracts, preconditions, postconditions, and class invariants" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "Complete test coverage of a class involves testing all operations associated with an object, setting and interrogating all object attributes, and exercising the object in all possible states. This ensures comprehensive validation of the class behavior."
+  },
+  {
+    "id": 47,
+    "question": "What limitation do inspections have compared to testing?",
+    "options": [
+      { "id": "a", "text": "Inspections cannot check non-functional characteristics such as performance and usability" },
+      { "id": "b", "text": "Inspections cannot detect algorithmic errors or logical flaws in the code" },
+      { "id": "c", "text": "Inspections cannot verify that the system meets all specified requirements" },
+      { "id": "d", "text": "Inspections cannot identify integration issues between multiple components" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "While inspections are effective for finding many types of errors, they cannot check non-functional characteristics such as performance, usability, and other runtime behaviors. These require actual system execution through testing."
+  },
+  {
+    "id": 48,
+    "question": "In the context of testing, what does 'test coverage' refer to?",
+    "options": [
+      { "id": "a", "text": "The extent to which testing exercises the code, requirements, or functionality of the system" },
+      { "id": "b", "text": "The percentage of requirements that have at least one associated test case" },
+      { "id": "c", "text": "The ratio of executed code paths to total possible code paths in the system" },
+      { "id": "d", "text": "The completeness of the test suite in terms of scenarios and use cases tested" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "Test coverage refers to the extent to which testing exercises the code, requirements, or functionality of the system. In TDD, for example, every code segment has at least one associated test, providing complete code coverage."
+  },
+  {
+    "id": 49,
+    "question": "Which testing approach should you use when you want to test combinations of functions accessed through the same menu?",
+    "options": [
+      { "id": "a", "text": "This is part of a testing policy that defines required system test coverage" },
+      { "id": "b", "text": "Use integration testing to verify menu-driven feature interactions" },
+      { "id": "c", "text": "Apply combinatorial testing techniques to cover feature combinations" },
+      { "id": "d", "text": "Employ scenario-based testing using realistic user workflows" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "Testing policies define the required system test coverage. An example policy states that combinations of functions (e.g., text formatting) that are accessed through the same menu must be tested, ensuring that feature interactions are validated."
+  },
+  {
+    "id": 50,
+    "question": "What is the main difference between validation testing and defect testing?",
+    "options": [
+      { "id": "a", "text": "Validation testing demonstrates the software meets requirements; defect testing discovers faults where behavior is incorrect" },
+      { "id": "b", "text": "Validation testing is performed by customers; defect testing is performed by developers" },
+      { "id": "c", "text": "Validation testing uses black-box techniques; defect testing uses white-box techniques" },
+      { "id": "d", "text": "Validation testing focuses on functional requirements; defect testing focuses on non-functional requirements" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "Validation testing aims to demonstrate to the developer and customer that the software meets its requirements (are we building the right product?). Defect testing aims to discover faults or defects where the software's behavior is incorrect or doesn't conform to its specification."
+  }
+]

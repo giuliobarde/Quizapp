@@ -1,602 +1,602 @@
 [
-    {
-      "id": 1,
-      "question": "Why is software change considered inevitable?",
-      "options": [
-        { "id": "a", "text": "New requirements emerge when software is used" },
-        { "id": "b", "text": "The business environment changes" },
-        { "id": "c", "text": "Errors must be repaired and new equipment is added" },
-        { "id": "d", "text": "All of the above" }
-      ],
-      "correctAnswer": "d",
-      "explanation": "Software change is inevitable due to multiple factors: new requirements emerging during use, changing business environments, the need to repair errors, addition of new equipment, and performance/reliability improvements."
-    },
-    {
-      "id": 2,
-      "question": "What portion of the software budget in large companies is typically devoted to evolving existing software rather than developing new software?",
-      "options": [
-        { "id": "a", "text": "A small minority" },
-        { "id": "b", "text": "About half" },
-        { "id": "c", "text": "The majority" },
-        { "id": "d", "text": "Less than 25%" }
-      ],
-      "correctAnswer": "c",
-      "explanation": "The majority of the software budget in large companies is devoted to changing and evolving existing software rather than developing new software, reflecting the importance of maintaining critical business assets."
-    },
-    {
-      "id": 3,
-      "question": "In which stage of software evolution is the system in operational use and evolving as new requirements are implemented?",
-      "options": [
-        { "id": "a", "text": "Servicing" },
-        { "id": "b", "text": "Evolution" },
-        { "id": "c", "text": "Phase-out" },
-        { "id": "d", "text": "Development" }
-      ],
-      "correctAnswer": "b",
-      "explanation": "The Evolution stage is when a software system is in operational use and is actively evolving as new requirements are proposed and implemented in the system."
-    },
-    {
-      "id": 4,
-      "question": "What characterizes the servicing stage of a software system's lifecycle?",
-      "options": [
-        { "id": "a", "text": "New functionality is actively being added" },
-        { "id": "b", "text": "Only bug fixes and environmental changes are made" },
-        { "id": "c", "text": "The system is being completely rewritten" },
-        { "id": "d", "text": "The system is no longer in use" }
-      ],
-      "correctAnswer": "b",
-      "explanation": "During the Servicing stage, the software remains useful but the only changes made are those required to keep it operational (bug fixes and changes to reflect environmental changes). No new functionality is added."
-    },
-    {
-      "id": 5,
-      "question": "What are the main drivers for system evolution?",
-      "options": [
-        { "id": "a", "text": "Management decisions" },
-        { "id": "b", "text": "Proposals for change" },
-        { "id": "c", "text": "Budget constraints" },
-        { "id": "d", "text": "Developer preferences" }
-      ],
-      "correctAnswer": "b",
-      "explanation": "Proposals for change are the primary drivers for system evolution. These should be linked with affected components to allow estimation of cost and impact."
-    },
-    {
-      "id": 6,
-      "question": "Which factors influence software evolution processes?",
-      "options": [
-        { "id": "a", "text": "The type of software being maintained" },
-        { "id": "b", "text": "The development processes used" },
-        { "id": "c", "text": "The skills and experience of people involved" },
-        { "id": "d", "text": "All of the above" }
-      ],
-      "correctAnswer": "d",
-      "explanation": "Software evolution processes depend on the type of software being maintained, the development processes used, and the skills and experience of the people involved."
-    },
-    {
-      "id": 7,
-      "question": "What is a critical difference in change implementation compared to initial development?",
-      "options": [
-        { "id": "a", "text": "It uses different programming languages" },
-        { "id": "b", "text": "It requires program understanding, especially if original developers aren't involved" },
-        { "id": "c", "text": "It doesn't require testing" },
-        { "id": "d", "text": "It always takes less time" }
-      ],
-      "correctAnswer": "b",
-      "explanation": "A critical difference is that the first stage of change implementation may involve program understanding, especially if the original system developers are not responsible for the change implementation."
-    },
-    {
-      "id": 8,
-      "question": "During the program understanding phase, what must be determined?",
-      "options": [
-        { "id": "a", "text": "How the program is structured" },
-        { "id": "b", "text": "How it delivers functionality" },
-        { "id": "c", "text": "How the proposed change might affect the program" },
-        { "id": "d", "text": "All of the above" }
-      ],
-      "correctAnswer": "d",
-      "explanation": "During the program understanding phase, you must understand how the program is structured, how it delivers functionality, and how the proposed change might affect the program."
-    },
-    {
-      "id": 9,
-      "question": "When might urgent changes be implemented without going through all stages of the software engineering process?",
-      "options": [
-        { "id": "a", "text": "When a serious system fault must be repaired immediately" },
-        { "id": "b", "text": "When environmental changes have unexpected effects" },
-        { "id": "c", "text": "When business changes require very rapid response" },
-        { "id": "d", "text": "All of the above" }
-      ],
-      "correctAnswer": "d",
-      "explanation": "Urgent changes may bypass normal processes when serious faults need immediate repair, when environmental changes (like OS upgrades) have unexpected effects, or when business changes require rapid response (like a competing product release)."
-    },
-    {
-      "id": 10,
-      "question": "How do agile methods handle the transition from development to evolution?",
-      "options": [
-        { "id": "a", "text": "It requires a complete process change" },
-        { "id": "b", "text": "It is seamless, with evolution being a continuation of development" },
-        { "id": "c", "text": "It requires extensive documentation handover" },
-        { "id": "d", "text": "It is not possible with agile methods" }
-      ],
-      "correctAnswer": "b",
-      "explanation": "Agile methods are based on incremental development, so the transition from development to evolution is seamless. Evolution is simply a continuation of the development process based on frequent system releases."
-    },
-    {
-      "id": 11,
-      "question": "What type of testing is particularly valuable when changes are made to a system?",
-      "options": [
-        { "id": "a", "text": "Unit testing" },
-        { "id": "b", "text": "Integration testing" },
-        { "id": "c", "text": "Regression testing" },
-        { "id": "d", "text": "Acceptance testing" }
-      ],
-      "correctAnswer": "c",
-      "explanation": "Automated regression testing is particularly valuable when changes are made to a system. Regression testing checks that changes have not 'broken' previously working code."
-    },
-    {
-      "id": 12,
-      "question": "What handover problem occurs when an agile development team hands off to a plan-based evolution team?",
-      "options": [
-        { "id": "a", "text": "The evolution team may expect detailed documentation not produced in agile" },
-        { "id": "b", "text": "The system is too complex" },
-        { "id": "c", "text": "The code is written in the wrong language" },
-        { "id": "d", "text": "There are too many developers" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "When development uses agile but evolution prefers plan-based approaches, the evolution team may expect detailed documentation to support evolution, which is not typically produced in agile processes."
-    },
-    {
-      "id": 13,
-      "question": "What are legacy systems?",
-      "options": [
-        { "id": "a", "text": "New systems using modern technology" },
-        { "id": "b", "text": "Older systems using obsolete languages and technology" },
-        { "id": "c", "text": "Systems that are no longer useful" },
-        { "id": "d", "text": "Only hardware components" }
-      ],
-      "correctAnswer": "b",
-      "explanation": "Legacy systems are older systems that rely on languages and technology that are no longer used for new systems development, yet remain useful for the business."
-    },
-    {
-      "id": 14,
-      "question": "Legacy systems are best described as:",
-      "options": [
-        { "id": "a", "text": "Just software systems" },
-        { "id": "b", "text": "Just hardware systems" },
-        { "id": "c", "text": "Broader socio-technical systems including hardware, software, and business processes" },
-        { "id": "d", "text": "Only database systems" }
-      ],
-      "correctAnswer": "c",
-      "explanation": "Legacy systems are not just software systems but are broader socio-technical systems that include hardware, software, libraries, supporting software, and business processes."
-    },
-    {
-      "id": 15,
-      "question": "Which of the following is NOT a legacy system component?",
-      "options": [
-        { "id": "a", "text": "System hardware" },
-        { "id": "b", "text": "Business processes" },
-        { "id": "c", "text": "Future development plans" },
-        { "id": "d", "text": "Business policies and rules" }
-      ],
-      "correctAnswer": "c",
-      "explanation": "Legacy system components include system hardware, support software, application software, application data, business processes, and business policies/rules. Future development plans are not a component of the existing legacy system."
-    },
-    {
-      "id": 16,
-      "question": "Why is legacy system replacement considered risky?",
-      "options": [
-        { "id": "a", "text": "Lack of complete system specification" },
-        { "id": "b", "text": "Tight integration of system and business processes" },
-        { "id": "c", "text": "Undocumented business rules embedded in the system" },
-        { "id": "d", "text": "All of the above" }
-      ],
-      "correctAnswer": "d",
-      "explanation": "Legacy system replacement is risky due to lack of complete specifications, tight integration with business processes, undocumented business rules, and the risk that new development may be late or over budget."
-    },
-    {
-      "id": 17,
-      "question": "Which factor makes legacy systems expensive to change?",
-      "options": [
-        { "id": "a", "text": "Use of obsolete programming languages" },
-        { "id": "b", "text": "Inadequate system documentation" },
-        { "id": "c", "text": "System structure degradation" },
-        { "id": "d", "text": "All of the above" }
-      ],
-      "correctAnswer": "d",
-      "explanation": "Legacy systems are expensive to change due to inconsistent programming styles, obsolete languages with few skilled developers, inadequate documentation, structure degradation, complex optimizations, and data errors."
-    },
-    {
-      "id": 18,
-      "question": "What strategy should be chosen for a legacy system with low quality and low business value?",
-      "options": [
-        { "id": "a", "text": "Continue maintaining" },
-        { "id": "b", "text": "Scrap the system" },
-        { "id": "c", "text": "Re-engineer it" },
-        { "id": "d", "text": "Replace with expensive custom solution" }
-      ],
-      "correctAnswer": "b",
-      "explanation": "Systems with low quality and low business value should be scrapped as they don't provide sufficient value to justify maintenance costs."
-    },
-    {
-      "id": 19,
-      "question": "What is the recommended strategy for a high-quality, high-business-value legacy system?",
-      "options": [
-        { "id": "a", "text": "Scrap it immediately" },
-        { "id": "b", "text": "Continue in operation using normal system maintenance" },
-        { "id": "c", "text": "Re-engineer it immediately" },
-        { "id": "d", "text": "Replace it with COTS" }
-      ],
-      "correctAnswer": "b",
-      "explanation": "High-quality, high-business-value systems should continue in operation using normal system maintenance as they are valuable and already maintainable."
-    },
-    {
-      "id": 20,
-      "question": "For a low-quality, high-business-value legacy system, what should be done?",
-      "options": [
-        { "id": "a", "text": "Continue normal maintenance" },
-        { "id": "b", "text": "Scrap it" },
-        { "id": "c", "text": "Re-engineer or replace if suitable system is available" },
-        { "id": "d", "text": "Ignore it" }
-      ],
-      "correctAnswer": "c",
-      "explanation": "Low-quality but high-business-value systems make important business contributions but are expensive to maintain. They should be re-engineered or replaced if a suitable system is available."
-    },
-    {
-      "id": 21,
-      "question": "Which stakeholders should be interviewed for business value assessment?",
-      "options": [
-        { "id": "a", "text": "System end-users and business customers" },
-        { "id": "b", "text": "Line managers and IT managers" },
-        { "id": "c", "text": "Senior managers" },
-        { "id": "d", "text": "All of the above" }
-      ],
-      "correctAnswer": "d",
-      "explanation": "Business value assessment should take different viewpoints into account, including system end-users, business customers, line managers, IT managers, and senior managers."
-    },
-    {
-      "id": 22,
-      "question": "A system used occasionally by few people likely has:",
-      "options": [
-        { "id": "a", "text": "High business value" },
-        { "id": "b", "text": "Low business value" },
-        { "id": "c", "text": "Medium business value" },
-        { "id": "d", "text": "Unknown business value" }
-      ],
-      "correctAnswer": "b",
-      "explanation": "If systems are only used occasionally or by a small number of people, they may have low business value."
-    },
-    {
-      "id": 23,
-      "question": "If a system's outputs are critical to the business, the system has:",
-      "options": [
-        { "id": "a", "text": "Low business value" },
-        { "id": "b", "text": "No business value" },
-        { "id": "c", "text": "High business value" },
-        { "id": "d", "text": "Medium business value" }
-      ],
-      "correctAnswer": "c",
-      "explanation": "If the business depends on system outputs, then the system has high business value."
-    },
-    {
-      "id": 24,
-      "question": "What are the three areas of system quality assessment?",
-      "options": [
-        { "id": "a", "text": "Business process, environment, and application assessment" },
-        { "id": "b", "text": "Hardware, software, and network assessment" },
-        { "id": "c", "text": "Cost, time, and quality assessment" },
-        { "id": "d", "text": "Development, testing, and deployment assessment" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "System quality assessment includes: (1) Business process assessment - how well the process supports business goals, (2) Environment assessment - effectiveness and maintenance cost of the environment, and (3) Application assessment - quality of the application software."
-    },
-    {
-      "id": 25,
-      "question": "Which question is relevant for business process assessment?",
-      "options": [
-        { "id": "a", "text": "Is there a defined process model and is it followed?" },
-        { "id": "b", "text": "Is the process effectively supported by the legacy application?" },
-        { "id": "c", "text": "Do different parts of the organization use different processes for the same function?" },
-        { "id": "d", "text": "All of the above" }
-      ],
-      "correctAnswer": "d",
-      "explanation": "Business process assessment should examine whether there's a defined process model, whether it's followed, if different parts use different processes, how it's been adapted, and whether it's effectively supported by the legacy application."
-    },
-    {
-      "id": 26,
-      "question": "What can be measured to assess application system quality?",
-      "options": [
-        { "id": "a", "text": "Number of system change requests" },
-        { "id": "b", "text": "Number of different user interfaces" },
-        { "id": "c", "text": "Volume of data processed" },
-        { "id": "d", "text": "All of the above" }
-      ],
-      "correctAnswer": "d",
-      "explanation": "Quantitative measures for application quality include the number of system change requests (higher means lower quality), number of different user interfaces (more means likely inconsistencies), and volume of data (larger volumes increase inconsistencies and errors)."
-    },
-    {
-      "id": 27,
-      "question": "What is software maintenance?",
-      "options": [
-        { "id": "a", "text": "Developing new software from scratch" },
-        { "id": "b", "text": "Modifying a program after it has been put into use" },
-        { "id": "c", "text": "Testing software before deployment" },
-        { "id": "d", "text": "Designing software architecture" }
-      ],
-      "correctAnswer": "b",
-      "explanation": "Software maintenance is modifying a program after it has been put into use. The term is mostly used for changing custom software, while generic products are said to evolve."
-    },
-    {
-      "id": 28,
-      "question": "Does maintenance normally involve major changes to the system's architecture?",
-      "options": [
-        { "id": "a", "text": "Yes, always" },
-        { "id": "b", "text": "No, it does not normally involve major architectural changes" },
-        { "id": "c", "text": "Only for legacy systems" },
-        { "id": "d", "text": "Only for new systems" }
-      ],
-      "correctAnswer": "b",
-      "explanation": "Maintenance does not normally involve major changes to the system's architecture. Changes are implemented by modifying existing components and adding new components to the system."
-    },
-    {
-      "id": 29,
-      "question": "What is fault repair maintenance?",
-      "options": [
-        { "id": "a", "text": "Adding new features" },
-        { "id": "b", "text": "Changing to a new operating environment" },
-        { "id": "c", "text": "Fixing bugs/vulnerabilities and correcting deficiencies" },
-        { "id": "d", "text": "Improving performance" }
-      ],
-      "correctAnswer": "c",
-      "explanation": "Fault repairs involve changing a system to fix bugs/vulnerabilities and correct deficiencies in the way the system meets its requirements."
-    },
-    {
-      "id": 30,
-      "question": "Environmental adaptation maintenance involves:",
-      "options": [
-        { "id": "a", "text": "Adding new functionality" },
-        { "id": "b", "text": "Fixing bugs" },
-        { "id": "c", "text": "Adapting software to a different operating environment" },
-        { "id": "d", "text": "Improving user interface" }
-      ],
-      "correctAnswer": "c",
-      "explanation": "Environmental adaptation is maintenance to adapt software to a different operating environment, changing a system so it operates in a different environment (computer, OS, etc.) from its initial implementation."
-    },
-    {
-      "id": 31,
-      "question": "How do maintenance costs typically compare to development costs?",
-      "options": [
-        { "id": "a", "text": "Maintenance costs are usually lower" },
-        { "id": "b", "text": "Maintenance costs are usually greater" },
-        { "id": "c", "text": "They are always equal" },
-        { "id": "d", "text": "Maintenance costs are negligible" }
-      ],
-      "correctAnswer": "b",
-      "explanation": "Maintenance costs are usually greater than development costs. They are affected by both technical and non-technical factors and increase as software is maintained."
-    },
-    {
-      "id": 32,
-      "question": "Why is it more expensive to add features during maintenance than during development?",
-      "options": [
-        { "id": "a", "text": "New team must understand existing programs" },
-        { "id": "b", "text": "Separation of maintenance and development removes incentive to write maintainable code" },
-        { "id": "c", "text": "Maintenance staff are often less experienced" },
-        { "id": "d", "text": "All of the above" }
-      ],
-      "correctAnswer": "d",
-      "explanation": "Adding features during maintenance is more expensive because new teams must understand existing code, separation of maintenance/development removes incentives for maintainability, maintenance work is unpopular, staff may be inexperienced with limited domain knowledge, and program structure degrades over time."
-    },
-    {
-      "id": 33,
-      "question": "What is maintenance prediction concerned with?",
-      "options": [
-        { "id": "a", "text": "Predicting future software trends" },
-        { "id": "b", "text": "Assessing which parts may cause problems and have high maintenance costs" },
-        { "id": "c", "text": "Forecasting budget requirements only" },
-        { "id": "d", "text": "Estimating project completion dates" }
-      ],
-      "correctAnswer": "b",
-      "explanation": "Maintenance prediction is concerned with assessing which parts of the system may cause problems and have high maintenance costs, understanding how changes affect maintainability."
-    },
-    {
-      "id": 34,
-      "question": "What does change prediction require understanding of?",
-      "options": [
-        { "id": "a", "text": "Developer preferences" },
-        { "id": "b", "text": "Relationships between a system and its environment" },
-        { "id": "c", "text": "Only the code structure" },
-        { "id": "d", "text": "Budget constraints" }
-      ],
-      "correctAnswer": "b",
-      "explanation": "Predicting the number of changes requires understanding the relationships between a system and its environment. Tightly coupled systems require changes whenever the environment changes."
-    },
-    {
-      "id": 35,
-      "question": "Which factors influence the relationship between a system and its environment for change prediction?",
-      "options": [
-        { "id": "a", "text": "Number and complexity of system interfaces" },
-        { "id": "b", "text": "Number of inherently volatile system requirements" },
-        { "id": "c", "text": "Business processes where the system is used" },
-        { "id": "d", "text": "All of the above" }
-      ],
-      "correctAnswer": "d",
-      "explanation": "Factors influencing system-environment relationships include: number and complexity of system interfaces, number of inherently volatile system requirements (organizational policies/procedures), and the business processes where the system is used."
-    },
-    {
-      "id": 36,
-      "question": "What have studies shown about maintenance effort distribution?",
-      "options": [
-        { "id": "a", "text": "Effort is evenly distributed across all components" },
-        { "id": "b", "text": "Most effort is spent on a small number of system components" },
-        { "id": "c", "text": "Effort is random and unpredictable" },
-        { "id": "d", "text": "All components require equal maintenance" }
-      ],
-      "correctAnswer": "b",
-      "explanation": "Studies have shown that most maintenance effort is spent on a relatively small number of system components, which is why complexity metrics are useful for prediction."
-    },
-    {
-      "id": 37,
-      "question": "What does complexity in software systems depend on?",
-      "options": [
-        { "id": "a", "text": "Complexity of control structures" },
-        { "id": "b", "text": "Complexity of data structures" },
-        { "id": "c", "text": "Object, method, and module size" },
-        { "id": "d", "text": "All of the above" }
-      ],
-      "correctAnswer": "d",
-      "explanation": "Complexity depends on the complexity of control structures, complexity of data structures, and object, method (procedure), and module size."
-    },
-    {
-      "id": 38,
-      "question": "Which process metric can indicate declining maintainability?",
-      "options": [
-        { "id": "a", "text": "Increasing number of requests for corrective maintenance" },
-        { "id": "b", "text": "Increasing average time for impact analysis" },
-        { "id": "c", "text": "Increasing number of outstanding change requests" },
-        { "id": "d", "text": "All of the above" }
-      ],
-      "correctAnswer": "d",
-      "explanation": "If any or all of these process metrics are increasing - number of corrective maintenance requests, average time for impact analysis, average time to implement changes, or number of outstanding requests - this may indicate a decline in maintainability."
-    },
-    {
-      "id": 39,
-      "question": "What is software reengineering?",
-      "options": [
-        { "id": "a", "text": "Building completely new software from scratch" },
-        { "id": "b", "text": "Restructuring or rewriting part or all of a legacy system without changing functionality" },
-        { "id": "c", "text": "Adding new features to software" },
-        { "id": "d", "text": "Testing software thoroughly" }
-      ],
-      "correctAnswer": "b",
-      "explanation": "Software reengineering is restructuring or rewriting part or all of a legacy system without changing its functionality. It involves adding effort to make systems easier to maintain through restructuring and re-documentation."
-    },
-    {
-      "id": 40,
-      "question": "When is reengineering applicable?",
-      "options": [
-        { "id": "a", "text": "When all sub-systems require complete replacement" },
-        { "id": "b", "text": "When some but not all sub-systems require frequent maintenance" },
-        { "id": "c", "text": "Only for new systems" },
-        { "id": "d", "text": "Never for legacy systems" }
-      ],
-      "correctAnswer": "b",
-      "explanation": "Reengineering is applicable where some but not all sub-systems of a larger system require frequent maintenance. It targets specific problematic areas."
-    },
-    {
-      "id": 41,
-      "question": "What is an advantage of reengineering over developing new software?",
-      "options": [
-        { "id": "a", "text": "Reduced risk" },
-        { "id": "b", "text": "Reduced cost" },
-        { "id": "c", "text": "Both reduced risk and reduced cost" },
-        { "id": "d", "text": "None of the above" }
-      ],
-      "correctAnswer": "c",
-      "explanation": "Reengineering offers both reduced risk (avoiding development, staffing, and specification problems of new development) and reduced cost (often significantly less than developing new software)."
-    },
-    {
-      "id": 42,
-      "question": "Which is NOT a reengineering process activity?",
-      "options": [
-        { "id": "a", "text": "Source code translation" },
-        { "id": "b", "text": "Reverse engineering" },
-        { "id": "c", "text": "Data reengineering" },
-        { "id": "d", "text": "Complete system replacement" }
-      ],
-      "correctAnswer": "d",
-      "explanation": "Reengineering process activities include source code translation, reverse engineering, program structure improvement, program modularization, and data reengineering. Complete system replacement is not a reengineering activity - it's replacement."
-    },
-    {
-      "id": 43,
-      "question": "What is reverse engineering in the reengineering process?",
-      "options": [
-        { "id": "a", "text": "Converting code to a new language" },
-        { "id": "b", "text": "Analyzing the program to understand it" },
-        { "id": "c", "text": "Restructuring for understandability" },
-        { "id": "d", "text": "Cleaning up data" }
-      ],
-      "correctAnswer": "b",
-      "explanation": "Reverse engineering involves analyzing the program to understand it, as opposed to other activities like source code translation (converting to new language) or program structure improvement (restructuring)."
-    },
-    {
-      "id": 44,
-      "question": "What factors affect reengineering costs?",
-      "options": [
-        { "id": "a", "text": "Quality of software to be reengineered" },
-        { "id": "b", "text": "Tool support available and extent of data conversion required" },
-        { "id": "c", "text": "Availability of expert staff" },
-        { "id": "d", "text": "All of the above" }
-      ],
-      "correctAnswer": "d",
-      "explanation": "Reengineering cost factors include the quality of software to be reengineered, tool support available, extent of data conversion required, and availability of expert staff (which can be problematic with old technology)."
-    },
-    {
-      "id": 45,
-      "question": "What is refactoring?",
-      "options": [
-        { "id": "a", "text": "Completely rewriting a system" },
-        { "id": "b", "text": "Making improvements to slow down degradation through change" },
-        { "id": "c", "text": "Adding new features" },
-        { "id": "d", "text": "Testing the system" }
-      ],
-      "correctAnswer": "b",
-      "explanation": "Refactoring is the process of making improvements to a program to slow down degradation through change. It can be thought of as 'preventative maintenance' that reduces future change problems."
-    },
-    {
-      "id": 46,
-      "question": "When you refactor a program, what should you avoid doing?",
-      "options": [
-        { "id": "a", "text": "Improving structure" },
-        { "id": "b", "text": "Reducing complexity" },
-        { "id": "c", "text": "Adding functionality" },
-        { "id": "d", "text": "Making it easier to understand" }
-      ],
-      "correctAnswer": "c",
-      "explanation": "When refactoring, you should not add functionality but rather concentrate on program improvement through better structure, reduced complexity, and improved understandability."
-    },
-    {
-      "id": 47,
-      "question": "How does refactoring differ from reengineering in timing?",
-      "options": [
-        { "id": "a", "text": "Refactoring is continuous throughout development and evolution" },
-        { "id": "b", "text": "Refactoring only happens after maintenance costs increase" },
-        { "id": "c", "text": "Refactoring only happens once" },
-        { "id": "d", "text": "They have the same timing" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "Refactoring is a continuous process of improvement throughout development and evolution, while reengineering takes place after a system has been maintained for some time and maintenance costs are increasing."
-    },
-    {
-      "id": 48,
-      "question": "Which is a 'bad smell' in program code indicating need for refactoring?",
-      "options": [
-        { "id": "a", "text": "Duplicate code" },
-        { "id": "b", "text": "Long methods" },
-        { "id": "c", "text": "Data clumping" },
-        { "id": "d", "text": "All of the above" }
-      ],
-      "correctAnswer": "d",
-      "explanation": "Bad smells include duplicate code, long methods, switch statements with duplication, data clumping (same data items recurring), and speculative generality (unused future-proofing)."
-    },
-    {
-      "id": 49,
-      "question": "What is the issue with 'data clumping'?",
-      "options": [
-        { "id": "a", "text": "Same group of data items re-occur in several places" },
-        { "id": "b", "text": "Data is too large" },
-        { "id": "c", "text": "Data is encrypted" },
-        { "id": "d", "text": "Data is in the wrong format" }
-      ],
-      "correctAnswer": "a",
-      "explanation": "Data clumping occurs when the same group of data items (fields in classes, parameters in methods) re-occur in several places in a program. These can often be replaced with an object that encapsulates all the data."
-    },
-    {
-      "id": 50,
-      "question": "What is 'speculative generality'?",
-      "options": [
-        { "id": "a", "text": "Code that is too specific" },
-        { "id": "b", "text": "Generality included in case it's needed in the future, but never used" },
-        { "id": "c", "text": "Well-designed extensible code" },
-        { "id": "d", "text": "Code with too many comments" }
-      ],
-      "correctAnswer": "b",
-      "explanation": "Speculative generality occurs when developers include generality in a program in case it is required in the future, but it's never actually needed. This can often simply be removed during refactoring."
-    }
-  ]
+  {
+    "id": 1,
+    "question": "Why is software change considered inevitable?",
+    "options": [
+      { "id": "a", "text": "New requirements emerge when software is used, making it the primary driver of change" },
+      { "id": "b", "text": "The business environment changes constantly, requiring continuous software adaptation" },
+      { "id": "c", "text": "Errors must be repaired and new equipment added to maintain system integrity" },
+      { "id": "d", "text": "Multiple factors including new requirements, business changes, errors, and equipment additions" }
+    ],
+    "correctAnswer": "d",
+    "explanation": "Software change is inevitable due to multiple factors: new requirements emerging during use, changing business environments, the need to repair errors, addition of new equipment, and performance/reliability improvements."
+  },
+  {
+    "id": 2,
+    "question": "What portion of the software budget in large companies is typically devoted to evolving existing software rather than developing new software?",
+    "options": [
+      { "id": "a", "text": "A small minority, as most resources go to innovation and new development" },
+      { "id": "b", "text": "About half, creating a balanced portfolio between maintenance and innovation" },
+      { "id": "c", "text": "The majority, reflecting the critical importance of maintaining business assets" },
+      { "id": "d", "text": "Less than 25%, with preference given to developing competitive advantages" }
+    ],
+    "correctAnswer": "c",
+    "explanation": "The majority of the software budget in large companies is devoted to changing and evolving existing software rather than developing new software, reflecting the importance of maintaining critical business assets."
+  },
+  {
+    "id": 3,
+    "question": "In which stage of software evolution is the system in operational use and evolving as new requirements are implemented?",
+    "options": [
+      { "id": "a", "text": "Servicing stage, where the system is actively maintained and enhanced" },
+      { "id": "b", "text": "Evolution stage, where new requirements are proposed and implemented" },
+      { "id": "c", "text": "Phase-out stage, where final updates are made before retirement" },
+      { "id": "d", "text": "Development stage, where operational feedback drives iterative improvements" }
+    ],
+    "correctAnswer": "b",
+    "explanation": "The Evolution stage is when a software system is in operational use and is actively evolving as new requirements are proposed and implemented in the system."
+  },
+  {
+    "id": 4,
+    "question": "What characterizes the servicing stage of a software system's lifecycle?",
+    "options": [
+      { "id": "a", "text": "New functionality is actively being added to meet emerging business needs" },
+      { "id": "b", "text": "Only bug fixes and environmental changes are made, with no new functionality" },
+      { "id": "c", "text": "The system is being completely rewritten using modern technologies" },
+      { "id": "d", "text": "The system is no longer in use and is scheduled for decommissioning" }
+    ],
+    "correctAnswer": "b",
+    "explanation": "During the Servicing stage, the software remains useful but the only changes made are those required to keep it operational (bug fixes and changes to reflect environmental changes). No new functionality is added."
+  },
+  {
+    "id": 5,
+    "question": "What are the main drivers for system evolution?",
+    "options": [
+      { "id": "a", "text": "Management decisions based on strategic business priorities and resource allocation" },
+      { "id": "b", "text": "Proposals for change that are linked with affected components for impact analysis" },
+      { "id": "c", "text": "Budget constraints that determine which enhancements can be implemented" },
+      { "id": "d", "text": "Developer preferences regarding technology choices and architectural patterns" }
+    ],
+    "correctAnswer": "b",
+    "explanation": "Proposals for change are the primary drivers for system evolution. These should be linked with affected components to allow estimation of cost and impact."
+  },
+  {
+    "id": 6,
+    "question": "Which factors influence software evolution processes?",
+    "options": [
+      { "id": "a", "text": "The type of software being maintained and its domain complexity" },
+      { "id": "b", "text": "The development processes used and their maturity level" },
+      { "id": "c", "text": "The skills and experience of people involved in the maintenance activities" },
+      { "id": "d", "text": "The combination of software type, development processes, and team expertise" }
+    ],
+    "correctAnswer": "d",
+    "explanation": "Software evolution processes depend on the type of software being maintained, the development processes used, and the skills and experience of the people involved."
+  },
+  {
+    "id": 7,
+    "question": "What is a critical difference in change implementation compared to initial development?",
+    "options": [
+      { "id": "a", "text": "It uses different programming languages to modernize the technology stack" },
+      { "id": "b", "text": "It requires program understanding, especially if original developers aren't involved" },
+      { "id": "c", "text": "It doesn't require testing since the system is already operational" },
+      { "id": "d", "text": "It always takes less time due to existing infrastructure and frameworks" }
+    ],
+    "correctAnswer": "b",
+    "explanation": "A critical difference is that the first stage of change implementation may involve program understanding, especially if the original system developers are not responsible for the change implementation."
+  },
+  {
+    "id": 8,
+    "question": "During the program understanding phase, what must be determined?",
+    "options": [
+      { "id": "a", "text": "How the program is structured, including its architectural patterns and design" },
+      { "id": "b", "text": "How it delivers functionality through its components and interactions" },
+      { "id": "c", "text": "How the proposed change might affect the program and its dependencies" },
+      { "id": "d", "text": "Structure, functionality delivery, and impact of proposed changes comprehensively" }
+    ],
+    "correctAnswer": "d",
+    "explanation": "During the program understanding phase, you must understand how the program is structured, how it delivers functionality, and how the proposed change might affect the program."
+  },
+  {
+    "id": 9,
+    "question": "When might urgent changes be implemented without going through all stages of the software engineering process?",
+    "options": [
+      { "id": "a", "text": "When a serious system fault must be repaired immediately to restore operations" },
+      { "id": "b", "text": "When environmental changes like OS upgrades have unexpected system effects" },
+      { "id": "c", "text": "When business changes require very rapid response to competitive threats" },
+      { "id": "d", "text": "When critical faults, environmental issues, or urgent business needs arise" }
+    ],
+    "correctAnswer": "d",
+    "explanation": "Urgent changes may bypass normal processes when serious faults need immediate repair, when environmental changes (like OS upgrades) have unexpected effects, or when business changes require rapid response (like a competing product release)."
+  },
+  {
+    "id": 10,
+    "question": "How do agile methods handle the transition from development to evolution?",
+    "options": [
+      { "id": "a", "text": "It requires a complete process change with new roles and ceremonies" },
+      { "id": "b", "text": "It is seamless, with evolution being a continuation of development processes" },
+      { "id": "c", "text": "It requires extensive documentation handover and knowledge transfer sessions" },
+      { "id": "d", "text": "It is not possible with agile methods due to their iterative nature" }
+    ],
+    "correctAnswer": "b",
+    "explanation": "Agile methods are based on incremental development, so the transition from development to evolution is seamless. Evolution is simply a continuation of the development process based on frequent system releases."
+  },
+  {
+    "id": 11,
+    "question": "What type of testing is particularly valuable when changes are made to a system?",
+    "options": [
+      { "id": "a", "text": "Unit testing to verify individual component functionality after modifications" },
+      { "id": "b", "text": "Integration testing to ensure components still work together correctly" },
+      { "id": "c", "text": "Regression testing to check that changes haven't broken existing functionality" },
+      { "id": "d", "text": "Acceptance testing to validate that changes meet stakeholder requirements" }
+    ],
+    "correctAnswer": "c",
+    "explanation": "Automated regression testing is particularly valuable when changes are made to a system. Regression testing checks that changes have not 'broken' previously working code."
+  },
+  {
+    "id": 12,
+    "question": "What handover problem occurs when an agile development team hands off to a plan-based evolution team?",
+    "options": [
+      { "id": "a", "text": "The evolution team may expect detailed documentation not produced in agile processes" },
+      { "id": "b", "text": "The system is too complex due to rapid iterative development cycles" },
+      { "id": "c", "text": "The code is written in languages unfamiliar to the evolution team" },
+      { "id": "d", "text": "There are too many developers involved, creating coordination challenges" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "When development uses agile but evolution prefers plan-based approaches, the evolution team may expect detailed documentation to support evolution, which is not typically produced in agile processes."
+  },
+  {
+    "id": 13,
+    "question": "What are legacy systems?",
+    "options": [
+      { "id": "a", "text": "New systems using modern technology that will eventually become outdated" },
+      { "id": "b", "text": "Older systems using obsolete languages and technology that remain useful" },
+      { "id": "c", "text": "Systems that are no longer useful and scheduled for decommissioning" },
+      { "id": "d", "text": "Hardware components that have exceeded their expected operational lifespan" }
+    ],
+    "correctAnswer": "b",
+    "explanation": "Legacy systems are older systems that rely on languages and technology that are no longer used for new systems development, yet remain useful for the business."
+  },
+  {
+    "id": 14,
+    "question": "Legacy systems are best described as:",
+    "options": [
+      { "id": "a", "text": "Software systems that require specialized maintenance and support expertise" },
+      { "id": "b", "text": "Hardware systems with outdated components that need gradual replacement" },
+      { "id": "c", "text": "Socio-technical systems including hardware, software, and business processes" },
+      { "id": "d", "text": "Database systems with accumulated data that is difficult to migrate" }
+    ],
+    "correctAnswer": "c",
+    "explanation": "Legacy systems are not just software systems but are broader socio-technical systems that include hardware, software, libraries, supporting software, and business processes."
+  },
+  {
+    "id": 15,
+    "question": "Which of the following is NOT a legacy system component?",
+    "options": [
+      { "id": "a", "text": "System hardware that may no longer be commercially available" },
+      { "id": "b", "text": "Business processes designed around the legacy system's capabilities" },
+      { "id": "c", "text": "Future development plans for modernization and enhancement initiatives" },
+      { "id": "d", "text": "Business policies and rules that embed legacy system usage" }
+    ],
+    "correctAnswer": "c",
+    "explanation": "Legacy system components include system hardware, support software, application software, application data, business processes, and business policies/rules. Future development plans are not a component of the existing legacy system."
+  },
+  {
+    "id": 16,
+    "question": "Why is legacy system replacement considered risky?",
+    "options": [
+      { "id": "a", "text": "Lack of complete system specification and documentation of requirements" },
+      { "id": "b", "text": "Tight integration of system and business processes that are hard to separate" },
+      { "id": "c", "text": "Undocumented business rules embedded in code that are hard to identify" },
+      { "id": "d", "text": "Incomplete specifications, tight integration, undocumented rules, and project risks" }
+    ],
+    "correctAnswer": "d",
+    "explanation": "Legacy system replacement is risky due to lack of complete specifications, tight integration with business processes, undocumented business rules, and the risk that new development may be late or over budget."
+  },
+  {
+    "id": 17,
+    "question": "Which factor makes legacy systems expensive to change?",
+    "options": [
+      { "id": "a", "text": "Use of obsolete programming languages with limited developer availability" },
+      { "id": "b", "text": "Inadequate system documentation that makes understanding difficult" },
+      { "id": "c", "text": "System structure degradation accumulated over years of modifications" },
+      { "id": "d", "text": "Obsolete languages, poor documentation, degraded structure, and data issues" }
+    ],
+    "correctAnswer": "d",
+    "explanation": "Legacy systems are expensive to change due to inconsistent programming styles, obsolete languages with few skilled developers, inadequate documentation, structure degradation, complex optimizations, and data errors."
+  },
+  {
+    "id": 18,
+    "question": "What strategy should be chosen for a legacy system with low quality and low business value?",
+    "options": [
+      { "id": "a", "text": "Continue maintaining it with minimal investment until natural end-of-life" },
+      { "id": "b", "text": "Scrap the system and modify business processes to eliminate dependency" },
+      { "id": "c", "text": "Re-engineer it to improve quality and potentially increase business value" },
+      { "id": "d", "text": "Replace with expensive custom solution to ensure perfect fit" }
+    ],
+    "correctAnswer": "b",
+    "explanation": "Systems with low quality and low business value should be scrapped as they don't provide sufficient value to justify maintenance costs."
+  },
+  {
+    "id": 19,
+    "question": "What is the recommended strategy for a high-quality, high-business-value legacy system?",
+    "options": [
+      { "id": "a", "text": "Scrap it immediately to make way for modern technology solutions" },
+      { "id": "b", "text": "Continue in operation using normal system maintenance procedures" },
+      { "id": "c", "text": "Re-engineer it immediately to leverage latest technology advances" },
+      { "id": "d", "text": "Replace it with COTS to reduce long-term maintenance burden" }
+    ],
+    "correctAnswer": "b",
+    "explanation": "High-quality, high-business-value systems should continue in operation using normal system maintenance as they are valuable and already maintainable."
+  },
+  {
+    "id": 20,
+    "question": "For a low-quality, high-business-value legacy system, what should be done?",
+    "options": [
+      { "id": "a", "text": "Continue normal maintenance despite high costs to preserve business value" },
+      { "id": "b", "text": "Scrap it and develop new business processes to compensate" },
+      { "id": "c", "text": "Re-engineer or replace if suitable system is available to reduce costs" },
+      { "id": "d", "text": "Ignore quality issues and focus solely on maintaining business functionality" }
+    ],
+    "correctAnswer": "c",
+    "explanation": "Low-quality but high-business-value systems make important business contributions but are expensive to maintain. They should be re-engineered or replaced if a suitable system is available."
+  },
+  {
+    "id": 21,
+    "question": "Which stakeholders should be interviewed for business value assessment?",
+    "options": [
+      { "id": "a", "text": "System end-users and business customers who interact with the system daily" },
+      { "id": "b", "text": "Line managers and IT managers who oversee operations and infrastructure" },
+      { "id": "c", "text": "Senior managers who understand strategic business implications and priorities" },
+      { "id": "d", "text": "All levels including end-users, customers, managers, and executives" }
+    ],
+    "correctAnswer": "d",
+    "explanation": "Business value assessment should take different viewpoints into account, including system end-users, business customers, line managers, IT managers, and senior managers."
+  },
+  {
+    "id": 22,
+    "question": "A system used occasionally by few people likely has:",
+    "options": [
+      { "id": "a", "text": "High business value due to its specialized and critical nature" },
+      { "id": "b", "text": "Low business value due to limited usage and stakeholder impact" },
+      { "id": "c", "text": "Medium business value depending on the importance of those few users" },
+      { "id": "d", "text": "Unknown business value until a comprehensive assessment is conducted" }
+    ],
+    "correctAnswer": "b",
+    "explanation": "If systems are only used occasionally or by a small number of people, they may have low business value."
+  },
+  {
+    "id": 23,
+    "question": "If a system's outputs are critical to the business, the system has:",
+    "options": [
+      { "id": "a", "text": "Low business value if the outputs can be generated through alternative means" },
+      { "id": "b", "text": "No business value if the outputs are only used for historical reference" },
+      { "id": "c", "text": "High business value since business operations depend on these outputs" },
+      { "id": "d", "text": "Medium business value depending on the frequency of output usage" }
+    ],
+    "correctAnswer": "c",
+    "explanation": "If the business depends on system outputs, then the system has high business value."
+  },
+  {
+    "id": 24,
+    "question": "What are the three areas of system quality assessment?",
+    "options": [
+      { "id": "a", "text": "Business process, environment, and application assessment of the system" },
+      { "id": "b", "text": "Hardware, software, and network assessment for technical infrastructure" },
+      { "id": "c", "text": "Cost, time, and quality assessment for project management purposes" },
+      { "id": "d", "text": "Development, testing, and deployment assessment for lifecycle stages" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "System quality assessment includes: (1) Business process assessment - how well the process supports business goals, (2) Environment assessment - effectiveness and maintenance cost of the environment, and (3) Application assessment - quality of the application software."
+  },
+  {
+    "id": 25,
+    "question": "Which question is relevant for business process assessment?",
+    "options": [
+      { "id": "a", "text": "Is there a defined process model and is it consistently followed?" },
+      { "id": "b", "text": "Is the process effectively supported by the legacy application system?" },
+      { "id": "c", "text": "Do different parts of the organization use different processes for same functions?" },
+      { "id": "d", "text": "Process definition, organizational consistency, and legacy system support" }
+    ],
+    "correctAnswer": "d",
+    "explanation": "Business process assessment should examine whether there's a defined process model, whether it's followed, if different parts use different processes, how it's been adapted, and whether it's effectively supported by the legacy application."
+  },
+  {
+    "id": 26,
+    "question": "What can be measured to assess application system quality?",
+    "options": [
+      { "id": "a", "text": "Number of system change requests which indicates maintenance burden" },
+      { "id": "b", "text": "Number of different user interfaces suggesting potential inconsistencies" },
+      { "id": "c", "text": "Volume of data processed which correlates with data quality issues" },
+      { "id": "d", "text": "Change requests, interface count, and data volume as quality indicators" }
+    ],
+    "correctAnswer": "d",
+    "explanation": "Quantitative measures for application quality include the number of system change requests (higher means lower quality), number of different user interfaces (more means likely inconsistencies), and volume of data (larger volumes increase inconsistencies and errors)."
+  },
+  {
+    "id": 27,
+    "question": "What is software maintenance?",
+    "options": [
+      { "id": "a", "text": "Developing new software from scratch using modern methodologies" },
+      { "id": "b", "text": "Modifying a program after it has been put into operational use" },
+      { "id": "c", "text": "Testing software before deployment to ensure quality standards" },
+      { "id": "d", "text": "Designing software architecture using industry best practices" }
+    ],
+    "correctAnswer": "b",
+    "explanation": "Software maintenance is modifying a program after it has been put into use. The term is mostly used for changing custom software, while generic products are said to evolve."
+  },
+  {
+    "id": 28,
+    "question": "Does maintenance normally involve major changes to the system's architecture?",
+    "options": [
+      { "id": "a", "text": "Yes, always to ensure the system stays current with technology" },
+      { "id": "b", "text": "No, it does not normally involve major architectural changes" },
+      { "id": "c", "text": "Only for legacy systems that require modernization efforts" },
+      { "id": "d", "text": "Only for new systems to establish proper architectural foundations" }
+    ],
+    "correctAnswer": "b",
+    "explanation": "Maintenance does not normally involve major changes to the system's architecture. Changes are implemented by modifying existing components and adding new components to the system."
+  },
+  {
+    "id": 29,
+    "question": "What is fault repair maintenance?",
+    "options": [
+      { "id": "a", "text": "Adding new features to enhance system capabilities and competitiveness" },
+      { "id": "b", "text": "Changing to a new operating environment to modernize infrastructure" },
+      { "id": "c", "text": "Fixing bugs/vulnerabilities and correcting deficiencies in requirements" },
+      { "id": "d", "text": "Improving performance through optimization and refactoring techniques" }
+    ],
+    "correctAnswer": "c",
+    "explanation": "Fault repairs involve changing a system to fix bugs/vulnerabilities and correct deficiencies in the way the system meets its requirements."
+  },
+  {
+    "id": 30,
+    "question": "Environmental adaptation maintenance involves:",
+    "options": [
+      { "id": "a", "text": "Adding new functionality to meet changing business requirements" },
+      { "id": "b", "text": "Fixing bugs discovered during production operations and testing" },
+      { "id": "c", "text": "Adapting software to a different operating environment like new OS" },
+      { "id": "d", "text": "Improving user interface to enhance usability and user experience" }
+    ],
+    "correctAnswer": "c",
+    "explanation": "Environmental adaptation is maintenance to adapt software to a different operating environment, changing a system so it operates in a different environment (computer, OS, etc.) from its initial implementation."
+  },
+  {
+    "id": 31,
+    "question": "How do maintenance costs typically compare to development costs?",
+    "options": [
+      { "id": "a", "text": "Maintenance costs are usually lower due to existing infrastructure" },
+      { "id": "b", "text": "Maintenance costs are usually greater and increase over time" },
+      { "id": "c", "text": "They are always equal when considering total lifecycle costs" },
+      { "id": "d", "text": "Maintenance costs are negligible with proper initial design" }
+    ],
+    "correctAnswer": "b",
+    "explanation": "Maintenance costs are usually greater than development costs. They are affected by both technical and non-technical factors and increase as software is maintained."
+  },
+  {
+    "id": 32,
+    "question": "Why is it more expensive to add features during maintenance than during development?",
+    "options": [
+      { "id": "a", "text": "New team must understand existing programs and their dependencies" },
+      { "id": "b", "text": "Separation of maintenance and development removes incentive for maintainability" },
+      { "id": "c", "text": "Maintenance staff are often less experienced with limited domain knowledge" },
+      { "id": "d", "text": "Program understanding, separated teams, inexperience, and degraded structure" }
+    ],
+    "correctAnswer": "d",
+    "explanation": "Adding features during maintenance is more expensive because new teams must understand existing code, separation of maintenance/development removes incentives for maintainability, maintenance work is unpopular, staff may be inexperienced with limited domain knowledge, and program structure degrades over time."
+  },
+  {
+    "id": 33,
+    "question": "What is maintenance prediction concerned with?",
+    "options": [
+      { "id": "a", "text": "Predicting future software trends and emerging technologies" },
+      { "id": "b", "text": "Assessing which parts may cause problems and have high maintenance costs" },
+      { "id": "c", "text": "Forecasting budget requirements only for financial planning purposes" },
+      { "id": "d", "text": "Estimating project completion dates for release planning activities" }
+    ],
+    "correctAnswer": "b",
+    "explanation": "Maintenance prediction is concerned with assessing which parts of the system may cause problems and have high maintenance costs, understanding how changes affect maintainability."
+  },
+  {
+    "id": 34,
+    "question": "What does change prediction require understanding of?",
+    "options": [
+      { "id": "a", "text": "Developer preferences regarding technology and architectural choices" },
+      { "id": "b", "text": "Relationships between a system and its environment and dependencies" },
+      { "id": "c", "text": "Only the code structure and internal design patterns used" },
+      { "id": "d", "text": "Budget constraints that limit the scope of possible changes" }
+    ],
+    "correctAnswer": "b",
+    "explanation": "Predicting the number of changes requires understanding the relationships between a system and its environment. Tightly coupled systems require changes whenever the environment changes."
+  },
+  {
+    "id": 35,
+    "question": "Which factors influence the relationship between a system and its environment for change prediction?",
+    "options": [
+      { "id": "a", "text": "Number and complexity of system interfaces with external components" },
+      { "id": "b", "text": "Number of inherently volatile system requirements like policies" },
+      { "id": "c", "text": "Business processes where the system is used for operations" },
+      { "id": "d", "text": "Interface complexity, volatile requirements, and business process usage" }
+    ],
+    "correctAnswer": "d",
+    "explanation": "Factors influencing system-environment relationships include: number and complexity of system interfaces, number of inherently volatile system requirements (organizational policies/procedures), and the business processes where the system is used."
+  },
+  {
+    "id": 36,
+    "question": "What have studies shown about maintenance effort distribution?",
+    "options": [
+      { "id": "a", "text": "Effort is evenly distributed across all components in well-designed systems" },
+      { "id": "b", "text": "Most effort is spent on a small number of complex system components" },
+      { "id": "c", "text": "Effort is random and unpredictable, requiring continuous monitoring" },
+      { "id": "d", "text": "All components require equal maintenance over the system lifecycle" }
+    ],
+    "correctAnswer": "b",
+    "explanation": "Studies have shown that most maintenance effort is spent on a relatively small number of system components, which is why complexity metrics are useful for prediction."
+  },
+  {
+    "id": 37,
+    "question": "What does complexity in software systems depend on?",
+    "options": [
+      { "id": "a", "text": "Complexity of control structures like loops and conditionals" },
+      { "id": "b", "text": "Complexity of data structures and their relationships" },
+      { "id": "c", "text": "Object, method, and module size affecting comprehension" },
+      { "id": "d", "text": "Control structures, data structures, and component size combined" }
+    ],
+    "correctAnswer": "d",
+    "explanation": "Complexity depends on the complexity of control structures, complexity of data structures, and object, method (procedure), and module size."
+  },
+  {
+    "id": 38,
+    "question": "Which process metric can indicate declining maintainability?",
+    "options": [
+      { "id": "a", "text": "Increasing number of requests for corrective maintenance activities" },
+      { "id": "b", "text": "Increasing average time for impact analysis of proposed changes" },
+      { "id": "c", "text": "Increasing number of outstanding change requests in backlog" },
+      { "id": "d", "text": "Increases in corrective requests, analysis time, and outstanding requests" }
+    ],
+    "correctAnswer": "d",
+    "explanation": "If any or all of these process metrics are increasing - number of corrective maintenance requests, average time for impact analysis, average time to implement changes, or number of outstanding requests - this may indicate a decline in maintainability."
+  },
+  {
+    "id": 39,
+    "question": "What is software reengineering?",
+    "options": [
+      { "id": "a", "text": "Building completely new software from scratch with modern technology" },
+      { "id": "b", "text": "Restructuring or rewriting legacy systems without changing functionality" },
+      { "id": "c", "text": "Adding new features to software to meet emerging requirements" },
+      { "id": "d", "text": "Testing software thoroughly to ensure quality and reliability" }
+    ],
+    "correctAnswer": "b",
+    "explanation": "Software reengineering is restructuring or rewriting part or all of a legacy system without changing its functionality. It involves adding effort to make systems easier to maintain through restructuring and re-documentation."
+  },
+  {
+    "id": 40,
+    "question": "When is reengineering applicable?",
+    "options": [
+      { "id": "a", "text": "When all sub-systems require complete replacement with modern alternatives" },
+      { "id": "b", "text": "When some but not all sub-systems require frequent maintenance effort" },
+      { "id": "c", "text": "Only for new systems to establish proper architectural foundations" },
+      { "id": "d", "text": "Never for legacy systems due to complexity and embedded dependencies" }
+    ],
+    "correctAnswer": "b",
+    "explanation": "Reengineering is applicable where some but not all sub-systems of a larger system require frequent maintenance. It targets specific problematic areas."
+  },
+  {
+    "id": 41,
+    "question": "What is an advantage of reengineering over developing new software?",
+    "options": [
+      { "id": "a", "text": "Reduced risk by avoiding specification and development problems" },
+      { "id": "b", "text": "Reduced cost compared to building new systems from scratch" },
+      { "id": "c", "text": "Both reduced risk and reduced cost make it attractive" },
+      { "id": "d", "text": "None of the above, as new development is always preferred" }
+    ],
+    "correctAnswer": "c",
+    "explanation": "Reengineering offers both reduced risk (avoiding development, staffing, and specification problems of new development) and reduced cost (often significantly less than developing new software)."
+  },
+  {
+    "id": 42,
+    "question": "Which is NOT a reengineering process activity?",
+    "options": [
+      { "id": "a", "text": "Source code translation to convert programs to new languages" },
+      { "id": "b", "text": "Reverse engineering to analyze and understand existing programs" },
+      { "id": "c", "text": "Data reengineering to clean-up and restructure system data" },
+      { "id": "d", "text": "Complete system replacement with entirely new functionality" }
+    ],
+    "correctAnswer": "d",
+    "explanation": "Reengineering process activities include source code translation, reverse engineering, program structure improvement, program modularization, and data reengineering. Complete system replacement is not a reengineering activity - it's replacement."
+  },
+  {
+    "id": 43,
+    "question": "What is reverse engineering in the reengineering process?",
+    "options": [
+      { "id": "a", "text": "Converting code to a new language for modernization purposes" },
+      { "id": "b", "text": "Analyzing the program to understand its structure and behavior" },
+      { "id": "c", "text": "Restructuring for understandability using automated tools" },
+      { "id": "d", "text": "Cleaning up data to improve quality and consistency" }
+    ],
+    "correctAnswer": "b",
+    "explanation": "Reverse engineering involves analyzing the program to understand it, as opposed to other activities like source code translation (converting to new language) or program structure improvement (restructuring)."
+  },
+  {
+    "id": 44,
+    "question": "What factors affect reengineering costs?",
+    "options": [
+      { "id": "a", "text": "Quality of software to be reengineered and its documentation" },
+      { "id": "b", "text": "Tool support available and extent of data conversion required" },
+      { "id": "c", "text": "Availability of expert staff familiar with legacy technologies" },
+      { "id": "d", "text": "Software quality, tool support, data conversion, and expert availability" }
+    ],
+    "correctAnswer": "d",
+    "explanation": "Reengineering cost factors include the quality of software to be reengineered, tool support available, extent of data conversion required, and availability of expert staff (which can be problematic with old technology)."
+  },
+  {
+    "id": 45,
+    "question": "What is refactoring?",
+    "options": [
+      { "id": "a", "text": "Completely rewriting a system to use modern frameworks" },
+      { "id": "b", "text": "Making improvements to slow down degradation through change" },
+      { "id": "c", "text": "Adding new features while maintaining backward compatibility" },
+      { "id": "d", "text": "Testing the system comprehensively before major releases" }
+    ],
+    "correctAnswer": "b",
+    "explanation": "Refactoring is the process of making improvements to a program to slow down degradation through change. It can be thought of as 'preventative maintenance' that reduces future change problems."
+  },
+  {
+    "id": 46,
+    "question": "When you refactor a program, what should you avoid doing?",
+    "options": [
+      { "id": "a", "text": "Improving structure to make the code more maintainable" },
+      { "id": "b", "text": "Reducing complexity by simplifying control flow and logic" },
+      { "id": "c", "text": "Adding functionality or changing the system's behavior" },
+      { "id": "d", "text": "Making it easier to understand through better naming" }
+    ],
+    "correctAnswer": "c",
+    "explanation": "When refactoring, you should not add functionality but rather concentrate on program improvement through better structure, reduced complexity, and improved understandability."
+  },
+  {
+    "id": 47,
+    "question": "How does refactoring differ from reengineering in timing?",
+    "options": [
+      { "id": "a", "text": "Refactoring is continuous throughout development and evolution phases" },
+      { "id": "b", "text": "Refactoring only happens after maintenance costs increase significantly" },
+      { "id": "c", "text": "Refactoring only happens once at the end of development" },
+      { "id": "d", "text": "They have the same timing and are often used interchangeably" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "Refactoring is a continuous process of improvement throughout development and evolution, while reengineering takes place after a system has been maintained for some time and maintenance costs are increasing."
+  },
+  {
+    "id": 48,
+    "question": "Which is a 'bad smell' in program code indicating need for refactoring?",
+    "options": [
+      { "id": "a", "text": "Duplicate code that appears in multiple locations in the program" },
+      { "id": "b", "text": "Long methods that should be broken into smaller functions" },
+      { "id": "c", "text": "Data clumping where same data items recur in multiple places" },
+      { "id": "d", "text": "Duplicate code, long methods, data clumping, and other issues" }
+    ],
+    "correctAnswer": "d",
+    "explanation": "Bad smells include duplicate code, long methods, switch statements with duplication, data clumping (same data items recurring), and speculative generality (unused future-proofing)."
+  },
+  {
+    "id": 49,
+    "question": "What is the issue with 'data clumping'?",
+    "options": [
+      { "id": "a", "text": "Same group of data items re-occur in several places in the code" },
+      { "id": "b", "text": "Data is too large and causes performance and memory issues" },
+      { "id": "c", "text": "Data is encrypted making it difficult to access and process" },
+      { "id": "d", "text": "Data is in the wrong format requiring extensive conversion" }
+    ],
+    "correctAnswer": "a",
+    "explanation": "Data clumping occurs when the same group of data items (fields in classes, parameters in methods) re-occur in several places in a program. These can often be replaced with an object that encapsulates all the data."
+  },
+  {
+    "id": 50,
+    "question": "What is 'speculative generality'?",
+    "options": [
+      { "id": "a", "text": "Code that is too specific and inflexible for future changes" },
+      { "id": "b", "text": "Generality included in case it's needed in the future, but never used" },
+      { "id": "c", "text": "Well-designed extensible code following SOLID principles" },
+      { "id": "d", "text": "Code with too many comments explaining anticipated future changes" }
+    ],
+    "correctAnswer": "b",
+    "explanation": "Speculative generality occurs when developers include generality in a program in case it is required in the future, but it's never actually needed. This can often simply be removed during refactoring."
+  }
+]
