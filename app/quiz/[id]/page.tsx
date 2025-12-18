@@ -91,12 +91,18 @@ export default function QuizPage() {
       const shuffledQuestions = shuffleArray(quizData)
       setQuestions(shuffledQuestions)
 
-      // Initialize timer if quiz has time limit
-      const quizMetadata = getQuizMetadata(quizId)
-      if (quizMetadata?.timeLimit) {
-        setTimeRemaining(quizMetadata.timeLimit)
-        setStartTime(Date.now())
+      // Initialize timer only for random-100 quiz
+      if (quizId === 'random-100') {
+        const quizMetadata = getQuizMetadata(quizId)
+        if (quizMetadata?.timeLimit) {
+          setTimeRemaining(quizMetadata.timeLimit)
+          setStartTime(Date.now())
+        } else {
+          setTimeRemaining(null)
+          setStartTime(Date.now())
+        }
       } else {
+        // Chapter quizzes don't have a timer
         setTimeRemaining(null)
         setStartTime(Date.now())
       }
@@ -199,7 +205,7 @@ export default function QuizPage() {
         setIsQuizComplete(false)
         setTimedOut(false)
 
-        // Reset timer
+        // Reset timer only for random-100
         const quizMetadata = getQuizMetadata(quizId)
         if (quizMetadata?.timeLimit) {
           setTimeRemaining(quizMetadata.timeLimit)
@@ -215,11 +221,8 @@ export default function QuizPage() {
         setIsQuizComplete(false)
         setTimedOut(false)
 
-        // Reset timer
-        const quizMetadata = getQuizMetadata(quizId)
-        if (quizMetadata?.timeLimit) {
-          setTimeRemaining(quizMetadata.timeLimit)
-        }
+        // Chapter quizzes don't have a timer
+        setTimeRemaining(null)
         setStartTime(Date.now())
       }
     }
